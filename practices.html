@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.js"></script>
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <button class="a">按钮A</button>
+        <button class="b">按钮B</button>
+        <input type="text" class="c">
+    </div>
+    <script>
+        function getData(url,callback){
+            let xhr=new XMLHttpRequest()
+            xhr.open('GET',url,true)
+            xhr.onload=function(){
+                if(xhr.status>=200&&xhr.status<300||xhr.status===304){
+                    callback(xhr.responseText)
+                }
+            }
+            xhr.onerror=function(){console.log('error')}
+            xhr.send()
+        }
+        let promise=Promise.resolve()
+        function render(url){
+            promise=promise.then(()=>{
+                return new Promise((resolve,reject)=>{
+                    getData(url,(data)=>{
+                        document.querySelector('.c').value=data
+                    })
+                    resolve()
+                })
+            })
+        }
+
+
+        $('.a').on('click',()=>{render('url_a')})
+        $('.b').on('click',()=>{render('url_b')})
+    </script> -->
+
+
+
+    <!-- <div class="father"><div class="child"></div></div>
+    <script>
+        $('.child').on('click',function(){console.log(1,this)})//child
+        $('.father').on('click','.child',function(){console.log(2,this)})//child
+        $('.child')[0].onclick=function(){console.log(3,this)}//child
+        var app={
+            init:function(){
+                this.$father=$('.father')
+                this.$child=$('.child')
+                this.bind()
+            },
+            bind:function(){
+                var _this=this
+                this.$father.on('click',this.sayHi)
+                this.$child.on('click',function(){
+                    _this.sayHello()
+                })
+                this.$child.on('click',this.sayBay.bind(this))
+            },
+            sayHi:function(){console.log('hi',this)},//father
+            sayHello:function(){console.log('hello',this)},//app
+            sayBay:function(){console.log('bay',this)}   //app
+        }
+        app.init()
+    </script> -->
+</body>
+</html>
