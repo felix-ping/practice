@@ -92,7 +92,7 @@
 //             resolve(data)
 //             document.body.removeChild(creatScript)
 //         }
-         
+
 //     })
 // }
 // jsonp('http://photo.sina.cn/aj/index',
@@ -172,7 +172,7 @@
 //         arr[u]=arr[u]+1
 //         u++
 //     }
-    
+
 //     let newArr=[]   
 //     while(arr.length!=0){
 //         let count=arr.shift()
@@ -348,9 +348,50 @@ let app = new Vue({
 })
 console.log(app.message)
 console.log(app.list)
-app.list='李四'
+app.list = '李四'
 console.log(app.list)
 
 
 
 
+//页面防抖
+$('textarea').on('keydown', debounce(ajaxAction, 2500));
+
+function debounce(fn, delay) {
+    var timer = null; // 声明计时器
+    return function () {
+        var context = this;
+        var args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+            fn.apply(context, args);
+        }, delay);
+    };
+}
+
+
+var exposure = new Exposure(node) 
+exposure.once(function() {
+    console.log(this)
+    console.log('world')
+})
+
+function Exposure(node) {
+    this.node = node 
+    this.lock = false 
+
+}
+Exposure.prototype.once = function(callback) {
+    this.node.addEventListener('scroll', () => {
+        let scrollTop = this.node.scrollTop
+        let windowHeight = this.node.innerHeight
+        let offsetTop = this.node.offsetTop
+        if(offsetTop < scrollTop + windowHeight && offsetTop > scrollTop){
+            if(!this.lock){
+                callback.call(this)
+                this.lock = true
+            }
+            
+        }
+    })
+}
