@@ -370,28 +370,66 @@ function debounce(fn, delay) {
 }
 
 
-var exposure = new Exposure(node) 
-exposure.once(function() {
+let exposure = new Exposure(node)
+exposure.once(function () {
     console.log(this)
     console.log('world')
 })
-
 function Exposure(node) {
-    this.node = node 
-    this.lock = false 
-
+    this.node = node
+    this.lock = false
 }
-Exposure.prototype.once = function(callback) {
+Exposure.prototype.once = function (callback) {
     this.node.addEventListener('scroll', () => {
         let scrollTop = this.node.scrollTop
         let windowHeight = this.node.innerHeight
         let offsetTop = this.node.offsetTop
-        if(offsetTop < scrollTop + windowHeight && offsetTop > scrollTop){
-            if(!this.lock){
+        if (offsetTop < scrollTop + windowHeight && offsetTop > scrollTop) {
+            if (!this.lock) {
                 callback.call(this)
                 this.lock = true
             }
-            
+
         }
     })
 }
+
+
+function Vue(options = {}) {
+    this.data = options.data
+    this.computed = options.computed
+    let _this = this
+    function Observe(data) {
+        Object.keys(data).forEach(item => {
+            Object.defineProperty(_this, item, {
+                set(newVal) {
+                    this.data[item] = newVal
+                },
+                get() {
+                    if(typeof data[item] === 'function') {
+                        return data[item].call(this)
+                    }
+                    return data[item]
+                }
+            })
+        })
+    }
+    Observe(this.data)
+    Observe(this.computed)
+
+}
+
+let app = new Vue({
+    data: {
+        firstName: 'zhang',
+        lastName: 'san',
+    },
+    computed: {
+        name: function() {
+            return this.firstName + '' + this.lastName
+        }
+    }
+})
+console.log(app.name)
+app.firstName = 'li'
+console.log(app.name)
