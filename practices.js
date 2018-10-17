@@ -433,3 +433,18 @@ let app = new Vue({
 console.log(app.name)
 app.firstName = 'li'
 console.log(app.name)
+
+
+function debounce(fn, time) {
+    let id = null
+    return function() {
+        clearTimeout(id)
+        id = setTimeout(() => {
+            fn.call(this)
+        }, time)
+    }
+}
+function print() {
+    console.log('print')
+}
+window.addEventListener('scroll', debounce(print, 300))
