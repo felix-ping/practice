@@ -448,3 +448,20 @@ function print() {
     console.log('print')
 }
 window.addEventListener('scroll', debounce(print, 300))
+
+
+
+function throttle(fn, time) {
+    let start = Date.now()
+    let currentTime
+    return function () {
+        currentTime = Date.now()
+        while (currentTime < start + time) { return }
+        fn()
+        start = currentTime
+    }
+}
+function print() {
+    console.log('print')
+}
+window.addEventListener('scroll', throttle(print, 1000))
