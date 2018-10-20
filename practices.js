@@ -465,3 +465,58 @@ function print() {
     console.log('print')
 }
 window.addEventListener('scroll', throttle(print, 1000))
+
+
+var a = 1
+function fn1() {
+    function fn3() {
+        functionfn2() {
+            console.log(a)
+        }
+        var a
+        fn2()
+        a = 4
+    }
+    var a = 2
+    return fn3
+}
+var fn = fn1()
+fn()
+
+var a = 1
+function fn1() {
+    var a
+    function fn3() {
+        var a
+        function fn2() {
+            console.log(a)
+        }
+        fn2()
+        a = 4
+    }
+    a = 2
+    return fn3
+}
+var fn = fn1()
+fn.call(undefined)
+//undefined
+
+//算法实现
+
+//冒泡\选择\插入\基数\计数\堆\快速\归并\桶
+
+// 冒泡排序 
+
+function bubbleSort(arr) {
+    let min = null
+    let swap = null
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+                min = arr[j]
+                arr[j] = arr[i]
+                arr[i] =min
+            }
+        }
+    }
+}
