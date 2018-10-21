@@ -509,14 +509,185 @@ fn.call(undefined)
 
 function bubbleSort(arr) {
     let min = null
-    let swap = null
     for (let i = 0; i < arr.length; i++) {
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[i] > arr[j]) {
                 min = arr[j]
                 arr[j] = arr[i]
-                arr[i] =min
+                arr[i] = min
             }
         }
     }
+    return arr
 }
+const array = [5, 9, 7, 4, 2, 8, 1, 6, 0]
+bubbleSort(array)
+
+
+//选择排序
+function selectSort(arr) {
+    let min, minIndex, swap = null 
+    for (let i = 0; i < arr.length; i++) {
+        minIndex = i 
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[minIndex] > arr[j]) {
+                minIndex = j
+            }
+        }
+        if (minIndex !== i) {
+            swap = arr[i]
+            arr[i] = arr[minIndex]
+            arr[minIndex] = swap
+        }
+    }
+    return arr
+}
+const array = [5, 9, 7, 4, 2, 8, 1, 6, 0, 3, 11, 10, 12]
+selectSort(array)
+
+
+//红灯三秒亮一次，绿灯一秒亮一次，黄灯2秒亮一次；如何让三个灯不断交替重复亮灯？（用Promse实现）
+//三个亮灯函数已经存在：
+
+function red() {console.log('red');}
+function green() {console.log('green');}
+function yellow() {console.log('yellow');}
+function changeLight(start, fn, time) {
+    let current = Date.now()
+    while (current - start < time) {current = Date.now()}
+    fn()
+    return current
+}
+function lightLoop(){
+    return new Promise(function (resolve, reject){
+        function startWork() {
+            return new Promise((resolve, reject) => {
+                let start = Date.now()
+                resolve(start)
+            })
+        }
+        startWork()
+        .then((start) => {return changeLight(start, red, 3000)})
+        .then((start) => {return changeLight(start, green, 1000)})  
+        .then((start) => {return changeLight(start, yellow, 2000)})
+        .then(()=> {return lightLoop() })
+    })
+}
+lightLoop()
+
+//另一种实现
+{
+    function red() {console.log('red');}
+    function green() {console.log('green');}
+    function yellow() {console.log('yellow');}
+    function lighting(time, callback) {
+        return new Promise((resolve, reject) => {
+            setTimeout(function () {
+                callback()
+                resolve()
+            }, time)
+        })
+    }
+    function start () {
+        return new Promise((resolve, reject) => {resolve()})
+    }
+    function infiLoop () {
+        return new Promise((resolve, reject) => {
+            start().then(() => {return lighting(3000, red)})
+            .then(() => {return lighting(1000, green)})
+            .then(() => {return lighting(2000, yellow)})
+            .then(() => {infiLoop()}) 
+        })
+        
+    }
+    infiLoop()
+    
+}
+//async await
+{
+    function red() {console.log('red');}
+    function green() {console.log('green');}
+    function yellow() {console.log('yellow');}
+    function lighting(callback, time){
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                callback()
+                resolve()//这里是一个没有理解透彻的点
+            }, time)
+        })
+    }
+    async function infiLoop() {
+        return new Promise((res, rej) => {
+            (async function start() {
+                await lighting(red, 3000)
+                await lighting(green, 1000)
+                await lighting(yellow, 2000)
+                await infiLoop()
+            })()
+        })
+    }
+    infiLoop()
+}
+
+
+
+//
+function setColor(color, time) {
+    return function (callback) {
+        document.getElementById("lamp").style.backgroundColor = color;
+        setTimeout(callback, time)
+    }
+}
+var queue = function (funcs) {
+    (function next() {
+        if (funcs.length > 0) {
+            var f = funcs.shift();
+            f(next);
+        }
+    })();
+};
+
++function tick() {
+    queue([
+        setColor("red", 3000),
+        setColor("green", 2000),
+        setColor("gray", 1000),
+        tick])
+}()
+
+//
+let f = 0, seconds = [3000, 1000, 2000], colors = [red, green, yellow], next = [1, 2, 0];
+let async = timeout => {
+    let p = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, timeout);
+    });
+    return p;
+};
+let fn = () => {
+    async(seconds[f]).then(() => {
+        colors[f]();
+        f = next[f];
+        fn();
+    });
+};
+fn();
+
+//
+Promise.recursion = function (fn) {
+    function foo(i = 0) {
+        fn(i);
+        return Promise.delay(1000).then(foo.bind(null, i + 1));
+    }
+
+    return foo();
+}
+
+Promise.recursion(i => {
+    if (i > 60) throw new Error('1分钟后停止');
+    var colors = ['red', 'green', 'yellow'];
+    l.style.background = colors[i % 3];
+}).catch(err => {
+    console.log(err.message);
+})
