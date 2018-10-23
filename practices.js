@@ -691,3 +691,206 @@ Promise.recursion(i => {
 }).catch(err => {
     console.log(err.message);
 })
+
+
+async function xxx(time, value) {
+    await yyy(time)
+    console.log(value)
+}
+
+function yyy (timeout) {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            res()
+        }, timeout);
+    })
+}
+
+xxx(1000, 'hello world')
+
+
+const yyy = async function (time) {
+    await new Promise((res) => {
+        setTimeout(() => {
+            res()
+        }, time)
+    })
+}
+async function xxx(time, value) {
+    await yyy(time)
+    console.log(value)
+}
+xxx(1000, 'hello world')
+
+let [foo, bar] = await Promise.all([getFoo(), getBar()])
+
+let fooPromise = getFoo()
+let barPromise = getBar()
+let foo = await fooPromise
+let bar = await barPromise
+
+
+
+
+
+
+
+
+
+
+//点击分页页码可实现无刷新页面加载
+//同时 URL 在数据加载后会发生变化展示对应页码
+//刷新页面（带页码参数）会定位到当前页码
+//当点击返回时可会到上个页面
+
+init()
+//处理返回数据
+window.onpopstate = function () {
+    init()
+}
+
+//用了事件代理
+document.querySelector('.pagination').onclick = function (e) {
+    var page = e.target.getAttribute('data-page')
+    if (page) {  //如果没点到li上 page 是null
+        getAndRender(page)
+    }
+}
+
+
+//初始化，根据 url 中 page 的值定位到对应页面，如果没设置展示第1页
+function init() {
+    var serach = location.search.replace(/^\?/, '').split('=');
+    console.log(11)
+    console.log(location.search)
+    console.log(serach)
+    if (serach[0] === 'page') {
+        initGetAndRender(serach[1])
+    } else {
+        initGetAndRender(1)
+    }
+}
+
+// 获取数据，并且渲染页面
+function getAndRender(page) {
+    showLoading()
+    getNews(page, function (ret) {
+        renderNews(ret.data)  //渲染页面
+        hideLoading()
+        setUrl(page)          //设置 url
+        setPagingState(page)  //设置分页状态
+    })
+}
+
+//初始化从url解析加载数据时不需要设置url了，否则返回会出错
+function initGetAndRender(page) {
+    showLoading()
+    getNews(page, function (ret) {
+        renderNews(ret.data)  //渲染页面
+        hideLoading()         //设置 url
+        setPagingState(page)  //设置分页状态
+    })
+}
+
+
+//设置url
+function setUrl(page) {
+    var url = location.pathname + '?page=' + page
+    history.pushState({ url: url, title: document.title }, document.title, url)
+}
+
+//改变页面标签状态
+function setPagingState(page) {
+    var pageNodes = document.querySelectorAll('.pagination>li');
+    pageNodes.forEach(function (node) {
+        node.classList.remove('active')
+    })
+    pageNodes[page - 1].classList.add('active')
+}
+
+
+function getNews(page, onSuccess) {
+    var url = 'http://photo.sina.cn/aj/index'
+    var data = {
+        page: page,
+        cate: 'recommend',
+        jsoncallback: '__onGetData__'
+    }
+    window.__onGetData__ = function (data) {
+        onSuccess && onSuccess(data);
+    }
+
+    jsonp(url, data);
+
+    function jsonp(url, data) {
+        var script = document.createElement('script')
+        var queryString = []
+        for (var key in data) {
+            queryString.push(key + '=' + encodeURIComponent(data[key]))
+        }
+        script.src = url + '?' + queryString.join('&')
+        document.head.appendChild(script)
+        document.head.removeChild(script)
+    }
+}
+
+function renderNews(items) {
+    var tpl = '';
+    for (var i = 0; i < items.length; i++) {
+        tpl += '<li class="item">';
+        tpl += ' <a href="' + items[i].wap_url + '" class="link" style="background-image:url(' + items[i].img_url + ')"></a>';
+        tpl += ' <h4 class="header">' + items[i].short_name + '</h4>';
+        tpl += '<p class="desp">' + items[i].short_intro + '</p>';
+        tpl += '</li>';
+    }
+    document.querySelector('.pic-ct').innerHTML = tpl;
+}
+
+function showLoading() {
+    document.querySelector('#cover').style.display = 'block';
+}
+function hideLoading() {
+    document.querySelector('#cover').style.display = 'none';
+}
+
+
+
+
+
+
+
+
+
+
+document.querySelector('.pagination').onclick = function(e){
+    let page = e.target.getAttribute('data-page')
+    if(page){  //如果没点到li上 page 是null
+        getNews(page, function(ret){
+            console.log(ret)
+		})
+    }
+}
+
+
+function getNews(page, onSuccess) {
+    let url = 'http://photo.sina.cn/aj/index'
+    const data = {
+        page: page,
+        cate: 'recommend',//这里是怎么拿到的?
+        jsoncallback: '__onGetData__'
+    }
+    window.__onGetData__ = function(data) {
+        onSuccess && onSuccess(data)
+    }
+    jsonp(url, data)
+    function jsonp(url, data) {
+        let script = document.createElement('script')
+        let queryString = []
+        for (let key in data) {
+            queryString.push(key + '=' + encodeURIComponent(data[key]))
+        }
+        script.src = url + '?' + queryString.join('&')
+        document.head.appendChild(script)
+        document.head.removeChild(script)
+    }
+}
