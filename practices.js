@@ -894,3 +894,116 @@ function getNews(page, onSuccess) {
         document.head.removeChild(script)
     }
 }
+
+//实现一个find函数，模拟原生的find函数，find(list, predicate)。
+//在list中逐项查找，返回第一个通过predicate迭代函数真值检测的元素值，如果没有元素通过检测则返回 undefined。
+// 如果找到匹配的元素，函数将立即返回，不会遍历整个list
+var even = find([1, 2, 3, 4, 5, 6], function (num) { return num % 2 == 0; });
+
+function find(list, predicate) {
+    for (var index = 0; index < list.length; index++) {
+        if (predicate(list[index], index, list)) return list[index];
+    }
+}
+
+// 实现一个filter函数，模拟原生的filter函数，filter(list, predicate)。
+// 遍历list中的每个值，返回所有通过predicate真值检测的元素所组成的数组。
+
+var evens = filter([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+// [2, 4, 6]
+
+function filter(list, predicate) {
+    let arr = []
+    for (let i = 0; i < list.length; i++){
+        if(predicate(list[i])) {
+            arr.push(list[i])
+        }
+    }
+    console.log(arr)
+    return arr
+}
+
+// 实现一个invoke函数，invoke(list, methodName, arguments)
+
+// 在list的每个元素上执行methodName方法。 任何传递给invoke的额外参数，invoke都会在调用methodName方法的时候传递给它。
+
+invoke([[5, 1, 7], [3, 2, 1]], 'sort'); // [[1, 5, 7], [1, 2, 3]];
+
+
+function isFunction() {
+    return typeof obj == 'function'
+}
+
+function invoke(list, method) {
+    var args = slice.call(arguments, 2);
+    var isFunc = isFunction(method);
+    return list.map(function (value) {
+        var func = isFunc ? method : value[method];
+        return func == null ? func : func.apply(value, args);
+    });
+}
+
+
+// 实现一个parseQuery函数，能够解析location的search字符串(不包括'?')。
+// 输入一个search，输出一个object，同名参数则是会成为数组。
+
+
+var search = "name=sa&age=12&address=qwe&address=poi&kaka";
+var result = parseQuery(search);
+console.log(result) //{address:["qwe", "poi"],age:"12",kaka:"",name:"sa"}
+
+
+
+function parseQuery(query) {
+    var reg = /([^&=\s]+)[=\s]?([^&=\s]*)/g;
+    var obj = {};
+    while (reg.exec(query)) {
+        var key = RegExp.$1;
+        var value = RegExp.$2;
+        if (Array.isArray(obj[key]) && value !== "") {
+            obj[key].push(value);
+            continue;
+        }
+        if (obj.hasOwnProperty(key) && value !== "") {
+            obj[key] = [obj[key], value];
+            continue;
+        }
+        obj[key] = value;
+    }
+    return obj;
+}
+
+//实现一个create函数，模拟原生的new操作符。
+
+
+
+function Preson(name, age) {
+    this.name = name;
+    this.age = age;
+}
+Preson.prototype = {
+    protype: "type"
+}
+var test = create(Preson, "adam", 19);
+console.log(test); //{name:"adam",age:19};
+console.log(test.protype) //type
+
+
+
+
+function create(construct) {
+    var args = Array.prototype.slice.call(arguments, 1);
+
+    var obj = {};
+
+    Object.setPrototypeOf(obj, construct.prototype);
+    //或者obj.__proto__ = construct.prototype;
+    // obj.constructor.prototype = construct.prototype是不会有效果的
+    var res = construct.apply(obj, args);
+
+    if (typeof res === "object" && res !== null) {
+        return res;
+    }
+
+    return obj;
+}
