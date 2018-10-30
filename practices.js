@@ -935,10 +935,11 @@ function isFunction() {
 }
 
 function invoke(list, method) {
-    var args = slice.call(arguments, 2);
+    var args = [].slice.call(arguments, 2);
     var isFunc = isFunction(method);
     return list.map(function (value) {
         var func = isFunc ? method : value[method];
+        console.log(value, method)
         return func == null ? func : func.apply(value, args);
     });
 }
@@ -1007,3 +1008,174 @@ function create(construct) {
 
     return obj;
 }
+
+
+//实现一个flatten函数，将一个嵌套多层的数组 array（数组） (嵌套可以是任何层数)转换为只有一层的数组，数组中元素仅基本类型的元素或数组，不存在循环引用的情况
+//方法一
+let arr = [3, [2, -4, [5, 7]], -3, ['aa', [['bb']]]]
+let arr2 = flatten2(arr)
+console.log(arr2)
+
+function flatten2(arr) {
+    let newArr = arr.flat(Infinity)
+    return newArr
+}
+
+//方法二
+let arr = [3, [2, -4, [5, 7]], -3, ['aa', [['bb']]]]
+let arr2 = flatten2(arr)
+console.log(arr2)
+
+function flatten2(arr) {
+    let newArr = []
+    function flatten1(arr) {
+        for (let key in arr) {
+            if (arr[key] && arr[key] instanceof Object) {
+                flatten1(arr[key])
+            }else{
+                newArr.push(arr[key]) 
+            }   
+        }
+    }
+    flatten1(arr)
+    return newArr
+}
+
+//方法三
+let arr = [3, [2, -4, [5, 7]], -3, ['aa', [['bb']]]]
+let arr2 = flatten2(arr)
+console.log(arr2)
+
+function flatten2(arr) {
+    return arr.reduce(function (initArr, currentArr) {
+        return initArr.concat(Array.isArray(currentArr) ? flatten2(currentArr) : currentArr)
+    }, [])
+}
+
+
+//实现一个reduce函数，作用和原生的reduce类似。
+// reduce(list, iteratee, [memo])，
+// memo是reduce函数的初始值，会被每一次成功调用iteratee函数的返回值所取代 。
+// 这个迭代传递4个参数：memo,value 和 迭代的index和最后一个引用的整个 list。
+// 如果没有memo传递给reduce的初始调用，iteratee不会被列表中的第一个元素调用。
+// 第一个元素将取代memo参数传递给列表中下一个元素调用的iteratee函数。
+
+var sum = reduce([1, 2, 3], function(memo, num){ return memo + num; }, 0);
+
+function reduce(list, iteratee, memo) {
+    let _memo = memo 
+    for (let key in list) {
+        _memo = other(list[key], iteratee, _memo)
+    }
+    return _memo
+}
+
+function other(value, iteratee, memo) {
+    return iteratee(memo, value)
+}
+console.log(sum)
+
+function iterator(list, iteratee, memo, index, length) {
+    for (; index >= 0 && index < length; index++) {
+        memo = iteratee(memo, list[index], index, list);
+    }
+    return memo;
+}
+
+function reduce(list, iteratee, memo) {
+    var index = 0, length = list.length;
+    if (arguments.length < 3) {
+        memo = list[index];
+        index = 1;
+    }
+    return iterator(list, iteratee, memo, index, length);
+}
+
+var sum = reduce([1, 2, 3], function (memo, num) { return memo + num; }, 0);
+
+
+//通过对list里的每个元素调用转换函数(iteratee迭代器)生成一个与之相对应的数组。iteratee传递三个参数：value，然后是迭代 index。
+let exec = map([1, 2, 3], function(num) {return num * 3 } ) //[3, 6, 9]
+function map(arr, iterator) {
+    let newArr = []
+    for (let value of arr) {
+        newArr.push(iterator(value))
+    }
+    return newArr
+}
+console.log(exec)
+
+
+function map(list, iteratee) {
+    let result = []
+    for (let index = 0; index < list.length; index++) {
+        result[index] = iteratee(list[index], index, list)
+    }
+    return result
+}
+let exec = map([1, 2, 3], function(num) {return num * 3 } )
+console.log(exec)
+//http://js.jirengu.com/titefesuda/2/edit?html,css,output
+//http://js.jirengu.com/wudoyaxuma/6/edit?html,css,output
+
+
+
+//手写深拷贝
+// 深度优先遍历复制, 借助队列
+function deepCopy(obj) {
+    var newObj = {},
+        srcQueue = [obj], srcVisitedQueue = [],
+        copyQueue = [newObj], copyVisitedQueue = [];
+
+    while (srcQueue.length > 0) {
+        var currentSrcElement = srcQueue.shift(),
+            currentCopyElement = copyQueue.shift();
+
+        srcVisitedQueue.push(currentSrcElement);
+        copyVisitedQueue.push(currentCopyElement);
+
+        for (var key in currentSrcElement) {
+            if (typeof currentCopyElement[key] !== 'object') {
+                currentCopyElement[key] = currentSrcElement[key];
+            } else {
+                // 有环的情况
+                var index = srcVisitedQueue.indexOf(currentSrcElement[key]);
+                if (index >= 0) {
+                    currentCopyElement[key] = copyVisitedQueue[index];
+                } else {
+                    srcQueue.push(currentSrcElement[key]);
+                    currentCopyElement[key] = {};
+                    copyQueue.push(currentCopyElement[key]);
+                }
+            }
+        }
+    }
+
+    return newObj;
+}
+
+// Test case
+// 1. 只含有简单类型的Object{a: 1, b:2} => pass
+// 2. 简单类型和复杂类型同时存在的情况下的Object => pass:
+// var obj1 = {
+//     a: 1,
+//     b: 2,
+//     c: {
+//         d: 3,
+//         e: {
+//             f: 4,
+//             g: 5
+//         }
+//     },
+//     h: {
+//         i: 6,
+//         j: 7
+//     }
+// };
+// 3. 有环的情况下的Object => pass:
+// var obj1 = {
+//     a: 1,
+//     b: 2,
+//     c: obj1
+// };
+
