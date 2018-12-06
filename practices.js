@@ -406,7 +406,7 @@ function Vue(options = {}) {
                     this.data[item] = newVal
                 },
                 get() {
-                    if(typeof data[item] === 'function') {
+                    if (typeof data[item] === 'function') {
                         return data[item].call(this)
                     }
                     return data[item]
@@ -425,7 +425,7 @@ let app = new Vue({
         lastName: 'san',
     },
     computed: {
-        name: function() {
+        name: function () {
             return this.firstName + '' + this.lastName
         }
     }
@@ -437,7 +437,7 @@ console.log(app.name)
 
 function debounce(fn, time) {
     let id = null
-    return function() {
+    return function () {
         clearTimeout(id)
         id = setTimeout(() => {
             fn.call(this)
@@ -470,7 +470,7 @@ window.addEventListener('scroll', throttle(print, 1000))
 var a = 1
 function fn1() {
     function fn3() {
-        functionfn2() {
+        function fn2() {
             console.log(a)
         }
         var a
@@ -526,9 +526,9 @@ bubbleSort(array)
 
 //选择排序
 function selectSort(arr) {
-    let min, minIndex, swap = null 
+    let min, minIndex, swap = null
     for (let i = 0; i < arr.length; i++) {
-        minIndex = i 
+        minIndex = i
         for (let j = i + 1; j < arr.length; j++) {
             if (arr[minIndex] > arr[j]) {
                 minIndex = j
@@ -549,17 +549,17 @@ selectSort(array)
 //红灯三秒亮一次，绿灯一秒亮一次，黄灯2秒亮一次；如何让三个灯不断交替重复亮灯？（用Promse实现）
 //三个亮灯函数已经存在：
 
-function red() {console.log('red');}
-function green() {console.log('green');}
-function yellow() {console.log('yellow');}
+function red() { console.log('red'); }
+function green() { console.log('green'); }
+function yellow() { console.log('yellow'); }
 function changeLight(start, fn, time) {
     let current = Date.now()
-    while (current - start < time) {current = Date.now()}
+    while (current - start < time) { current = Date.now() }
     fn()
     return current
 }
-function lightLoop(){
-    return new Promise(function (resolve, reject){
+function lightLoop() {
+    return new Promise(function (resolve, reject) {
         function startWork() {
             return new Promise((resolve, reject) => {
                 let start = Date.now()
@@ -567,19 +567,19 @@ function lightLoop(){
             })
         }
         startWork()
-        .then((start) => {return changeLight(start, red, 3000)})
-        .then((start) => {return changeLight(start, green, 1000)})  
-        .then((start) => {return changeLight(start, yellow, 2000)})
-        .then(()=> {return lightLoop() })
+            .then((start) => { return changeLight(start, red, 3000) })
+            .then((start) => { return changeLight(start, green, 1000) })
+            .then((start) => { return changeLight(start, yellow, 2000) })
+            .then(() => { return lightLoop() })
     })
 }
 lightLoop()
 
 //另一种实现
 {
-    function red() {console.log('red');}
-    function green() {console.log('green');}
-    function yellow() {console.log('yellow');}
+    function red() { console.log('red'); }
+    function green() { console.log('green'); }
+    function yellow() { console.log('yellow'); }
     function lighting(time, callback) {
         return new Promise((resolve, reject) => {
             setTimeout(function () {
@@ -588,27 +588,27 @@ lightLoop()
             }, time)
         })
     }
-    function start () {
-        return new Promise((resolve, reject) => {resolve()})
+    function start() {
+        return new Promise((resolve, reject) => { resolve() })
     }
-    function infiLoop () {
+    function infiLoop() {
         return new Promise((resolve, reject) => {
-            start().then(() => {return lighting(3000, red)})
-            .then(() => {return lighting(1000, green)})
-            .then(() => {return lighting(2000, yellow)})
-            .then(() => {infiLoop()}) 
+            start().then(() => { return lighting(3000, red) })
+                .then(() => { return lighting(1000, green) })
+                .then(() => { return lighting(2000, yellow) })
+                .then(() => { infiLoop() })
         })
-        
+
     }
     infiLoop()
-    
+
 }
 //async await
 {
-    function red() {console.log('red');}
-    function green() {console.log('green');}
-    function yellow() {console.log('yellow');}
-    function lighting(callback, time){
+    function red() { console.log('red'); }
+    function green() { console.log('green'); }
+    function yellow() { console.log('yellow'); }
+    function lighting(callback, time) {
         return new Promise((resolve) => {
             setTimeout(() => {
                 callback()
@@ -698,7 +698,7 @@ async function xxx(time, value) {
     console.log(value)
 }
 
-function yyy (timeout) {
+function yyy(timeout) {
     return new Promise((res, rej) => {
         setTimeout(() => {
             res()
@@ -862,12 +862,12 @@ function hideLoading() {
 
 
 
-document.querySelector('.pagination').onclick = function(e){
+document.querySelector('.pagination').onclick = function (e) {
     let page = e.target.getAttribute('data-page')
-    if(page){  //如果没点到li上 page 是null
-        getNews(page, function(ret){
+    if (page) {  //如果没点到li上 page 是null
+        getNews(page, function (ret) {
             console.log(ret)
-		})
+        })
     }
 }
 
@@ -879,7 +879,7 @@ function getNews(page, onSuccess) {
         cate: 'recommend',//这里是怎么拿到的?
         jsoncallback: '__onGetData__'
     }
-    window.__onGetData__ = function(data) {
+    window.__onGetData__ = function (data) {
         onSuccess && onSuccess(data)
     }
     jsonp(url, data)
@@ -909,13 +909,13 @@ function find(list, predicate) {
 // 实现一个filter函数，模拟原生的filter函数，filter(list, predicate)。
 // 遍历list中的每个值，返回所有通过predicate真值检测的元素所组成的数组。
 
-var evens = filter([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+var evens = filter([1, 2, 3, 4, 5, 6], function (num) { return num % 2 == 0; });
 // [2, 4, 6]
 
 function filter(list, predicate) {
     let arr = []
-    for (let i = 0; i < list.length; i++){
-        if(predicate(list[i])) {
+    for (let i = 0; i < list.length; i++) {
+        if (predicate(list[i])) {
             arr.push(list[i])
         }
     }
@@ -1032,9 +1032,9 @@ function flatten2(arr) {
         for (let key in arr) {
             if (arr[key] && arr[key] instanceof Object) {
                 flatten1(arr[key])
-            }else{
-                newArr.push(arr[key]) 
-            }   
+            } else {
+                newArr.push(arr[key])
+            }
         }
     }
     flatten1(arr)
@@ -1060,10 +1060,10 @@ function flatten2(arr) {
 // 如果没有memo传递给reduce的初始调用，iteratee不会被列表中的第一个元素调用。
 // 第一个元素将取代memo参数传递给列表中下一个元素调用的iteratee函数。
 
-var sum = reduce([1, 2, 3], function(memo, num){ return memo + num; }, 0);
+var sum = reduce([1, 2, 3], function (memo, num) { return memo + num; }, 0);
 
 function reduce(list, iteratee, memo) {
-    let _memo = memo 
+    let _memo = memo
     for (let key in list) {
         _memo = other(list[key], iteratee, _memo)
     }
@@ -1095,7 +1095,7 @@ var sum = reduce([1, 2, 3], function (memo, num) { return memo + num; }, 0);
 
 
 //通过对list里的每个元素调用转换函数(iteratee迭代器)生成一个与之相对应的数组。iteratee传递三个参数：value，然后是迭代 index。
-let exec = map([1, 2, 3], function(num) {return num * 3 } ) //[3, 6, 9]
+let exec = map([1, 2, 3], function (num) { return num * 3 }) //[3, 6, 9]
 function map(arr, iterator) {
     let newArr = []
     for (let value of arr) {
@@ -1113,7 +1113,7 @@ function map(list, iteratee) {
     }
     return result
 }
-let exec = map([1, 2, 3], function(num) {return num * 3 } )
+let exec = map([1, 2, 3], function (num) { return num * 3 })
 console.log(exec)
 //http://js.jirengu.com/titefesuda/2/edit?html,css,output
 //http://js.jirengu.com/wudoyaxuma/6/edit?html,css,output
@@ -1186,29 +1186,29 @@ function deepCopy(obj) {
 
 
 function _LazyMan(name) {
-    this.tasks = [];   
+    this.tasks = [];
     var self = this;
-    var fn =(function(n){
+    var fn = (function (n) {
         var name = n;
-        return function(){
+        return function () {
             console.log("Hi! This is " + name + "!");
             self.next();
         }
     })(name);
     this.tasks.push(fn);
-    setTimeout(function(){
+    setTimeout(function () {
         self.next();
     }, 0); // 在下一个事件循环启动任务
 }
 /* 事件调度函数 */
-_LazyMan.prototype.next = function() { 
+_LazyMan.prototype.next = function () {
     var fn = this.tasks.shift();
     fn && fn();
 }
-_LazyMan.prototype.eat = function(name) {
+_LazyMan.prototype.eat = function (name) {
     var self = this;
-    var fn =(function(name){
-        return function(){
+    var fn = (function (name) {
+        return function () {
             console.log("Eat " + name + "~");
             self.next()
         }
@@ -1216,24 +1216,24 @@ _LazyMan.prototype.eat = function(name) {
     this.tasks.push(fn);
     return this; // 实现链式调用
 }
-_LazyMan.prototype.sleep = function(time) {
+_LazyMan.prototype.sleep = function (time) {
     var self = this;
-    var fn = (function(time){
-        return function() {
-            setTimeout(function(){
+    var fn = (function (time) {
+        return function () {
+            setTimeout(function () {
                 console.log("Wake up after " + time + "s!");
                 self.next();
             }, time * 1000);
         }
     })(time);
     this.tasks.push(fn);
-   return this;
+    return this;
 }
-_LazyMan.prototype.sleepFirst = function(time) {
+_LazyMan.prototype.sleepFirst = function (time) {
     var self = this;
-    var fn = (function(time) {
-        return function() {
-            setTimeout(function() {
+    var fn = (function (time) {
+        return function () {
+            setTimeout(function () {
                 console.log("Wake up after " + time + "s!");
                 self.next();
             }, time * 1000);
@@ -1243,7 +1243,7 @@ _LazyMan.prototype.sleepFirst = function(time) {
     return this;
 }
 /* 封装 */
-function LazyMan(name){
+function LazyMan(name) {
     return new _LazyMan(name);
 }
 
@@ -1252,89 +1252,89 @@ function LazyMan(name){
 // lazyman2
 
 
-(function(window, undefined){
-	var taskList = [];
-	// 类
-	function LazyMan(){};
-	LazyMan.prototype.eat = function(str){
-		subscribe("eat", str);
-		return this;
-	};
-	LazyMan.prototype.sleep = function(num){
-		subscribe("sleep", num);
-		return this;
-	};
-	LazyMan.prototype.sleepFirst = function(num){
-		subscribe("sleepFirst", num);
-		return this;
-	};
-	// 订阅
-	function subscribe(){
-		var param = {},
-			args = Array.prototype.slice.call(arguments);
-		if(args.length < 1){
-			throw new Error("subscribe 参数不能为空!");
-		}
-		param.msg = args[0];
-		param.args = args.slice(1); // 函数的参数列表
-		if(param.msg == "sleepFirst"){
-			taskList.unshift(param);
-		}else{
-			taskList.push(param);
-		}
-	}
-	// 发布
-	function publish(){
-		if(taskList.length > 0){
-			run(taskList.shift());
-		}
-	}
-	// 鸭子叫
-	function run(option){
-		var msg = option.msg,
-			args = option.args;
-		switch(msg){
-			case "lazyMan": lazyMan.apply(null, args);break;
-			case "eat": eat.apply(null, args);break;
-			case "sleep": sleep.apply(null,args);break;
-			case "sleepFirst": sleepFirst.apply(null,args);break;
-			default:;
-		}
-	}
-	// 具体方法
-	function lazyMan(str){
-		lazyManLog("Hi!This is "+ str +"!");
-		publish();
-	}
-	function eat(str){
-		lazyManLog("Eat "+ str +"~");
-		publish();
-	}
-	function sleep(num){
-		setTimeout(function(){
-			lazyManLog("Wake up after "+ num);
-			publish();
-		}, num*1000);
-		
-	}
-	function sleepFirst(num){
-		setTimeout(function(){
-			lazyManLog("Wake up after "+ num);
-			publish();
-		}, num*1000);
-	}
-	// 输出文字
-	function lazyManLog(str){
-		console.log(str);
-	}
-	// 暴露接口
-	window.LazyMan = function(str){
-		subscribe("lazyMan", str);
-		setTimeout(function(){
-			publish();
-		}, 0);
-		return new LazyMan();
-	};
+(function (window, undefined) {
+    var taskList = [];
+    // 类
+    function LazyMan() { };
+    LazyMan.prototype.eat = function (str) {
+        subscribe("eat", str);
+        return this;
+    };
+    LazyMan.prototype.sleep = function (num) {
+        subscribe("sleep", num);
+        return this;
+    };
+    LazyMan.prototype.sleepFirst = function (num) {
+        subscribe("sleepFirst", num);
+        return this;
+    };
+    // 订阅
+    function subscribe() {
+        var param = {},
+            args = Array.prototype.slice.call(arguments);
+        if (args.length < 1) {
+            throw new Error("subscribe 参数不能为空!");
+        }
+        param.msg = args[0];
+        param.args = args.slice(1); // 函数的参数列表
+        if (param.msg == "sleepFirst") {
+            taskList.unshift(param);
+        } else {
+            taskList.push(param);
+        }
+    }
+    // 发布
+    function publish() {
+        if (taskList.length > 0) {
+            run(taskList.shift());
+        }
+    }
+    // 鸭子叫
+    function run(option) {
+        var msg = option.msg,
+            args = option.args;
+        switch (msg) {
+            case "lazyMan": lazyMan.apply(null, args); break;
+            case "eat": eat.apply(null, args); break;
+            case "sleep": sleep.apply(null, args); break;
+            case "sleepFirst": sleepFirst.apply(null, args); break;
+            default: ;
+        }
+    }
+    // 具体方法
+    function lazyMan(str) {
+        lazyManLog("Hi!This is " + str + "!");
+        publish();
+    }
+    function eat(str) {
+        lazyManLog("Eat " + str + "~");
+        publish();
+    }
+    function sleep(num) {
+        setTimeout(function () {
+            lazyManLog("Wake up after " + num);
+            publish();
+        }, num * 1000);
+
+    }
+    function sleepFirst(num) {
+        setTimeout(function () {
+            lazyManLog("Wake up after " + num);
+            publish();
+        }, num * 1000);
+    }
+    // 输出文字
+    function lazyManLog(str) {
+        console.log(str);
+    }
+    // 暴露接口
+    window.LazyMan = function (str) {
+        subscribe("lazyMan", str);
+        setTimeout(function () {
+            publish();
+        }, 0);
+        return new LazyMan();
+    };
 })(window);
 
 function add(num1, num2) {
@@ -1344,14 +1344,138 @@ function add(num1, num2) {
     let flag = 0
     let result = ''
     let temp = 0
-    for(let i=len-1; i>=0; i--){
+    for (let i = len - 1; i >= 0; i--) {
         temp = flag + parseInt(num1[i]) + parseInt(num2[i])
-        result = (temp%10) + result 
-        flag = parseInt(temp/10)
+        result = (temp % 10) + result
+        flag = parseInt(temp / 10)
     }
-    result = (flag===1?'1':'') + result
+    result = (flag === 1 ? '1' : '') + result
     return result
 }
-    let num1 = "9007199254740991"
-    let num2 = "1229007199254740993443"
-    console.log(add(num1, num2))
+let num1 = "9007199254740991"
+let num2 = "1229007199254740993443"
+console.log(add(num1, num2))
+
+//事件委托
+function listen(element, eventType, selector, fn) {
+    element.addEventListener(eventType, (e) => {
+        let el = e.target
+        while (!el.matches(selector)) {
+            if (el === element) {
+                el = null
+                break
+            }
+            el = el.parentNode
+        }
+        el && fn.call(el, e, el)
+    })
+}
+listen(ul, 'click', li, (e, el) => {
+    console.log(e)
+})
+ul > li * 5 > span
+
+//归并算法
+function mergeSort(arr) {  // 采用自上而下的递归方法
+    var len = arr.length;
+    if (len < 2) {
+        return arr;
+    }
+    var middle = Math.floor(len / 2),
+        left = arr.slice(0, middle),
+        right = arr.slice(middle);
+    return merge(mergeSort(left), mergeSort(right));
+}
+
+function merge(left, right) {
+    var result = [];
+    while (left.length > 0 && right.length > 0) {
+        if (left[0] <= right[0]) {
+            result.push(left.shift());
+        } else {
+            result.push(right.shift());
+        }
+    }
+
+    while (left.length){
+        result.push(left.shift());
+    }
+    while (right.length){
+        result.push(right.shift());
+    }
+    return result;
+}
+
+//插入
+function insertionSort(arr) {
+    var len = arr.length;
+    var preIndex, current;
+    for (var i = 1; i < len; i++) {
+        preIndex = i - 1;
+        current = arr[i];
+        while (preIndex >= 0 && arr[preIndex] > current) {
+            arr[preIndex + 1] = arr[preIndex];
+            preIndex--;
+        }
+        arr[preIndex + 1] = current;
+    }
+    return arr;
+}
+
+
+
+//计数
+function countingSort(arr, maxValue){
+    let bucket = new Array(maxValue + 1)
+    let length = 0
+    for(let i = 0; i < arr.length; i++){
+        if(!bucket[arr[i]]){
+            bucket[arr[i]] = 0
+        }
+        bucket[arr[i]]++
+    }
+
+    for(let j = 0; j < bucket.length; j++){
+        while(bucket[j] > 0){
+            arr[length] = j
+            bucket[j]-- 
+            length++
+        }
+    }
+    return arr
+}
+countingSort([1,2,1,4,5,6,3,4,7,8,9,4,3,2,0],9)
+
+//快速
+function quickSort(arr, left, right) {
+    var len = arr.length,
+        partitionIndex,
+        left = typeof left != 'number' ? 0 : left,
+        right = typeof right != 'number' ? len - 1 : right;
+
+    if (left < right) {
+        partitionIndex = partition(arr, left, right);
+        quickSort(arr, left, partitionIndex-1);
+        quickSort(arr, partitionIndex+1, right);
+    }
+    return arr;
+}
+
+function partition(arr, left ,right) {     // 分区操作
+    var pivot = left,                      // 设定基准值（pivot）
+        index = pivot + 1;
+    for (var i = index; i <= right; i++) {
+        if (arr[i] < arr[pivot]) {
+            swap(arr, i, index);
+            index++;
+        }       
+    }
+    swap(arr, pivot, index - 1);
+    return index-1;
+}
+ 
+function swap(arr, i, j) {
+    var temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
