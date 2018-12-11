@@ -501,50 +501,6 @@ var fn = fn1()
 fn.call(undefined)
 //undefined
 
-//算法实现
-
-//冒泡\选择\插入\基数\计数\堆\快速\归并\桶
-
-// 冒泡排序 
-
-function bubbleSort(arr) {
-    let min = null
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] > arr[j]) {
-                min = arr[j]
-                arr[j] = arr[i]
-                arr[i] = min
-            }
-        }
-    }
-    return arr
-}
-const array = [5, 9, 7, 4, 2, 8, 1, 6, 0]
-bubbleSort(array)
-
-
-//选择排序
-function selectSort(arr) {
-    let min, minIndex, swap = null
-    for (let i = 0; i < arr.length; i++) {
-        minIndex = i
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[minIndex] > arr[j]) {
-                minIndex = j
-            }
-        }
-        if (minIndex !== i) {
-            swap = arr[i]
-            arr[i] = arr[minIndex]
-            arr[minIndex] = swap
-        }
-    }
-    return arr
-}
-const array = [5, 9, 7, 4, 2, 8, 1, 6, 0, 3, 11, 10, 12]
-selectSort(array)
-
 
 //红灯三秒亮一次，绿灯一秒亮一次，黄灯2秒亮一次；如何让三个灯不断交替重复亮灯？（用Promse实现）
 //三个亮灯函数已经存在：
@@ -1375,36 +1331,69 @@ listen(ul, 'click', li, (e, el) => {
 })
 ul > li * 5 > span
 
-//归并算法
-function mergeSort(arr) {  // 采用自上而下的递归方法
-    var len = arr.length;
-    if (len < 2) {
-        return arr;
-    }
-    var middle = Math.floor(len / 2),
-        left = arr.slice(0, middle),
-        right = arr.slice(middle);
-    return merge(mergeSort(left), mergeSort(right));
-}
+//算法实现
 
-function merge(left, right) {
-    var result = [];
-    while (left.length > 0 && right.length > 0) {
-        if (left[0] <= right[0]) {
-            result.push(left.shift());
-        } else {
-            result.push(right.shift());
+//冒泡\选择\插入\基数\计数\堆\快速\归并\桶
+
+// 冒泡排序 
+
+function bubbleSort(arr) {
+    let min = null
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {// 注意j的取值
+            if (arr[i] > arr[j]) {
+                min = arr[j]
+                arr[j] = arr[i]
+                arr[i] = min
+            }
         }
     }
-
-    while (left.length){
-        result.push(left.shift());
-    }
-    while (right.length){
-        result.push(right.shift());
-    }
-    return result;
+    return arr
 }
+const array = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0]
+console.log(bubbleSort(array))
+//选择排序
+function selectSort(arr) {
+    let minIndex, swap = null
+    for (let i = 0; i < arr.length; i++) {
+        minIndex = i
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[minIndex] > arr[j]) {//minIndex 标记在数组上
+                minIndex = j
+            }
+        }
+        if (minIndex !== i) {
+            swap = arr[i]
+            arr[i] = arr[minIndex]
+            arr[minIndex] = swap
+        }
+    }
+    return arr
+}
+const array = [5, 9, 7, 4, 2, 8, 1, 6, 0, 3, 11, 10, 12]
+selectSort(array)
+
+//计数
+function countingSort(arr, maxValue) {
+    let bucket = new Array(maxValue + 1)
+    let length = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (!bucket[arr[i]]) {
+            bucket[arr[i]] = 0
+        }
+        bucket[arr[i]]++
+    }
+
+    for (let j = 0; j < bucket.length; j++) {
+        while (bucket[j] > 0) {
+            arr[length] = j
+            bucket[j]--
+            length++
+        }
+    }
+    return arr
+}
+countingSort([1, 2, 1, 4, 5, 6, 3, 4, 7, 8, 9, 4, 3, 2, 0], 9)
 
 //插入
 function insertionSort(arr) {
@@ -1421,31 +1410,87 @@ function insertionSort(arr) {
     }
     return arr;
 }
+console.log(insertionSort([1, 2, 1, 4, 5, 6, 3, 4, 7, 8, 9, 4, 3, 2, 0]))
 
+//归并算法
+Array.prototype.merge_sort = function () {
+    var merge = function (left, right) {
+        var final = [];
+        while (left.length && right.length)
+            final.push(left[0] <= right[0] ? left.shift() : right.shift());
+        return final.concat(left.concat(right));
+    };
+    var len = this.length;
+    if (len < 2) return this;
+    var mid = len / 2;
+    return merge(this.slice(0, parseInt(mid)).merge_sort(), this.slice(parseInt(mid)).merge_sort());
+};
+console.log([1, 2, 1, 4, 5, 6, 3, 4, 7, 8, 9, 4, 3, 2, 0].merge_sort())
 
-
-
-//计数
-function countingSort(arr, maxValue){
-    let bucket = new Array(maxValue + 1)
-    let length = 0
-    for(let i = 0; i < arr.length; i++){
-        if(!bucket[arr[i]]){
-            bucket[arr[i]] = 0
-        }
-        bucket[arr[i]]++
+//归并2
+function mergeSort(arr) {  // 采用自上而下的递归方法
+    var len = arr.length;
+    if (len < 2) {
+        return arr;
     }
-
-    for(let j = 0; j < bucket.length; j++){
-        while(bucket[j] > 0){
-            arr[length] = j
-            bucket[j]-- 
-            length++
-        }
-    }
-    return arr
+    var middle = Math.floor(len / 2),
+        left = arr.slice(0, middle),
+        right = arr.slice(middle);
+    console.log('L', left)
+    console.log('R', right)
+    return merge(mergeSort(left), mergeSort(right));
 }
-countingSort([1,2,1,4,5,6,3,4,7,8,9,4,3,2,0],9)
+
+function merge(left, right) {
+    console.log('xxx')
+    var result = [];
+    console.log('LR', left, right)
+    while (left.length > 0 && right.length > 0) {
+        if (left[0] <= right[0]) {
+            result.push(left.shift());
+            console.log(1, result)
+        } else {
+            result.push(right.shift());
+            console.log(2, result)
+        }
+    }
+    console.log('LR2', left, right)
+    while (left.length) {
+        result.push(left.shift());
+        console.log(3, result)
+    }
+    while (right.length) {
+        result.push(right.shift());
+        console.log(4, result)
+    }
+    return result;
+}
+function mergeSort(arr) {
+    if (arr.length < 2) { return arr }
+    let middle = Math.floor((arr.length / 2))
+    let left = arr.slice(0, middle)
+    let right = arr.slice(middle)
+    return merge(mergeSort(left), mergeSort(right))
+}
+function merge(left, right) {
+    let result = []
+    while (left.length > 0 && right.length > 0) {
+        if (left[0] <= right[0]) {
+            result.push(left.shift())
+        } else {
+            result.push(right.shift())
+        }
+    }
+    while (left.length > 0) {
+        result.push(left.shift())
+    }
+    while (right.length > 0) {
+        result.push(right.shift())
+    }
+    return result
+}
+let a = [3, 66, 5, 89, 2, 43, 57, 99, 1, 19, 32]
+console.log(mergeSort(a))
 
 //快速
 function quickSort(arr, left, right) {
@@ -1456,33 +1501,59 @@ function quickSort(arr, left, right) {
 
     if (left < right) {
         partitionIndex = partition(arr, left, right);
-        quickSort(arr, left, partitionIndex-1);
-        quickSort(arr, partitionIndex+1, right);
+        quickSort(arr, left, partitionIndex - 1);
+        quickSort(arr, partitionIndex + 1, right);
     }
     return arr;
 }
 
-function partition(arr, left ,right) {     // 分区操作
+function partition(arr, left, right) {     // 分区操作
     var pivot = left,                      // 设定基准值（pivot）
         index = pivot + 1;
     for (var i = index; i <= right; i++) {
         if (arr[i] < arr[pivot]) {
             swap(arr, i, index);
             index++;
-        }       
+        }
     }
     swap(arr, pivot, index - 1);
-    return index-1;
+    return index - 1;
 }
- 
+
 function swap(arr, i, j) {
     var temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
 }
 
+//快排
+Array.prototype.quickSort = function () {
+    const l = this.length
+    if (l < 2) return this
+    const basic = this[0], left = [], right = []
+    for (let i = 1; i < l; i++) {
+        const iv = this[i]
+        iv >= basic && right.push(iv) // to avoid repeatly element.
+        iv < basic && left.push(iv)
+    }
+    return left.quickSort().concat(basic, right.quickSort())
+}
+const arr = [5, 3, 7, 4, 1, 9, 8, 6, 2];
+const ascendArr = arr.quickSort()
 
 
+let quickSort = (arr) => {
+    if (arr.length < 2) { return arr }
+    let basic = arr[0], left = [], right = []
+    for (let i = 1; i < arr.length; i++) {
+        let value = arr[i]
+        value >= basic && right.push(value)
+        value < basic && left.push(value)
+    }
+    return quickSort(left).concat(basic, quickSort(right))
+}
+const arr = [5, 3, 7, 4, 1, 9, 8, 6, 2];
+console.log(quickSort(arr))
 
 // 深度优先遍历复制, 借助队列
 function deepCopy(obj) {
@@ -1541,3 +1612,271 @@ function deepCopy(obj) {
 //     b: 2,
 //     c: obj1
 // };
+
+
+//jquery深拷贝源码
+jQuery.extend = jQuery.fn.extend = function () {
+    var options, name, src, copy, copyIsArray, clone,
+        target = arguments[0] || {},
+        i = 1,
+        length = arguments.length,
+        deep = false;
+
+    // Handle a deep copy situation
+    if (typeof target === "boolean") {
+        deep = target;
+
+        // Skip the boolean and the target
+        target = arguments[i] || {};
+        i++;
+    }
+
+    // Handle case when target is a string or something (possible in deep copy)
+    if (typeof target !== "object" && !jQuery.isFunction(target)) {
+        target = {};
+    }
+
+    // Extend jQuery itself if only one argument is passed
+    if (i === length) {
+        target = this;
+        i--;
+    }
+
+    for (; i < length; i++) {
+
+        // Only deal with non-null/undefined values
+        if ((options = arguments[i]) != null) {
+
+            // Extend the base object
+            for (name in options) {
+                src = target[name];
+                copy = options[name];
+
+                // Prevent never-ending loop
+                if (target === copy) {
+                    continue;
+                }
+
+                // Recurse if we're merging plain objects or arrays
+                if (deep && copy && (jQuery.isPlainObject(copy) || (copyIsArray = Array.isArray(copy)))) {
+
+                    if (copyIsArray) {
+                        copyIsArray = false;
+                        clone = src && Array.isArray(src) ? src : [];
+
+                    } else {
+                        clone = src && jQuery.isPlainObject(src) ? src : {};
+                    }
+
+                    // Never move original objects, clone them
+                    target[name] = jQuery.extend(deep, clone, copy);
+
+                    // Don't bring in undefined values
+                } else if (copy !== undefined) {
+                    target[name] = copy;
+                }
+            }
+        }
+    }
+    // Return the modified object
+    return target;
+};
+
+
+
+
+function Foo() {
+    getName = function () { alert(1); };
+    return this;
+}
+Foo.getName = function () { alert(2); };
+Foo.prototype.getName = function () { alert(3); };
+var getName = function () { alert(4); };
+function getName() { alert(5); }
+//请写出以下输出结果：
+Foo.getName(); //2
+getName(); // 4
+Foo().getName(); // 1
+getName(); // 1
+new Foo.getName(); //2 相当于 new (Foo.getName)();
+new Foo().getName(); // 3 相当于 (new Foo()).getName()
+new new Foo().getName(); // 3 相当于 new ((new Foo()).getName)()
+
+
+//https://juejin.im/post/5b39bb696fb9a00e57630e27
+
+
+
+//promise实现
+function MyPromise(executor) {
+    var that = this
+    this.status = 'pending' // 当前状态
+    this.data = undefined
+    this.onResolvedCallback = [] // Promise resolve时的回调函数集，因为在Promise结束之前有可能有多个回调添加到它上面
+    this.onRejectedCallback = [] // Promise reject时的回调函数集，因为在Promise结束之前有可能有多个回调添加到它上面
+
+    // 更改状态 => 绑定数据 => 执行回调函数集
+    function resolve(value) {
+        if (that.status === 'pending') {
+            that.status = 'resolved'
+            that.data = value
+            for (var i = 0; i < that.onResolvedCallback.length; ++i) {
+                that.onResolvedCallback[i](value)
+            }
+        }
+    }
+
+    function reject(reason) {
+        if (that.status === 'pending') {
+            that.status = 'rejected'
+            that.data = reason
+            for (var i = 0; i < that.onResolvedCallback.length; ++i) {
+                that.onRejectedCallback[i](reason)
+            }
+        }
+    }
+
+    try {
+        executor(resolve, reject) // resolve, reject两个函数可以在外部传入的函数（executor）中调用
+    } catch (e) { // 考虑到执行过程可能有错
+        reject(e)
+    }
+}
+
+// 标准是没有catch方法的，实现了then，就实现了catch
+// then/catch 均要返回一个新的Promise实例
+
+MyPromise.prototype.then = function (onResolved, onRejected) {
+    var that = this
+    var promise2
+
+    // 值穿透
+    onResolved = typeof onResolved === 'function' ? onResolved : function (v) { return v }
+    onRejected = typeof onRejected === 'function' ? onRejected : function (r) { return r }
+
+    if (that.status === 'resolved') {
+        return promise2 = new MyPromise(function (resolve, reject) {
+            try {
+                var x = onResolved(that.data)
+                if (x instanceof MyPromise) { // 如果onResolved的返回值是一个Promise对象，直接取它的结果做为promise2的结果
+                    x.then(resolve, reject)
+                }
+                resolve(x) // 否则，以它的返回值做为promise2的结果 
+            } catch (e) {
+                reject(e) // 如果出错，以捕获到的错误做为promise2的结果
+            }
+        })
+    }
+
+    if (that.status === 'rejected') {
+        return promise2 = new MyPromise(function (resolve, reject) {
+            try {
+                var x = onRejected(that.data)
+                if (x instanceof MyPromise) {
+                    x.then(resolve, reject)
+                }
+            } catch (e) {
+                reject(e)
+            }
+        })
+    }
+
+    if (that.status === 'pending') {
+        return promise2 = new MyPromise(function (resolve, reject) {
+            self.onResolvedCallback.push(function (reason) {
+                try {
+                    var x = onResolved(that.data)
+                    if (x instanceof MyPromise) {
+                        x.then(resolve, reject)
+                    }
+                } catch (e) {
+                    reject(e)
+                }
+            })
+
+            self.onRejectedCallback.push(function (value) {
+                try {
+                    var x = onRejected(that.data)
+                    if (x instanceof MyPromise) {
+                        x.then(resolve, reject)
+                    }
+                } catch (e) {
+                    reject(e)
+                }
+            })
+        })
+    }
+}
+
+MyPromise.prototype.catch = function (onRejected) {
+    return this.then(null, onRejected)
+}
+
+// 以下是简单的测试样例：
+new MyPromise(resolve => resolve(8)).then(value => {
+    console.log(value)
+})
+
+//https://juejin.im/post/5bfff5086fb9a049c84f2d24
+//https://github.com/xieranmaya/blog/issues/3 //源地址
+
+
+
+.1 数组全排列
+
+题目：现在有一个数组[1, 2, 3, 4]，请实现算法，得到这个数组的全排列的数组，如[2, 1, 3, 4]，[2, 1, 4, 3]。。。。你这个算法的时间复杂度是多少
+
+实现思路：从“开始元素”起，每个元素都和开始元素进行交换；不断缩小范围，最后输出这种排列。暴力法的时间复杂度是 ，递归实现的时间复杂度是
+    ** 如何去重？去重的全排列就是从第一个数字起每个数分别与它后面非重复出现的数字交换。** 对于有重复元素的数组，例如：[1, 2, 2]，应该剔除重复的情况。每次只需要检查arr[start, i) 中是不是有和arr[i]相同的元素，有的话，说明之前已经输出过了，不需要考虑。
+代码实现：
+const swap = (arr, i, j) => {
+    let tmp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = tmp
+}
+
+const permutation = arr => {
+    const _permutation = (arr, start) => {
+        if (start === arr.length) {
+            console.log(arr)
+            return
+        }
+        for (let i = start; i < arr.length; ++i) {
+            // 全排列：去重操作
+            if (arr.slice(start, i).indexOf(arr[i]) !== -1) {
+                continue
+            }
+            swap(arr, i, start) // 和开始元素进行交换
+            _permutation(arr, start + 1)
+            swap(arr, i, start) // 恢复数组
+        }
+        return
+    }
+    return _permutation(arr, 0)
+}
+
+permutation([1, 2, 2])
+console.log("**********")
+permutation([1, 2, 3, 4])
+
+作者：godbmw
+链接：https://juejin.im/post/5bfff5086fb9a049c84f2d24
+来源：掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+
+//二分查找， 最坏logn + 1
+
+Array.prototype.binary_search = function(low, high, khey) {
+	if (low > high)
+		return -1;
+	var mid = parseInt((high + low) / 2);
+	if (this[mid] > khey)
+		return this.binary_search(low, mid - 1, khey);
+	if (this[mid] < khey)
+		return this.binary_search(mid + 1, high, khey);
+	return mid;
+};
+console.log([0,1,2,3,4,5,6,7,8,9,10].binary_search(0,10,10))
+
