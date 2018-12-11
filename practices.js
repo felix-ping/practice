@@ -1338,17 +1338,17 @@ ul > li * 5 > span
 // 冒泡排序 
 
 function bubbleSort(arr) {
-    let min = null
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {// 注意j的取值
-            if (arr[i] > arr[j]) {
-                min = arr[j]
-                arr[j] = arr[i]
-                arr[i] = min
+    var len = arr.length;
+    for (var i = 0; i < len - 1; i++) {
+        for (var j = 0; j < len - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {        // 相邻元素两两对比
+                var temp = arr[j + 1];        // 元素交换
+                arr[j + 1] = arr[j];
+                arr[j] = temp;
             }
         }
     }
-    return arr
+    return arr;
 }
 const array = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0]
 console.log(bubbleSort(array))
@@ -1395,6 +1395,26 @@ function countingSort(arr, maxValue) {
 }
 countingSort([1, 2, 1, 4, 5, 6, 3, 4, 7, 8, 9, 4, 3, 2, 0], 9)
 
+Array.prototype.countSort = function () {
+    const C = []
+    for (let i = 0; i < this.length; i++) {
+        const j = this[i]
+        C[j] >= 1 ? C[j]++ : (C[j] = 1)
+    }
+    const D = []
+    for (let j = 0; j < C.length; j++) {
+        if (C[j]) {
+            while (C[j] > 0) {
+                D.push(j)
+                C[j]--
+            }
+        }
+    }
+    return D
+}
+const arr = [11, 9, 6, 8, 1, 3, 5, 1, 1, 0, 100]
+console.log(arr.countSort())
+
 //插入
 function insertionSort(arr) {
     var len = arr.length;
@@ -1411,6 +1431,19 @@ function insertionSort(arr) {
     return arr;
 }
 console.log(insertionSort([1, 2, 1, 4, 5, 6, 3, 4, 7, 8, 9, 4, 3, 2, 0]))
+Array.prototype.insertion_sort = function () {
+    var i, j;
+    for (i = 1; i < this.length; i++) {
+        for (j = 0; j < i; j++) {
+            if (this[j] > this[i]) {
+                this.splice(j, 0, this[i]);
+                this.splice(i + 1, 1);
+                break;
+            }
+        }
+    }
+    return this;
+};
 
 //归并算法
 Array.prototype.merge_sort = function () {
@@ -1868,15 +1901,15 @@ permutation([1, 2, 3, 4])
 
 //二分查找， 最坏logn + 1
 
-Array.prototype.binary_search = function(low, high, khey) {
-	if (low > high)
-		return -1;
-	var mid = parseInt((high + low) / 2);
-	if (this[mid] > khey)
-		return this.binary_search(low, mid - 1, khey);
-	if (this[mid] < khey)
-		return this.binary_search(mid + 1, high, khey);
-	return mid;
+Array.prototype.binary_search = function (low, high, khey) {
+    if (low > high)
+        return -1;
+    var mid = parseInt((high + low) / 2);
+    if (this[mid] > khey)
+        return this.binary_search(low, mid - 1, khey);
+    if (this[mid] < khey)
+        return this.binary_search(mid + 1, high, khey);
+    return mid;
 };
-console.log([0,1,2,3,4,5,6,7,8,9,10].binary_search(0,10,10))
+console.log([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].binary_search(0, 10, 10))
 
