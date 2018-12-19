@@ -69,5 +69,45 @@
         }
         app.init()
     </script> -->
+
+
+
+<!-- eventBus -->
+<script src="https://cdn.bootcss.com/vue/2.5.20/vue.js"></script>
+<div id="app">
+    <component-a></component-a>
+    <component-b></component-b>
+</div>
+<script>      
+$eventHub=new Vue()
+Vue.component('component-a',{
+    template:`
+        <div>a<button @click=notify>click</button></div>
+    `,
+    methods:{
+        notify(){
+        $eventHub.$emit('xxx',1)
+        }
+    }
+})
+
+
+Vue.component('component-b',{
+    template:`
+        <div>b<div ref=output></div></div>
+`,
+    created(){
+        $eventHub.$on('xxx',(data)=>{
+            this.$refs.output.textContent=data+1
+        })
+    }
+})
+
+let app = new Vue({
+    el:'#app'
+})
+</script>
+
+
 </body>
 </html>

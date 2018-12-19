@@ -1336,6 +1336,22 @@ ul > li * 5 > span
 //冒泡\选择\插入\基数\计数\堆\快速\归并\桶
 
 // 冒泡排序 
+// function bubbleSort(arr) {
+//     let min = null
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {// 注意j的取值
+//             if (arr[i] > arr[j]) {
+//                 min = arr[j]
+//                 arr[j] = arr[i]
+//                 arr[i] = min
+//             }
+//         console.log(arr)
+//         }
+//     }
+//     return arr
+// }
+// const array = [3, 1,  4, 5, 9, 7,  2, 8, 6, 0]
+// console.log(bubbleSort(array))
 
 function bubbleSort(arr) {
     var len = arr.length;
@@ -1372,6 +1388,17 @@ function selectSort(arr) {
 }
 const array = [5, 9, 7, 4, 2, 8, 1, 6, 0, 3, 11, 10, 12]
 selectSort(array)
+Array.prototype.selection_sort = function() {
+	var i, j, min;var temp;
+	for (i = 0; i < this.length - 1; i++) {
+		min = i;
+		for (j = i + 1; j < this.length; j++){if (this[min] > this[j]){min = j}}
+		temp = this[min];
+		this[min] = this[i];
+		this[i] = temp;
+    }
+    return this
+};
 
 //计数
 function countingSort(arr, maxValue) {
@@ -1383,7 +1410,6 @@ function countingSort(arr, maxValue) {
         }
         bucket[arr[i]]++
     }
-
     for (let j = 0; j < bucket.length; j++) {
         while (bucket[j] > 0) {
             arr[length] = j
@@ -1394,7 +1420,6 @@ function countingSort(arr, maxValue) {
     return arr
 }
 countingSort([1, 2, 1, 4, 5, 6, 3, 4, 7, 8, 9, 4, 3, 2, 0], 9)
-
 Array.prototype.countSort = function () {
     const C = []
     for (let i = 0; i < this.length; i++) {
@@ -1403,8 +1428,7 @@ Array.prototype.countSort = function () {
     }
     const D = []
     for (let j = 0; j < C.length; j++) {
-        if (C[j]) {
-            while (C[j] > 0) {
+        if (C[j]) {while (C[j] > 0) {
                 D.push(j)
                 C[j]--
             }
@@ -1447,15 +1471,15 @@ Array.prototype.insertion_sort = function () {
 
 //归并算法
 Array.prototype.merge_sort = function () {
+    var len = this.length;
+    if (len < 2) return this;
+    var mid = len / 2;
     var merge = function (left, right) {
         var final = [];
         while (left.length && right.length)
             final.push(left[0] <= right[0] ? left.shift() : right.shift());
         return final.concat(left.concat(right));
     };
-    var len = this.length;
-    if (len < 2) return this;
-    var mid = len / 2;
     return merge(this.slice(0, parseInt(mid)).merge_sort(), this.slice(parseInt(mid)).merge_sort());
 };
 console.log([1, 2, 1, 4, 5, 6, 3, 4, 7, 8, 9, 4, 3, 2, 0].merge_sort())
@@ -1855,13 +1879,14 @@ new MyPromise(resolve => resolve(8)).then(value => {
 
 
 
-.1 数组全排列
+// .1 数组全排列
 
-题目：现在有一个数组[1, 2, 3, 4]，请实现算法，得到这个数组的全排列的数组，如[2, 1, 3, 4]，[2, 1, 4, 3]。。。。你这个算法的时间复杂度是多少
+// 题目：现在有一个数组[1, 2, 3, 4]，请实现算法，得到这个数组的全排列的数组，如[2, 1, 3, 4]，[2, 1, 4, 3]。。。。你这个算法的时间复杂度是多少
 
-实现思路：从“开始元素”起，每个元素都和开始元素进行交换；不断缩小范围，最后输出这种排列。暴力法的时间复杂度是 ，递归实现的时间复杂度是
-    ** 如何去重？去重的全排列就是从第一个数字起每个数分别与它后面非重复出现的数字交换。** 对于有重复元素的数组，例如：[1, 2, 2]，应该剔除重复的情况。每次只需要检查arr[start, i) 中是不是有和arr[i]相同的元素，有的话，说明之前已经输出过了，不需要考虑。
-代码实现：
+// 实现思路：从“开始元素”起，每个元素都和开始元素进行交换；不断缩小范围，最后输出这种排列。暴力法的时间复杂度是 ，递归实现的时间复杂度是
+//     ** 如何去重？去重的全排列就是从第一个数字起每个数分别与它后面非重复出现的数字交换。** 对于有重复元素的数组，例如：[1, 2, 2]，应该剔除重复的情况。
+//     每次只需要检查arr[start, i) 中是不是有和arr[i]相同的元素，有的话，说明之前已经输出过了，不需要考虑。
+// 代码实现：
 const swap = (arr, i, j) => {
     let tmp = arr[i]
     arr[i] = arr[j]
@@ -1892,23 +1917,21 @@ permutation([1, 2, 2])
 console.log("**********")
 permutation([1, 2, 3, 4])
 
-作者：godbmw
-链接：https://juejin.im/post/5bfff5086fb9a049c84f2d24
-来源：掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+//https://juejin.im/post/5bfff5086fb9a049c84f2d24
+
 
 
 
 //二分查找， 最坏logn + 1
 
-Array.prototype.binary_search = function (low, high, khey) {
-    if (low > high)
-        return -1;
+Array.prototype.binary_search = function (low, high, kv) {
+    if (low > high){return -1}
     var mid = parseInt((high + low) / 2);
-    if (this[mid] > khey)
-        return this.binary_search(low, mid - 1, khey);
-    if (this[mid] < khey)
-        return this.binary_search(mid + 1, high, khey);
+    if (this[mid] > kv)
+        return this.binary_search(low, mid - 1, kv);
+    if (this[mid] < kv)
+        return this.binary_search(mid + 1, high, kv);
     return mid;
 };
 console.log([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].binary_search(0, 10, 10))
