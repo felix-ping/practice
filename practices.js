@@ -1936,3 +1936,89 @@ Array.prototype.binary_search = function (low, high, kv) {
 };
 console.log([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].binary_search(0, 10, 10))
 
+
+
+function createStore(initState) {
+    /*
+    补全代码
+    */
+
+    return {
+        getState,
+        changeState,
+        subscribe
+    }
+}
+
+let initState = {
+    counter: {
+        number: 0
+    }
+}
+
+let store = createStore(initState)
+
+store.subscribe(() => {
+    let state = store.getState()
+    console.log(state)
+})
+
+store.changeState({
+    counter: {
+        number: 1
+    }
+})
+
+
+function createStore(initState) {
+    oldObj = initState
+    let handles = []
+    hasValue = true
+    function getState() {
+        return oldObj
+    }
+    function changeState(newObj) {
+        (function judge(newObj) {
+            if (typeof newObj !== 'object' || JSON.stringify(newObj) === '{}') return
+            Reflect.ownKeys(newObj).forEach(index => {
+                let child = newObj[index]
+                if (JSON.stringify(child) === '{}' || !child) return hasValue = false
+                judge(child)
+            })
+        })(newObj)
+        if (!hasValue) return console.log('不能为空,重新输入')
+        oldObj = newObj
+        handles.forEach(handle => {
+            handle && handle.call(this, this)
+        })
+
+    }
+    function subscribe(handle) {
+        if (typeof handle !== 'function') return '错误'
+        handles.push(handle)
+    }
+    return {
+        getState,
+        changeState,
+        subscribe
+    }
+}
+
+let initState = {
+    counter: {
+        number: 0
+    }
+}
+
+let store = createStore(initState)
+
+store.subscribe(() => {
+    let state = store.getState()
+    console.log(state)
+})
+
+store.changeState({
+    counter: {
+        number: 1
+    }
+})
