@@ -2022,3 +2022,93 @@ store.changeState({
         number: 1
     }
 })
+
+
+
+
+
+
+
+
+function createStore(initState) {
+    /* 
+    补全代码 */
+    
+    return {
+        getState,
+        dispatch,
+        subscribe
+    }
+}
+
+let initState = {
+    counter: {
+        number: 0
+    }
+}
+
+let reducer = (action, state) => {
+    //补全代码
+}
+let store = createStore(initState, reducer)
+
+store.subscribe(() => {
+    let state = store.getState()
+    console.log(state) //{ counter: { number: 10 } }
+})
+
+store.dispatch({ type: '增加', val: 10 })
+
+
+function createStore(initState, reducer) {
+    //补全代码
+    let state = initState || {}
+    const callbackList = []
+
+    function getState() {
+        return state
+    }
+
+    function subscribe(fn) {
+        typeof fn === 'function' && callbackList.push(fn)
+    }
+
+    function dispatch(action) {
+        state = reducer(action, state)
+        callbackList.forEach(fn => fn())
+    }
+
+    return {
+        getState,
+        dispatch,
+        subscribe
+    }
+}
+
+let initState = {
+    counter: {
+        number: 0
+    }
+}
+
+let reducer = (action, state) => {
+    //补全代码
+    switch (action.type) {
+        case '增加':
+            return Object.assign({}, state, {
+                counter: { number: state.counter.number + action.val }
+            })
+        default:
+            return state
+    }
+}
+
+let store = createStore(initState, reducer)
+
+store.subscribe(() => {
+    let state = store.getState()
+    console.log(state) //{ counter: { number: 10 } }
+})
+
+store.dispatch({ type: '增加', val: 10 })
+省略了参数校验
