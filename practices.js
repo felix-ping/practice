@@ -2171,3 +2171,43 @@ fn = 20;
 console.log('i1' + i);
 //i2undefined,fn2undefined,i399,fn1undefined,i110
 //i3100  因为使用的是同一个i,在r=fn2()中改变的值.
+
+
+// 介绍下Promise，内部实现
+
+function myPromise(fn) {
+    this.status = 'pending'
+
+    this.successFnArr = []
+    this.errorFnArr = []
+
+    fn(resolve.bind(this), reject.bind(this))
+
+    function doThen(args) {
+        setTimeout(() => {
+            if (this.status === 'resolved') {
+                for (let i = 0; i < this.successFnArr.length; i++) {
+                    this.successFnArr[i].apply(undefined, args)
+                }
+            } else if (this.status === 'rejected') {
+                for (let j = 0; j < this.errorFnArr.length; j++) {
+                    this.errorFnArr[j].apply(undefined, args)
+                }
+            }
+        })
+    }
+    function resolve() {
+        let args = Array.from(arguments)
+        this.status = 'resolved'
+        doThen.call(this, args)
+    }
+    function reject() {
+        let args = Array.from(arguments)
+        this.status = 'rejected'
+        doThen.call(this, args)
+    }
+}
+myPromise.prototype.then = function (successFn, errorFn) {
+    this.successFnArr.push(successFn)
+    this.errorFnArr.push(errorFn)
+}
