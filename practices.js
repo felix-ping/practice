@@ -2211,3 +2211,24 @@ myPromise.prototype.then = function (successFn, errorFn) {
     this.successFnArr.push(successFn)
     this.errorFnArr.push(errorFn)
 }
+
+
+实现如下函数 
+sum(2, 3)  //6
+sum(2)(3)  //6
+
+
+//sum(2, 3)  //6
+function sum(a,b){
+    return a*b;
+}
+
+sum(2)(3)  //6
+function sum(a){
+    return function f(b){
+        return a*b
+    }
+}
+//ES6
+sum = (a,b) => (a*b)
+sum = a => (b=>a*b)
