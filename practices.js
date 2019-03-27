@@ -2232,3 +2232,27 @@ function sum(a){
 //ES6
 sum = (a,b) => (a*b)
 sum = a => (b=>a*b)
+
+
+//实现一个map函数，模拟原生的map函数，map(list, iteratee)。
+//通过对list里的每个元素调用转换函数(iteratee迭代器)生成一个与之相对应的数组。iteratee传递三个参数：value，然后是迭代 index。
+
+//ex：
+
+map([1, 2, 3], function(num){ return num * 3; }=> [3, 6, 9];
+
+function map(list, iteratee) {
+    var results=[];
+    for (var index = 0; index < list.length; index++) {
+        results[index] = iteratee(list[index], index, list);
+    }
+    return results;
+};
+Array.prototype.mymap = function(callback){
+    let arr = [];
+    for(let i=0;i<this.length;i++){
+    arr.push(this[i]===undefined ? undefined : callback(this[i],this));
+    }
+    return arr;
+}
+
