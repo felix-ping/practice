@@ -1,6 +1,8 @@
-let qucik = (arr) => {
-  if (arr.length < 2) { return arr }//
-  let basic = arr[0], left = [], right = []
+let quick = (arr) => {
+  if (arr.length < 2) {
+    return arr
+  }
+  let basic = arr[0], left = [], right = [];
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] > basic) {
       right.push(arr[i])
@@ -9,168 +11,169 @@ let qucik = (arr) => {
       left.push(arr[i])
     }
   }
-  return qucik(left).concat(basic, qucik(right))//
-}
-console.log(qucik([5, 3, 4, 5, 7, 5, 2, 1, 8, 5, 3, 1223, 1, 0]))
+  return quick(left).concat(basic, quick(right))//
+};
+console.log(quick([5, 3, 4, 5, 7, 5, 2, 1, 8, 5, 3, 1223, 1, 0]));
 
 
 let bubble = (arr) => {
-  let swap
+  let swap;
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length - i; j++) {//
       if (arr[j] > arr[j + 1]) {
-        swap = arr[j]
-        arr[j] = arr[j + 1]
+        swap = arr[j];
+        arr[j] = arr[j + 1];
         arr[j + 1] = swap
       }
     }
   }
   return arr
-}
-const array = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0]
-console.log(bubble(array))
+};
+const arr = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0];
+console.log(bubble(arr));
 
 
 let selectSort = (arr) => {
-  let swap, min
+  let swap, min;
   for (let i = 0; i < arr.length; i++) {
-    min = i
+    min = i;
     for (let j = i + 1; j < arr.length; j++) {//
       if (arr[min] > arr[j]) {
         min = j
       }
     }
-    swap = arr[i]
-    arr[i] = arr[min]
+    swap = arr[i];
+    arr[i] = arr[min];
     arr[min] = swap
   }
   return arr
-}
-const array = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0]
-console.log(selectSort(array))
+};
+const array4 = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0];
+console.log(selectSort(array4));
 
 let insertionSort = (arr) => {
-  let preIndex, current
+  let preIndex, current;
   for (let i = 1; i < arr.length; i++) {
-    preIndex = i - 1
-    current = arr[i]
+    preIndex = i - 1;
+    current = arr[i];
     while (preIndex >= 0 && arr[preIndex] > current) {
-      arr[preIndex + 1] = arr[preIndex]//
+      arr[preIndex + 1] = arr[preIndex];//
       preIndex--
     }
     arr[preIndex + 1] = current
   }
   return arr
-}
-const array = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0]
-console.log(insertionSort(array))
+};
+const arr2 = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0];
+console.log(insertionSort(arr2));
 
 let counter = (arr) => {
-  let count = []
+  let count = [];
   for (let i = 0; i < arr.length; i++) {
-    let value = arr[i]
+    let value = arr[i];
     if (count[value] >= 1) {
       count[value]++
     } else {
       count[value] = 1
     }
   }
-  let newArr = []
+  let newArr = [];
   for (let j = 0; j < count.length; j++) {
     if (count[j]) {
       while (count[j] > 0) {
-        newArr.push(j)
+        newArr.push(j);
         count[j]--
       }
     }
   }
   return newArr
-}
-const array = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0]
-console.log(counter(array))
+};
+const array3 = [3, 1, 2, 4, 5, 9, 7, 4, 2, 8, 1, 6, 0];
+console.log(counter(array3));
 
 
 Array.prototype.binary = function (star, end, value) {
   if (star > end) return -1;//
-  let mid = Math.floor((star + end) / 2)
+  let mid = Math.floor((star + end) / 2);
   if (this[mid] > value) {
-    return this.binary(star, mid , value)//
+    return this.binary(star, mid, value)//
   }
   if (this[mid] < value) {//
-    return this.binary(mid , end, value)//
+    return this.binary(mid, end, value)//
   }
   return mid//
-}
-console.log([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].binary(0, 10, 1))
+};
+console.log([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].binary(0, 10, 1));
 
 
+Array.prototype.mergeSort = function () {
+  if (this.length < 2) {
+    return this
+  }
+  let middle = this.length / 2;
 
-
-Array.prototype.mergeSort=function(){
-  if(this.length<2){return this}
-  let mid = this.length/2
-  function merge(left,right){
-    let final=[]
-    while(left.length && right.length){
+  function merge(left, right) {
+    let final = [];
+    while (left.length && right.length) {
       final.push(left[0] <= right[0] ? left.shift() : right.shift())
     }
-    return final.concat(left.concat(right))//
+    return final.concat(left.concat(right))
   }
-  return merge(this.slice(0,parseInt(mid)).mergeSort(),this.slice(parseInt(mid)).mergeSort())//
-  
-}
-console.log([1, 2, 1, 4, 5, 6, 3, 4, 7, 8, 9, 4, 3, 2, 0].mergeSort())
 
+  return merge(this.slice(0, parseInt(middle)).mergeSort(), this.slice(parseInt(middle)).mergeSort())//
+
+};
+console.log([1, 2, 1, 4, 5, 6, 3, 4, 7, 8, 9, 4, 3, 2, 0].mergeSort());
 
 
 const Bus = {
-    event: {},
-    on: function (eventName, fn) {
-      if (this.event[eventName] === undefined) {
-        this.event[eventName] = []
-      }
-      this.event[eventName].push(fn)
-    },
-    emit: function (eventName, data) {
-      if(this.event[eventName]){
-        this.event[eventName].map(function (fn) {
-          fn.call(undefined,data)
-        })
-      }
+  event: {},
+  on: function (eventName, fn) {
+    if (this.event[eventName] === undefined) {
+      this.event[eventName] = []
+    }
+    this.event[eventName].push(fn)
+  },
+  emit: function (eventName, data) {
+    if (this.event[eventName]) {
+      this.event[eventName].map(function (fn) {
+        fn.call(undefined, data)
+      })
     }
   }
-  Bus.on('event', function (data) {
-    console.log(1, data)
-  })
-  Bus.on('hi', function (data) {
-    console.log(2, data)
-  })
-  Bus.on('hi', function (data) {
-    console.log(3, data + 1)
-  })
-  Bus.emit('event', { name: 'hello' })
-  Bus.emit('hi', { to: 'hunger' })
-  Bus.emit('hi', { to: 'valley' })
-  Bus.emit('go', { to: 'xxx' })
+};
+Bus.on('event', function (data) {
+  console.log(1, data)
+});
+Bus.on('hi', function (data) {
+  console.log(2, data)
+});
+Bus.on('hi', function (data) {
+  console.log(3, data + 1)
+});
+Bus.emit('event', {name: 'hello'});
+Bus.emit('hi', {to: 'hunger'});
+Bus.emit('hi', {to: 'valley'});
+Bus.emit('go', {to: 'xxx'});
 
-  function listen(element, eventType, selector, fn) {
-    element.addEventListener(eventType, (e) => {
-        let el = e.target
-        while (!el.matches(selector)) {
-            if (el === element) {
-                el = null
-                break
-            }
-            el = el.parentNode
-        }
-        el && fn.call(el, e, el)
-    })
+function listen(element, eventType, selector, fn) {
+  element.addEventListener(eventType, (e) => {
+    let el = e.target;
+    while (!el.matches(selector)) {
+      if (el === element) {
+        el = null;
+        break
+      }
+      el = el.parentNode
+    }
+    el && fn.call(el, e, el)
+  })
 }
+let ul = document.querySelector(ul);
 listen(ul, 'click', li, (e, el) => {
-    console.log(e)
-})
-ul > li * 5 > span
-
+  console.log(e)
+});
+// ul > li * 5 > span;
 
 
 // 1、自我介绍，挑一个简历上的项目介绍一下
@@ -226,14 +229,13 @@ ul > li * 5 > span
 // 最后聊了一下项目,聊了一下前公司
 
 
-
-// 1. DNS解析,将域名解析为ip地址(搜索浏览器自己的DNS缓存...)
-// 2. TCP三次握手
-// 3. 发送http请求
-// 4. 接收http响应
-// 5. 浏览器解析渲染页面
-// 6. TCP四次挥手
-// 7.  重流和重绘
+/*1. DNS解析,将域名解析为ip地址(搜索浏览器自己的DNS缓存...)
+2. TCP三次握手
+3. 发送http请求
+4. 接收http响应
+5. 浏览器解析渲染页面
+6. TCP四次挥手
+7.  重流和重绘*/
 
 
 /*浏览器解析文档资源并渲染页面是个怎样的流程？
@@ -253,3 +255,7 @@ Plugin直译为"插件"。Plugin可以扩展webpack的功能，让webpack具有�
 不同的用法
 Loader在module.rules中配置，也就是说他作为模块的解析规则而存在。 类型为数组，每一项都是一个Object，里面描述了对于什么类型的文件（test），使用什么加载(loader)和使用的参数（options）
 Plugin在plugins中单独配置。 类型为数组，每一项是一个plugin的实例，参数都通过构造函数传入。*/
+
+
+
+// vue.router中可以在router-view中添加key触发mounted中不能触发的单页面中的更新。
