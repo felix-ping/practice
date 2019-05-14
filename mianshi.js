@@ -259,3 +259,4 @@ Plugin在plugins中单独配置。 类型为数组，每一项是一个plugin的
 
 
 // vue.router中可以在router-view中添加key触发mounted中不能触发的单页面中的更新。
+//https相对于http就是增加了SSL层的封装，由不加密变为加密。但因为涉及解码影响速率问题，只有重要信息用https。
