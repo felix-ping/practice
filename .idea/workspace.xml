@@ -20,8 +20,8 @@
       <file leaf-file-name="mianshi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mianshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="418" column="2" selection-start-line="418" selection-start-column="2" selection-end-line="418" selection-end-column="2" />
+            <state relative-caret-position="467">
+              <caret line="455" lean-forward="true" selection-start-line="455" selection-end-line="455" />
             </state>
           </provider>
         </entry>
@@ -64,6 +64,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -75,7 +76,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,7 +116,9 @@
       <workItem from="1558968569699" duration="470000" />
       <workItem from="1559138862518" duration="1291000" />
       <workItem from="1559228616190" duration="354000" />
-      <workItem from="1559316729124" duration="226000" />
+      <workItem from="1559316729124" duration="314000" />
+      <workItem from="1559399326677" duration="636000" />
+      <workItem from="1559662856471" duration="221000" />
     </task>
     <task id="LOCAL-00001" summary="简述url到页面过程">
       <created>1557144938811</created>
@@ -174,16 +176,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559228703884</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="表单中type=hidden的作用">
+      <created>1559316994934</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559316994934</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7748000" />
+    <option name="totallyTimeSpent" value="8919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24925596" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -217,9 +227,24 @@
     <MESSAGE value="webpack 常见问题" />
     <MESSAGE value="正则查漏" />
     <MESSAGE value="router-link vs href" />
-    <option name="LAST_COMMIT_MESSAGE" value="router-link vs href" />
+    <MESSAGE value="表单中type=hidden的作用" />
+    <option name="LAST_COMMIT_MESSAGE" value="表单中type=hidden的作用" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7596">
+          <caret line="422" lean-forward="true" selection-start-line="422" selection-end-line="422" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7524">
+          <caret line="418" column="2" selection-start-line="418" selection-start-column="2" selection-end-line="418" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7380">
@@ -285,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="418" column="2" selection-start-line="418" selection-start-column="2" selection-end-line="418" selection-end-column="2" />
+        <state relative-caret-position="467">
+          <caret line="455" lean-forward="true" selection-start-line="455" selection-end-line="455" />
         </state>
       </provider>
     </entry>

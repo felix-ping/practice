@@ -416,5 +416,42 @@ Webpack 的运行流程是一个串行的过程，从启动到结束会依次执
 3.有时候一个表单里有多个提交按钮，后端不知道用户是点击哪个按钮提交过来的呢？这时候我们只要加隐藏域，对每一个按钮起个名字(value值)，后端接收到数据后，检查value值，就能知道是哪个按钮提交的了。
 4.有时候一个网页中有多个form，我们知道多个form是不能同时提交的，但有时这些form确实相互作用，我们就可以在form中添加隐藏域来使它们联系起来。
 5.JavaScript不支持全局变量，但有时我们必须用全局变量，我们就可以把值先存在隐藏域里，它的值就不会丢失了。
-6.还有个例子，比如按一个按钮弹出四个小窗口，当点击其中的一个小窗口时其他三个自动关闭．可是IE不支持小窗口相互调用，所以只有在父窗口写个隐藏域，当小窗口看到那个隐藏域的值是close时就自己关掉。
+6.  还有个例子，比如按一个按钮弹出四个小窗口，当点击其中的一个小窗口时其他三个自动关闭．可是IE不支持小窗口相互调用，所以只有在父窗口写个隐藏域，当小窗口看到那个隐藏域的值是close时就自己关掉。
+*/
+
+
+//深度克隆对象的方法有哪些
+
+/*function deepCopy(target){
+let copyed_objs = [];//此数组解决了循环引用和相同引用的问题，它存放已经递归到的目标对象
+    function _deepCopy(target){
+        if((typeof target !== 'object')||!target){return target;}
+        for(let i= 0 ;i<copyed_objs.length;i++){
+            if(copyed_objs[i].target === target){
+                return copyed_objs[i].copyTarget;
+            }
+        }
+        let obj = {};
+        if(Array.isArray(target)){
+            obj = [];//处理target是数组的情况
+        }
+        copyed_objs.push({target:target,copyTarget:obj})
+        Object.keys(target).forEach(key=>{
+            if(obj[key]){ return;}
+            obj[key] = _deepCopy(target[key]);
+        });
+        return obj;
+    }
+    return _deepCopy(target);
+}
+var a = {
+    arr:[1,2,3,{key:'123'}],//数组测试
+};
+a.self = a;//循环引用测试
+a.common1 = {name:'ccc'};
+a.common2 = a.common1;//相同引用测试
+var c = deepCopy(a);
+c.common1.name = 'changed';
+console.log(c);
+
 */
