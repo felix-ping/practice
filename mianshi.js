@@ -455,3 +455,13 @@ c.common1.name = 'changed';
 console.log(c);
 
 */
+
+
+//console.log(1+'2') 和 console.log(1-'2') 的打印结果？
+//结果分别是12和-1 涉及的知识点是隐性类型转换
+
+// var a = 1;
+//     var b = 3;
+//     console.log( a+++b );
+//4
+// 其实是 a++ + b 所以是4
