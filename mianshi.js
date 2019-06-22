@@ -169,6 +169,7 @@ function listen(element, eventType, selector, fn) {
     el && fn.call(el, e, el)
   })
 }
+
 let ul = document.querySelector(ul);
 listen(ul, 'click', li, (e, el) => {
   console.log(e)
@@ -257,10 +258,8 @@ Loader在module.rules中配置，也就是说他作为模块的解析规则而�
 Plugin在plugins中单独配置。 类型为数组，每一项是一个plugin的实例，参数都通过构造函数传入。*/
 
 
-
 // vue.router中可以在router-view中添加key触发mounted中不能触发的单页面中的更新。
 //https相对于http就是增加了SSL层的封装，由不加密变为加密。但因为涉及解码影响速率问题，只有重要信息用https。
-
 
 
 // 你了解什么是技术债务吗
@@ -324,7 +323,6 @@ Plugin在plugins中单独配置。 类型为数组，每一项是一个plugin的
 
 来源：https://www.jianshu.com/p/e532a7e4f768
 */
-
 
 
 /*1. webpack与grunt、gulp的不同？
@@ -467,9 +465,6 @@ console.log(c);
 // 其实是 a++ + b 所以是4
 
 
-
-
-
 /*function Foo() {
     getName = function () { alert (1); };
     return this;
@@ -487,3 +482,34 @@ console.log(c);
     new Foo().getName(); // 3 相当于 (new Foo()).getName()
     new new Foo().getName(); // 3 相当于 new ((new Foo()).getName)()
 */
+
+/*
+求斐波那契数列（兔子数列） 1,1,2,3,5,8,13,21,34,55,89...中的第 n 项
+let n = 1
+function fn(n) {
+  if(n < 3){
+    return 1
+  }
+  return fn(n-1) + fn(n-2)
+}
+
+fn(20)//6765
+*/
+
+
+//取出网址中的查询参数
+/*
+let netUrl = 'https://www.google.com/search?newwindow=1&safe=strict&source=hp&ei=wtKPW_PSFoOnoATYl7_YAQ&btnG=Google+%E6%90%9C%E7%B4%A2&q=%E6%98%AF%232%24%E5%9C%B0%E6%96%B9%25gs%5Ejlkj%26sdf*jlkjl()fsaldjf&oq=%E6%97%A5%E6%9C%AC&gs_l=psy-ab.3..0l10.1605.3039.0.3219.4.3.0.0.0.0.144.261.0j2.3.0....0...1c.1j4.64.psy-ab..1.3.399.10..35i39k1.139.VMt82ZO3Oe4'
+let reg = /(?<=[?&])(\w+=[^?&]+)/g
+let result = netUrl.match(reg)
+console.log(result);
+
+let regSliceBefore = /=/g
+let xxx = {}
+for ( let item of result) {
+  let key = item.slice(0, item.search(regSliceBefore))
+  let value = item.slice(item.search(regSliceBefore)+1).
+  xxx[key] = value
+}
+
+console.log(xxx);*/
