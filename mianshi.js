@@ -508,7 +508,7 @@ let regSliceBefore = /=/g
 let xxx = {}
 for ( let item of result) {
   let key = item.slice(0, item.search(regSliceBefore))
-  let value = item.slice(item.search(regSliceBefore)+1).
+  let value = decodeURI(item.slice(item.search(regSliceBefore)+1))
   xxx[key] = value
 }
 
