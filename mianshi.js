@@ -562,3 +562,11 @@ console.log(a[b]);
 a中b,c均为[Object,object]
 
 */
+
+
+/*let a = 3;
+let b = new Number(3);
+a是数字,是基本类型
+b虽然是数字,却有__proto__
+
+*/
