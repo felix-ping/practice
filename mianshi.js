@@ -564,9 +564,22 @@ a中b,c均为[Object,object]
 */
 
 
-/*let a = 3;
+/*
+let a = 3;
 let b = new Number(3);
 a是数字,是基本类型
 b虽然是数字,却有__proto__
 
 */
+
+
+/*
+function getAge(...args) {
+  console.log(typeof args);
+}
+getAge(21);
+//"object"
+*/
+
+// const sum = eval("10*10+5");  //105 eval会为字符串传递的代码求值。
+//const obj = { 1: "a", 2: "b", 3: "c" }; obj.hasOwnProperty("1"); //true 所有对象键（不包括Symbols）都会被存储为字符串
