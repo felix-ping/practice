@@ -583,3 +583,15 @@ getAge(21);
 
 // const sum = eval("10*10+5");  //105 eval会为字符串传递的代码求值。
 //const obj = { 1: "a", 2: "b", 3: "c" }; obj.hasOwnProperty("1"); //true 所有对象键（不包括Symbols）都会被存储为字符串
+
+
+
+/*3. for of , for in 和 forEach,map 的区别。
+
+for...of循环：具有 iterator 接口，就可以用for...of循环遍历它的成员(属性值)。for...of循环可以使用的范围包括数组、Set 和 Map 结构、某些类似数组的对象、Generator 对象，以及字符串。for...of循环调用遍历器接口，数组的遍历器接口只返回具有数字索引的属性。对于普通的对象，for...of结构不能直接使用，会报错，必须部署了 Iterator 接口后才能使用。可以中断循环。
+for...in循环：遍历对象自身的和继承的可枚举的属性, 不能直接获取属性值。可以中断循环。
+forEach: 只能遍历数组，不能中断，没有返回值(或认为返回值是undefined)。
+map: 只能遍历数组，不能中断，返回值是修改后的数组。
+
+PS: Object.keys()：返回给定对象所有可枚举属性的字符串数组。
+*/

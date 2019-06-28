@@ -20,8 +20,8 @@
       <file leaf-file-name="mianshi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mianshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="585" lean-forward="true" selection-start-line="585" selection-end-line="585" />
+            <state relative-caret-position="467">
+              <caret line="596" column="2" lean-forward="true" selection-start-line="596" selection-start-column="2" selection-end-line="596" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -123,7 +123,8 @@
       <workItem from="1560785786181" duration="827000" />
       <workItem from="1561215402438" duration="3614000" />
       <workItem from="1561304711234" duration="1028000" />
-      <workItem from="1561478126093" duration="1987000" />
+      <workItem from="1561478126093" duration="2164000" />
+      <workItem from="1561732961057" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="简述url到页面过程">
       <created>1557144938811</created>
@@ -251,11 +252,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561564160177</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="每日一题">
+      <created>1561564702909</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1561564702909</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17838000" />
+    <option name="totallyTimeSpent" value="18121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -300,11 +308,18 @@
     <MESSAGE value="每日一题 正则取查询参数" />
     <MESSAGE value="添加转义" />
     <MESSAGE value="二分查找" />
-    <MESSAGE value="每日一题" />
     <MESSAGE value="每日一题 new Number()" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 new Number()" />
+    <MESSAGE value="每日一题" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10530">
+          <caret line="585" lean-forward="true" selection-start-line="585" selection-end-line="585" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9324">
@@ -419,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="585" lean-forward="true" selection-start-line="585" selection-end-line="585" />
+        <state relative-caret-position="467">
+          <caret line="596" column="2" lean-forward="true" selection-start-line="596" selection-start-column="2" selection-end-line="596" selection-end-column="2" />
         </state>
       </provider>
     </entry>
