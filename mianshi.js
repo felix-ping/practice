@@ -606,3 +606,13 @@ PS: Object.keys()：返回给定对象所有可枚举属性的字符串数组。
 0 == 0; 为true
 
 */
+
+/*跨域的方法有哪些？原理是什么？
+*jsonp
+* cors
+* postMessage
+* websocket
+* node 中间件
+*
+*
+* */
