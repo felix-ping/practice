@@ -635,3 +635,12 @@ Object.definedProperty 不支持数组，更准确的说是不支持数组的各
 
 PS: Vue2.x 使用 Object.defineProperty 实现数据双向绑定，V3.0 则使用了 Proxy.
 */
+
+
+/*
+* es6
+*
+*
+* */
+
+
