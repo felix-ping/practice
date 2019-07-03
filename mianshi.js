@@ -639,7 +639,23 @@ PS: Vue2.x 使用 Object.defineProperty 实现数据双向绑定，V3.0 则使�
 
 /*
 * es6
-*
+*function unique(arr) {
+    if (!Array.isArray(arr)) {
+        console.log('type error!')
+        return
+    }
+    return [...new Set(arr)]
+}
+
+
+function unique(arr) {
+    if (!Array.isArray(arr)) {
+        console.log('type error!')
+        return
+    }
+    return Array.from(new Set(arr))
+}
+
 *
 * */
 
