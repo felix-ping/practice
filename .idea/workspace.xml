@@ -20,8 +20,8 @@
       <file leaf-file-name="mianshi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mianshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="667" column="68" selection-start-line="667" selection-start-column="68" selection-end-line="667" selection-end-column="68" />
+            <state relative-caret-position="525">
+              <caret line="690" column="5" selection-start-line="690" selection-start-column="5" selection-end-line="690" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -128,7 +128,8 @@
       <workItem from="1561909426512" duration="705000" />
       <workItem from="1561995790202" duration="686000" />
       <workItem from="1562169440007" duration="1095000" />
-      <workItem from="1562278437109" duration="660000" />
+      <workItem from="1562278437109" duration="1296000" />
+      <workItem from="1562427677145" duration="169000" />
     </task>
     <task id="LOCAL-00001" summary="简述url到页面过程">
       <created>1557144938811</created>
@@ -305,17 +306,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562169672054</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="每日一题 数组">
+      <created>1562338625622</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1562338625622</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22018000" />
+    <option name="totallyTimeSpent" value="22823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14955357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.109375" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -360,9 +368,17 @@
     <MESSAGE value="每日一题  proxy" />
     <MESSAGE value="每日一题" />
     <MESSAGE value="每日一题 数字去重" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 数字去重" />
+    <MESSAGE value="每日一题 数组" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题 数组" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11808">
+          <caret line="656" column="1" lean-forward="true" selection-start-line="656" selection-start-column="1" selection-end-line="656" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11610">
@@ -512,8 +528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="667" column="68" selection-start-line="667" selection-start-column="68" selection-end-line="667" selection-end-column="68" />
+        <state relative-caret-position="525">
+          <caret line="690" column="5" selection-start-line="690" selection-start-column="5" selection-end-line="690" selection-end-column="5" />
         </state>
       </provider>
     </entry>
