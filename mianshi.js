@@ -703,3 +703,12 @@ cookie有域的限制，因此不能跨域提交请求，故使用非主要域�
 解决办法:优先队列
 */
 
+
+/*Vue2中注册在router-link上事件无效解决方法
+*
+*如果当前router-link的tag不是a的话（官方文档中说明：默认为a，可以通过tag改变渲染后的标签），那么就会往自己的子元素（组件）找，找到的第一个就会把一些属性及时间覆盖过去
+*
+*<router-link  @click.native="change"><span>{{item.text}}</span></router-link>
+* 只需要在@click后面加上native就可以了
+*
+* */
