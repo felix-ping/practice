@@ -712,3 +712,11 @@ cookie有域的限制，因此不能跨域提交请求，故使用非主要域�
 * 只需要在@click后面加上native就可以了
 *
 * */
+
+
+/*MVVM全称是Model-View-ViewModel
+Vue是以数据为驱动的，Vue自身将DOM和数据进行绑定，一旦创建绑定，DOM和数据将保持同步，每当数据发生变化，DOM会跟着变化。  ViewModel是Vue的核心，它是Vue的一个实例。Vue实例时作用域某个HTML元素上的这个HTML元素可以是body，也可以是某个id所指代的元素。
+DOMListeners和DataBindings是实现双向绑定的关键。DOMListeners监听页面所有View层DOM元素的变化，当发生变化，Model层的数据随之变化；DataBindings监听Model层的数据，当数据发生变化，View层的DOM元素随之变化。
+Model(模型):数据层，负责存储数据。
+View(控制器):就是ViewController层，他的任务就是从ViewModel层获取数据，然后显示。
+ViewModel(视图模型):就是View和Model层的粘合剂，封装业务逻辑处理，封装网络处理，封装数据缓存。就是把原来ViewController层的业务逻辑和页面逻辑等剥离出来放到ViewModel层。*/
