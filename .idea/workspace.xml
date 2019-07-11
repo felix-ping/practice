@@ -20,8 +20,8 @@
       <file leaf-file-name="mianshi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mianshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="715" lean-forward="true" selection-start-line="715" selection-end-line="715" />
+            <state relative-caret-position="458">
+              <caret line="755" column="13" lean-forward="true" selection-start-line="755" selection-start-column="13" selection-end-line="755" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -133,7 +133,8 @@
       <workItem from="1562508383343" duration="553000" />
       <workItem from="1562600800297" duration="702000" />
       <workItem from="1562650836276" duration="306000" />
-      <workItem from="1562772917718" duration="600000" />
+      <workItem from="1562772917718" duration="1236000" />
+      <workItem from="1562827133841" duration="641000" />
     </task>
     <task id="LOCAL-00001" summary="简述url到页面过程">
       <created>1557144938811</created>
@@ -338,11 +339,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562600904522</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="每日一题 MVVM">
+      <created>1562773968903</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1562773968903</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25617000" />
+    <option name="totallyTimeSpent" value="26894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -397,9 +405,17 @@
     <MESSAGE value="每日一题 cookie隔离" />
     <MESSAGE value="每日一题 算法优先队列" />
     <MESSAGE value="每日一题 router-view" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 router-view" />
+    <MESSAGE value="每日一题 MVVM" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题 MVVM" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12870">
+          <caret line="715" lean-forward="true" selection-start-line="715" selection-end-line="715" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12780">
@@ -584,8 +600,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="715" lean-forward="true" selection-start-line="715" selection-end-line="715" />
+        <state relative-caret-position="458">
+          <caret line="755" column="13" lean-forward="true" selection-start-line="755" selection-start-column="13" selection-end-line="755" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -720,3 +720,38 @@ DOMListeners和DataBindings是实现双向绑定的关键。DOMListeners监听�
 Model(模型):数据层，负责存储数据。
 View(控制器):就是ViewController层，他的任务就是从ViewModel层获取数据，然后显示。
 ViewModel(视图模型):就是View和Model层的粘合剂，封装业务逻辑处理，封装网络处理，封装数据缓存。就是把原来ViewController层的业务逻辑和页面逻辑等剥离出来放到ViewModel层。*/
+
+
+
+/*
+* async function async1() {
+    console.log('async1 start');
+    await async2();
+    console.log('async1 end');
+}
+async function async2() {
+    console.log('async2');
+}
+console.log('script start');
+setTimeout(function() {
+    console.log('setTimeout');
+}, 0)
+async1();
+new Promise(function(resolve) {
+    console.log('promise1');
+    resolve();
+}).then(function() {
+    console.log('promise2');
+});
+console.log('script end');
+
+// script start
+// async1 start
+// async2
+// promise1
+// script end
+// async1 end
+// promise2
+// undefined
+// setTimeout
+* */
