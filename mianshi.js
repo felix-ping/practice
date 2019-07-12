@@ -724,7 +724,7 @@ ViewModel(视图模型):就是View和Model层的粘合剂，封装业务逻辑�
 
 
 /*
-* async function async1() {
+async function async1() {
     console.log('async1 start');
     await async2();
     console.log('async1 end');
@@ -755,3 +755,57 @@ console.log('script end');
 // undefined
 // setTimeout
 * */
+
+
+
+
+// setTimeout(()=>{console.log(4);
+//         Promise.resolve(8)
+//         .then(v=>{console.log(v)})
+//             .then(()=>{console.log(9)})},0)
+// setTimeout(()=>{console.log(10)
+//         Promise.resolve(11)
+//         .then(v=>{console.log(v)})
+//             .then(()=>{console.log(12)})},0)
+// new Promise(resolve=>{console.log(1)
+//     for(var i=0;i<10000;i++){i==9999&&resolve()}
+//     console.log(2)
+// }).then(()=>{console.log(5)
+//         Promise.resolve(7).then(v=>console.log(v))
+//     }).then(()=>{console.log(6)})
+// console.log(3)
+
+
+// setTimeout(()=>{console.log(4)},0)
+// new Promise(resolve=>{
+//     console.log(1)
+//     for(var i=0;i<10000;i++){
+//         i==9999&&resolve()
+//     }
+//     console.log(2)
+// }).then(()=>{console.log(5)
+//     Promise.resolve(7).then(v=>console.log(v))
+// }).then(()=>{console.log(6)})
+// console.log(3)
+
+
+async function timeout(ms) {
+  console.log(1)
+  await new Promise((resolve) => {
+    console.log(2)
+    setTimeout(function(){
+      console.log(6)
+      resolve()
+    }, ms);
+    console.log(3)
+  });
+  console.log(4)
+}
+
+async function asyncPrint(value, ms) {
+  console.log(5)
+  await timeout(ms);
+  console.log(value);
+}
+
+asyncPrint('hello world', 2000);
