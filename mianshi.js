@@ -789,7 +789,7 @@ console.log('script end');
 // console.log(3)
 
 
-async function timeout(ms) {
+/*async function timeout(ms) {
   console.log(1)
   await new Promise((resolve) => {
     console.log(2)
@@ -808,4 +808,14 @@ async function asyncPrint(value, ms) {
   console.log(value);
 }
 
-asyncPrint('hello world', 2000);
+asyncPrint('hello world', 2000);*/
+
+/*async function dbFuc(db) {
+  let docs = [{}, {}, {}];
+  let promises = docs.map((doc) => db.post(doc));
+
+  let results = await Promise.all(promises);
+  console.log(results);
+}*/
+
+

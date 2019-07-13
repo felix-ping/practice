@@ -20,8 +20,8 @@
       <file leaf-file-name="mianshi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mianshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="796" column="20" lean-forward="true" selection-start-line="796" selection-start-column="20" selection-end-line="796" selection-end-column="20" />
+            <state relative-caret-position="586">
+              <caret line="818" column="1" selection-start-line="818" selection-start-column="1" selection-end-line="818" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -139,7 +139,8 @@
       <workItem from="1562600800297" duration="702000" />
       <workItem from="1562650836276" duration="306000" />
       <workItem from="1562772917718" duration="1236000" />
-      <workItem from="1562827133841" duration="3481000" />
+      <workItem from="1562827133841" duration="4696000" />
+      <workItem from="1563032210041" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="简述url到页面过程">
       <created>1557144938811</created>
@@ -358,11 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562859150669</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="每日一题 async2">
+      <created>1562931055661</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1562931055661</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29734000" />
+    <option name="totallyTimeSpent" value="31592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -394,7 +402,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="简述url到页面过程" />
     <MESSAGE value="webpack plugin and loader" />
     <MESSAGE value="router update" />
     <MESSAGE value="http vs https" />
@@ -419,9 +426,17 @@
     <MESSAGE value="每日一题 router-view" />
     <MESSAGE value="每日一题 MVVM" />
     <MESSAGE value="每日一题 async" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 async" />
+    <MESSAGE value="每日一题 async2" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题 async2" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14364">
+          <caret line="798" column="11" lean-forward="true" selection-start-line="798" selection-start-column="11" selection-end-line="798" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12870">
@@ -623,9 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="674" column="5" selection-start-line="674" selection-end-line="674" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -644,8 +656,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="796" column="20" lean-forward="true" selection-start-line="796" selection-start-column="20" selection-end-line="796" selection-end-column="20" />
+        <state relative-caret-position="586">
+          <caret line="818" column="1" selection-start-line="818" selection-start-column="1" selection-end-line="818" selection-end-column="1" />
         </state>
       </provider>
     </entry>
