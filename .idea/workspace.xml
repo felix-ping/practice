@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25246f00-6a21-4f89-9781-7c518ed880ec" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/100.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mianshi.js" beforeDir="false" afterPath="$PROJECT_DIR$/mianshi.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mianshi.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="860" column="10" selection-start-line="860" selection-start-column="10" selection-end-line="860" selection-end-column="10" />
+            <state relative-caret-position="144">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,6 +43,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mianshi.js" />
+        <option value="$PROJECT_DIR$/100.js" />
       </list>
     </option>
   </component>
@@ -142,7 +146,8 @@
       <workItem from="1562827133841" duration="4696000" />
       <workItem from="1563032210041" duration="1944000" />
       <workItem from="1563119008535" duration="181000" />
-      <workItem from="1563187657536" duration="596000" />
+      <workItem from="1563187657536" duration="1232000" />
+      <workItem from="1563353951637" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="简述url到页面过程">
       <created>1557144938811</created>
@@ -375,11 +380,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563032973196</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="每日一题 key的作用">
+      <created>1563206063962</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1563206063962</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33670000" />
+    <option name="totallyTimeSpent" value="34380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -411,7 +423,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="router update" />
     <MESSAGE value="http vs https" />
     <MESSAGE value="技术债务" />
     <MESSAGE value="webpack 常见问题" />
@@ -436,9 +447,17 @@
     <MESSAGE value="每日一题 async" />
     <MESSAGE value="每日一题 async2" />
     <MESSAGE value="每日一题 async3" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 async3" />
+    <MESSAGE value="每日一题 key的作用" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题 key的作用" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15480">
+          <caret line="860" column="10" selection-start-line="860" selection-start-column="10" selection-end-line="860" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15408">
@@ -679,8 +698,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mianshi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
+        <state relative-caret-position="403">
           <caret line="860" column="10" selection-start-line="860" selection-start-column="10" selection-end-line="860" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/100.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
