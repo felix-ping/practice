@@ -5,6 +5,9 @@ var arr = [ [1, 2, 2], [3, 4, 5, 5], [6, 7, 8, 9, [11, 12, [12, 13, [14] ] ] ], 
 var arr = [ [1, 2, 2], [3, 4, 5, 5], [6, 7, 8, 9, [11, 12, [12, 13, [14] ] ] ], 10];
 [...new Set(arr.flat(Infinity))].sort((a,b)=>{return a-b})
 */
+
+
+
 /*
 第 92 题：已知数据格式，实现一个函数 fn 找出链条中所有的父级 id
 const value = '112'
@@ -57,11 +60,6 @@ function fn(id, list) {
   return [sub.id].concat(fn(id, sub.children));
 }
 
-
-*/
-
-
-
 const fn = (data, value) => {
   let res = []
   const dfs = (arr, temp = []) => {
@@ -112,4 +110,12 @@ const data = [{
     }
   ]
 }];
-fn(data,'122')
+fn(data,'122')*/
+
+/*
+28th. cookie 和 token 都存放在 header 中，为什么不会劫持 token？
+1、首先token不是防止XSS的，而是为了防止CSRF的；
+2、CSRF攻击的原因是浏览器会自动带上cookie，而浏览器不会自动带上token
+
+
+*/
