@@ -119,3 +119,36 @@ fn(data,'122')*/
 
 
 */
+
+/*29th .聊聊 Vue 的双向数据绑定，Model 如何改变 View，View 又是如何改变 Model 的
+*
+* VM 主要做了两件微小的事情：
+
+从 M 到 V 的映射（Data Binding），这样可以大量节省你人肉来 update View 的代码
+从 V 到 M 的事件监听（DOM Listeners），这样你的 Model 会随着 View 触发事件而改变
+1、M 到 V 实现
+
+做到这件事的第一步是形成类似于：
+
+// template
+var tpl = '<p>{{ text }}</p>';
+// data
+var data = {
+text: 'This is some text'
+};
+// magic process
+template(tpl, data); // '<p>This is some text</p>'
+
+2、V 到 M 实现
+
+从 V 到 M 主要由两类（ 虽然本质上都是监听 DOM ）构成，一类是用户自定义的 listener， 一类是 VM 自动处理的含有 value 属性元素的 listener
+
+第一类类似于你在 Vue 里用 v-on 时绑定的那样，VM 在实例化得时候可以将所有用户自定义的 listener 一次性代理到根元素上，这些 listener 可以访问到你的 model 对象，这样你就可以在 listener 中改变 model
+
+第二类类似于对含有 v-model 与 value 元素的自动处理，我们期望的是例如在一个输入框内
+
+<input type="text" v-model="message" />
+输入值，那么我与之对应的 model 属性 message 也会随之改变，相当于 VM 做了一个默认的 listener，它会监听这些元素的改变然后自动改变 model
+*
+*
+* */
