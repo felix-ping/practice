@@ -168,6 +168,26 @@ console.log(
       )
     )
 );
+
+
+var arr1 = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'D1', 'D2']
+var arr2 = ['A', 'B', 'C', 'D']
+
+const func = (arr1, arr2) => arr2.reduce((acc, cur) => [...acc, ...arr1.filter(item => item.startsWith(cur)), cur], [])
+
+
+let arr1 = ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"];
+let arr2 = ["A", "B", "C", "D"];
+console.log(
+  [...arr1, ...arr2]
+    .sort(
+      (v2, v1) => (
+        v2.codePointAt(0) - v1.codePointAt(0) ||
+        v1.length - v2.length ||
+        v2.codePointAt(1) - v1.codePointAt(1)
+      )
+    )
+);
 */
 
 
