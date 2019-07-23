@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25246f00-6a21-4f89-9781-7c518ed880ec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="499">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -34,7 +34,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>async</find>
+      <find>alert</find>
     </findStrings>
+    <replaceStrings>
+      <replace>console.log</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -170,7 +174,7 @@
       <workItem from="1563637829569" duration="713000" />
       <workItem from="1563718602022" duration="2014000" />
       <workItem from="1563810522018" duration="787000" />
-      <workItem from="1563849664182" duration="1044000" />
+      <workItem from="1563849664182" duration="4043000" />
     </task>
     <task id="LOCAL-00001" summary="简述url到页面过程">
       <created>1557144938811</created>
@@ -501,11 +505,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563810706838</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="每日一题 内存图">
+      <created>1563850737321</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1563850737321</updated>
+    </task>
+    <task id="LOCAL-00049" summary="每日一题">
+      <created>1563851725759</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1563851725759</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43515000" />
+    <option name="totallyTimeSpent" value="46514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -516,7 +534,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31833333" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31833333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -537,8 +555,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题  proxy" />
-    <MESSAGE value="每日一题" />
     <MESSAGE value="每日一题 数字去重" />
     <MESSAGE value="每日一题 数组" />
     <MESSAGE value="每日一题 cookie隔离" />
@@ -562,7 +578,9 @@
     <MESSAGE value="每日一题 30th 数组合并 解法5,6" />
     <MESSAGE value="每日一题 30th 数组合并 解法7" />
     <MESSAGE value="每日一题 41th" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 41th" />
+    <MESSAGE value="每日一题 内存图" />
+    <MESSAGE value="每日一题" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/100.js">
@@ -897,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="499">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
