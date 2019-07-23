@@ -56,3 +56,23 @@ getName()//1
 new Foo.getName()//2
 new Foo().getName()//3
 new new Foo().getName()//3
+
+
+
+let arr = [{a:1,age:11,ph:153},{b:2,age:20,ph:143},{c:3,age:12,ph:101}]
+function sorts(data, key){
+  let mapArr = arr.map((item)=>{return item[key]})
+  let sortMap = mapArr.sort((a,b)=>{return a - b})
+  let result = sortMap.map((item)=>{
+    for(let i =0;i< arr.length;i++){
+      if(arr[i][key]===item){
+        return arr[i]
+      }
+    }
+  })
+  return result
+}
+
+sorts(arr,'age')
+sorts(arr,'ph')
+
