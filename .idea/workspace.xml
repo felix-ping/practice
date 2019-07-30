@@ -20,8 +20,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="346" column="24" lean-forward="true" selection-start-line="346" selection-start-column="24" selection-end-line="346" selection-end-column="24" />
+            <state relative-caret-position="568">
+              <caret line="399" column="68" selection-start-line="399" selection-start-column="68" selection-end-line="399" selection-end-column="68" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -178,14 +178,8 @@
       <workItem from="1564033483185" duration="299000" />
       <workItem from="1564145000281" duration="737000" />
       <workItem from="1564241220266" duration="160000" />
-      <workItem from="1564323325935" duration="621000" />
-    </task>
-    <task id="LOCAL-00004" summary="http vs https">
-      <created>1557848644106</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1557848644106</updated>
+      <workItem from="1564323325935" duration="974000" />
+      <workItem from="1564500559897" duration="81000" />
     </task>
     <task id="LOCAL-00005" summary="技术债务">
       <created>1558798948481</created>
@@ -523,17 +517,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564145135782</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="每日一题 3rd 防抖/节流">
+      <created>1564328862014</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1564328862014</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50452000" />
+    <option name="totallyTimeSpent" value="50886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06994048" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06954612" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -559,7 +560,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 cookie隔离" />
     <MESSAGE value="每日一题 算法优先队列" />
     <MESSAGE value="每日一题 router-view" />
     <MESSAGE value="每日一题 MVVM" />
@@ -584,7 +584,8 @@
     <MESSAGE value="每日一题" />
     <MESSAGE value="每日一题 表格数据排序" />
     <MESSAGE value="每日一题 51th  proxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 51th  proxy" />
+    <MESSAGE value="每日一题 3rd 防抖/节流" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题 3rd 防抖/节流" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/100.js">
@@ -947,8 +948,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="346" column="24" lean-forward="true" selection-start-line="346" selection-start-column="24" selection-end-line="346" selection-end-column="24" />
+        <state relative-caret-position="568">
+          <caret line="399" column="68" selection-start-line="399" selection-start-column="68" selection-end-line="399" selection-end-column="68" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
