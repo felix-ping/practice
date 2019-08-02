@@ -20,8 +20,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="432" column="21" selection-start-line="432" selection-start-column="21" selection-end-line="432" selection-end-column="21" />
+            <state relative-caret-position="442">
+              <caret line="450" column="1" selection-start-line="450" selection-start-column="1" selection-end-line="450" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -180,14 +180,8 @@
       <workItem from="1564241220266" duration="160000" />
       <workItem from="1564323325935" duration="974000" />
       <workItem from="1564500559897" duration="326000" />
-      <workItem from="1564581371300" duration="77000" />
-    </task>
-    <task id="LOCAL-00006" summary="webpack 常见问题">
-      <created>1558968657955</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1558968657955</updated>
+      <workItem from="1564581371300" duration="121000" />
+      <workItem from="1564755243580" duration="1129000" />
     </task>
     <task id="LOCAL-00007" summary="正则查漏">
       <created>1559139545387</created>
@@ -525,11 +519,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564500672612</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="每日一题 63th 无缝轮播">
+      <created>1564581479284</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1564581479285</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51208000" />
+    <option name="totallyTimeSpent" value="52381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -561,7 +562,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 router-view" />
     <MESSAGE value="每日一题 MVVM" />
     <MESSAGE value="每日一题 async" />
     <MESSAGE value="每日一题 async2" />
@@ -586,7 +586,8 @@
     <MESSAGE value="每日一题 51th  proxy" />
     <MESSAGE value="每日一题 3rd 防抖/节流" />
     <MESSAGE value="每日一题 26th 模块化" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 26th 模块化" />
+    <MESSAGE value="每日一题 63th 无缝轮播" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题 63th 无缝轮播" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/100.js">
@@ -949,8 +950,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="432" column="21" selection-start-line="432" selection-start-column="21" selection-end-line="432" selection-end-column="21" />
+        <state relative-caret-position="442">
+          <caret line="450" column="1" selection-start-line="450" selection-start-column="1" selection-end-line="450" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

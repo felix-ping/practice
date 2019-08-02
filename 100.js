@@ -436,3 +436,20 @@ https://www.processon.com/view/link/5c8409bbe4b02b2ce492286a#outline
 *
 *
 * */
+
+
+/*第 87 题：在输入框中如何判断输入的是一个正确的网址
+
+
+const isUrl = urlStr => {
+    try {
+        const { href, origin, host, hostname, pathname } = new URL(urlStr)
+        return href && origin && host && hostname && pathname && true
+    } catch (e) {
+        return false
+    }
+}
+
+
+
+*/
