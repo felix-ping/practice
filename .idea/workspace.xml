@@ -20,8 +20,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="450" column="1" selection-start-line="450" selection-start-column="1" selection-end-line="450" selection-end-column="1" />
+            <state relative-caret-position="586">
+              <caret line="512" column="1" selection-start-line="512" selection-start-column="1" selection-end-line="512" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -79,7 +79,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,6 +90,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,14 +181,9 @@
       <workItem from="1564323325935" duration="974000" />
       <workItem from="1564500559897" duration="326000" />
       <workItem from="1564581371300" duration="121000" />
-      <workItem from="1564755243580" duration="1129000" />
-    </task>
-    <task id="LOCAL-00007" summary="正则查漏">
-      <created>1559139545387</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1559139545387</updated>
+      <workItem from="1564755243580" duration="1750000" />
+      <workItem from="1564793226040" duration="16000" />
+      <workItem from="1564846388250" duration="529000" />
     </task>
     <task id="LOCAL-00008" summary="router-link vs href">
       <created>1559228703884</created>
@@ -526,17 +521,23 @@
       <option name="project" value="LOCAL" />
       <updated>1564581479285</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="每日一题 87th">
+      <created>1564756908482</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1564756908489</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52381000" />
+    <option name="totallyTimeSpent" value="53547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.06954612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.05124451" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -562,7 +563,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 MVVM" />
     <MESSAGE value="每日一题 async" />
     <MESSAGE value="每日一题 async2" />
     <MESSAGE value="每日一题 async3" />
@@ -587,7 +587,8 @@
     <MESSAGE value="每日一题 3rd 防抖/节流" />
     <MESSAGE value="每日一题 26th 模块化" />
     <MESSAGE value="每日一题 63th 无缝轮播" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 63th 无缝轮播" />
+    <MESSAGE value="每日一题 87th" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题 87th" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/100.js">
@@ -950,8 +951,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="450" column="1" selection-start-line="450" selection-start-column="1" selection-end-line="450" selection-end-column="1" />
+        <state relative-caret-position="586">
+          <caret line="512" column="1" selection-start-line="512" selection-start-column="1" selection-end-line="512" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
