@@ -16,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="512" column="1" selection-start-line="512" selection-start-column="1" selection-end-line="512" selection-end-column="1" />
+            <state relative-caret-position="575">
+              <caret line="589" column="34" selection-start-line="589" selection-start-column="34" selection-end-line="589" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -79,6 +79,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,7 +91,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,14 +183,9 @@
       <workItem from="1564581371300" duration="121000" />
       <workItem from="1564755243580" duration="1750000" />
       <workItem from="1564793226040" duration="16000" />
-      <workItem from="1564846388250" duration="529000" />
-    </task>
-    <task id="LOCAL-00008" summary="router-link vs href">
-      <created>1559228703884</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1559228703884</updated>
+      <workItem from="1564846388250" duration="1148000" />
+      <workItem from="1564899139560" duration="146000" />
+      <workItem from="1564932475047" duration="54000" />
     </task>
     <task id="LOCAL-00009" summary="表单中type=hidden的作用">
       <created>1559316994934</created>
@@ -528,30 +523,39 @@
       <option name="project" value="LOCAL" />
       <updated>1564756908489</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="每日一题 21th">
+      <created>1564846933449</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1564846933449</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53547000" />
+    <option name="totallyTimeSpent" value="54366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.05124451" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.03660322" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31833333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31833333" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -563,7 +567,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 async" />
     <MESSAGE value="每日一题 async2" />
     <MESSAGE value="每日一题 async3" />
     <MESSAGE value="每日一题 key的作用" />
@@ -588,7 +591,8 @@
     <MESSAGE value="每日一题 26th 模块化" />
     <MESSAGE value="每日一题 63th 无缝轮播" />
     <MESSAGE value="每日一题 87th" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 87th" />
+    <MESSAGE value="每日一题 21th" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题 21th" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/100.js">
@@ -951,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="512" column="1" selection-start-line="512" selection-start-column="1" selection-end-line="512" selection-end-column="1" />
+        <state relative-caret-position="575">
+          <caret line="589" column="34" selection-start-line="589" selection-start-column="34" selection-end-line="589" selection-end-column="34" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
