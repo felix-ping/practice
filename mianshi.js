@@ -914,7 +914,7 @@ new Promise(function(resolve) {
     console.log('promise3');
 });
 console.log('script end');*/
-
+/*
 
 async function a1() {
   console.log('a1 start');
@@ -955,4 +955,48 @@ console.log('script end');
 // promise 1  sdfd
 //promise2.then
 //promise3
-//settimeout
+//settimeout*/
+
+
+/*setTimeout(function() {
+    console.log('setTimeout3');
+}, 0)
+async1();
+async function async1() {
+    console.log('async1 start');
+	await y()
+    await async2();
+    console.log('async1 end');
+    await x()
+    console.log('x end')
+}
+function x (){
+  console.log('async0')
+}
+function y(){
+   console.log('yyy')
+}
+Promise.resolve().then(()=>{
+  console.log('promise5');
+})
+async function async2() {
+    console.log('async2');
+   setTimeout(function() {
+    console.log('async2xx');
+}, 0)
+}
+console.log('script start');
+setTimeout(function() {
+    console.log('setTimeout');
+}, 0)
+
+
+new Promise(function(resolve) {
+    console.log('promise1');
+    resolve();
+}).then(function() {
+    console.log('promise2');
+}).then(function() {
+    console.log('promise3');
+});
+console.log('script end');*/
