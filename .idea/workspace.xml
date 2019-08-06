@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25246f00-6a21-4f89-9781-7c518ed880ec" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/100.js" beforeDir="false" afterPath="$PROJECT_DIR$/100.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mianshi.js" beforeDir="false" afterPath="$PROJECT_DIR$/mianshi.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,14 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="100.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="589" column="34" selection-start-line="589" selection-start-column="34" selection-end-line="589" selection-end-column="34" />
+            <state relative-caret-position="2708">
+              <caret line="574" column="44" selection-start-line="574" selection-start-column="44" selection-end-line="574" selection-end-column="44" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mianshi.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mianshi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="590">
+              <caret line="915" column="26" selection-start-line="915" selection-start-column="26" selection-end-line="915" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -46,10 +55,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mianshi.js" />
         <option value="$PROJECT_DIR$/practices.js" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/100.js" />
+        <option value="$PROJECT_DIR$/mianshi.js" />
       </list>
     </option>
   </component>
@@ -79,7 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,6 +99,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,14 +194,8 @@
       <workItem from="1564793226040" duration="16000" />
       <workItem from="1564846388250" duration="1148000" />
       <workItem from="1564899139560" duration="146000" />
-      <workItem from="1564932475047" duration="54000" />
-    </task>
-    <task id="LOCAL-00009" summary="表单中type=hidden的作用">
-      <created>1559316994934</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1559316994934</updated>
+      <workItem from="1564932475047" duration="186000" />
+      <workItem from="1565094002367" duration="1711000" />
     </task>
     <task id="LOCAL-00010" summary="深拷贝的实现">
       <created>1559663131728</created>
@@ -530,17 +533,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564846933449</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="每日一题 20th  npm install">
+      <created>1564932556396</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1564932556397</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54366000" />
+    <option name="totallyTimeSpent" value="56209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.03660322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20278184" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -551,13 +561,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31833333" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +577,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 async2" />
     <MESSAGE value="每日一题 async3" />
     <MESSAGE value="每日一题 key的作用" />
     <MESSAGE value="每日一题 11th" />
@@ -592,7 +601,8 @@
     <MESSAGE value="每日一题 63th 无缝轮播" />
     <MESSAGE value="每日一题 87th" />
     <MESSAGE value="每日一题 21th" />
-    <option name="LAST_COMMIT_MESSAGE" value="每日一题 21th" />
+    <MESSAGE value="每日一题 20th  npm install" />
+    <option name="LAST_COMMIT_MESSAGE" value="每日一题 20th  npm install" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/100.js">
@@ -929,13 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mianshi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="860" column="10" selection-start-line="860" selection-start-column="10" selection-end-line="860" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practices.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -955,11 +958,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="589" column="34" selection-start-line="589" selection-start-column="34" selection-end-line="589" selection-end-column="34" />
+        <state relative-caret-position="2708">
+          <caret line="574" column="44" selection-start-line="574" selection-start-column="44" selection-end-line="574" selection-end-column="44" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="915" column="26" selection-start-line="915" selection-start-column="26" selection-end-line="915" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -724,24 +724,36 @@ ViewModel(视图模型):就是View和Model层的粘合剂，封装业务逻辑�
 
 
 /*
+async1();
 async function async1() {
     console.log('async1 start');
     await async2();
     console.log('async1 end');
+    await x()
+    console.log('x end')
+}
+function x (){
+  console.log('async0')
 }
 async function async2() {
     console.log('async2');
+   setTimeout(function() {
+    console.log('async2xx');
+}, 0)
 }
 console.log('script start');
 setTimeout(function() {
     console.log('setTimeout');
 }, 0)
-async1();
+
+
 new Promise(function(resolve) {
     console.log('promise1');
     resolve();
 }).then(function() {
     console.log('promise2');
+}).then(function() {
+    console.log('promise3');
 });
 console.log('script end');
 
@@ -865,3 +877,40 @@ weakSet
 2. 更快
 利用key的唯一性生成map对象来获取对应节点，比遍历方式更快。(这个观点，就是我最初的那个观点。从这个角度看，map会比遍历更快。)
 * */
+
+
+/*setTimeout(function() {
+    console.log('setTimeout3');
+}, 0)
+async1();
+async function async1() {
+    console.log('async1 start');
+    await async2();
+    console.log('async1 end');
+    await x()
+    console.log('x end')
+}
+function x (){
+  console.log('async0')
+}
+async function async2() {
+    console.log('async2');
+   setTimeout(function() {
+    console.log('async2xx');
+}, 0)
+}
+console.log('script start');
+setTimeout(function() {
+    console.log('setTimeout');
+}, 0)
+
+
+new Promise(function(resolve) {
+    console.log('promise1');
+    resolve();
+}).then(function() {
+    console.log('promise2');
+}).then(function() {
+    console.log('promise3');
+});
+console.log('script end');*/
