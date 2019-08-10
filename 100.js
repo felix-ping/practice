@@ -642,7 +642,6 @@ info2(); //28
 /*
 深拷贝
 function deepClone(obj, hash = new WeakMap()) { //递归拷贝
- */
     if (obj instanceof RegExp) return new RegExp(obj);
     if (obj instanceof Date) return new Date(obj);
     if (obj === null || typeof obj !== 'object') {
@@ -656,6 +655,7 @@ function deepClone(obj, hash = new WeakMap()) { //递归拷贝
      * 如果obj是数组，那么 obj.constructor 是 [Function: Array]
      * 如果obj是对象，那么 obj.constructor 是 [Function: Object]
      */
+/*
 let t = new obj.constructor();
 hash.set(obj, t);
 for (let key in obj) {
@@ -665,4 +665,20 @@ for (let key in obj) {
   }
 }
 return t;
+}*/
+
+/*
+call
+Function.prototype.call = function() {
+    let [thisArg, ...args] = [...arguments];
+    if (!thisArg) {
+        //context为null或者是undefined
+        thisArg = typeof window === 'undefined' ? global : window;
+    }
+    //this的指向的是当前函数 func (func.call)
+    thisArg.func = this;
+    //执行函数
+    let result = thisArg.func(...args);
+    delete thisArg.func; //thisArg上并没有 func 属性，因此需要移除
+    return result;
 }*/

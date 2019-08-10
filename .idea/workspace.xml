@@ -50,8 +50,11 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="636" column="13" selection-start-line="636" selection-start-column="13" selection-end-line="636" selection-end-column="13" />
+            <state relative-caret-position="377">
+              <caret line="670" column="4" selection-start-line="670" selection-start-column="4" selection-end-line="670" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -219,21 +222,7 @@
       <workItem from="1565094002367" duration="3781000" />
       <workItem from="1565194234831" duration="653000" />
       <workItem from="1565262126412" duration="3036000" />
-      <workItem from="1565452071879" duration="53000" />
-    </task>
-    <task id="LOCAL-00017" summary="每日一题">
-      <created>1561478303472</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1561478303472</updated>
-    </task>
-    <task id="LOCAL-00018" summary="每日一题 new Number()">
-      <created>1561564160177</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1561564160177</updated>
+      <workItem from="1565452071879" duration="172000" />
     </task>
     <task id="LOCAL-00019" summary="每日一题">
       <created>1561564702909</created>
@@ -564,11 +553,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565365365806</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="箭头函数">
+      <created>1565452148946</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1565452148947</updated>
+    </task>
+    <task id="LOCAL-00067" summary="deep copy">
+      <created>1565452202898</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1565452202898</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62021000" />
+    <option name="totallyTimeSpent" value="62140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -601,8 +604,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 29th  mvvm 双向绑定" />
-    <MESSAGE value="每日一题 30th 数组合并" />
     <MESSAGE value="每日一题 30th 数组合并 解法1" />
     <MESSAGE value="每日一题 30th 数组合并 解法2,3" />
     <MESSAGE value="每日一题 30th 数组合并 解法4" />
@@ -626,7 +627,9 @@
     <MESSAGE value="promise练习" />
     <MESSAGE value="手写 promise2" />
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="箭头函数" />
+    <MESSAGE value="deep copy" />
+    <option name="LAST_COMMIT_MESSAGE" value="deep copy" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/promise.js">
@@ -657,6 +660,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10728">
           <caret line="596" column="5" selection-start-line="596" selection-start-column="5" selection-end-line="596" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -686,8 +692,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="636" column="13" selection-start-line="636" selection-start-column="13" selection-end-line="636" selection-end-column="13" />
+        <state relative-caret-position="377">
+          <caret line="670" column="4" selection-start-line="670" selection-start-column="4" selection-end-line="670" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
