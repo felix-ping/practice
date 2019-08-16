@@ -50,8 +50,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="747" column="27" lean-forward="true" selection-start-line="747" selection-start-column="27" selection-end-line="747" selection-end-column="27" />
+            <state relative-caret-position="554">
+              <caret line="798" selection-start-line="798" selection-end-line="798" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -225,14 +225,7 @@
       <workItem from="1565262126412" duration="3036000" />
       <workItem from="1565452071879" duration="778000" />
       <workItem from="1565538425744" duration="2473000" />
-      <workItem from="1565794314755" duration="29000" />
-    </task>
-    <task id="LOCAL-00022" summary="每日一题  跨域">
-      <created>1561909532414</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1561909532414</updated>
+      <workItem from="1565794314755" duration="114000" />
     </task>
     <task id="LOCAL-00023" summary="每日一题  proxy">
       <created>1561995871463</created>
@@ -570,11 +563,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565624732351</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="77th">
+      <created>1565794358037</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1565794358037</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65248000" />
+    <option name="totallyTimeSpent" value="65333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -607,7 +607,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 30th 数组合并 解法5,6" />
     <MESSAGE value="每日一题 30th 数组合并 解法7" />
     <MESSAGE value="每日一题 41th" />
     <MESSAGE value="每日一题 内存图" />
@@ -632,7 +631,8 @@
     <MESSAGE value="call" />
     <MESSAGE value="67th" />
     <MESSAGE value="65th" />
-    <option name="LAST_COMMIT_MESSAGE" value="65th" />
+    <MESSAGE value="77th" />
+    <option name="LAST_COMMIT_MESSAGE" value="77th" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/promise.js">
@@ -763,8 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="747" column="27" lean-forward="true" selection-start-line="747" selection-start-column="27" selection-end-line="747" selection-end-column="27" />
+        <state relative-caret-position="554">
+          <caret line="798" selection-start-line="798" selection-end-line="798" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
