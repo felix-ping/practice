@@ -804,3 +804,23 @@ Angular 和 Vue 都提供了列表重绘的优化机制，也就是 “提示”
 *
 *
 * */
+
+
+/*99th
+*
+* function fun(num){
+    let num1 = num / 10;
+    let num2 = num % 10;
+    if(num1<1){
+        return num;
+    }else{
+        num1 = Math.floor(num1)
+        return `${num2}${fun(num1)}`
+    }
+}
+var a = fun(12345)
+console.log(a)
+console.log(typeof a)
+*
+*
+* */
