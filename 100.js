@@ -892,7 +892,7 @@ opacity: 0 ： 修改元素会造成重绘，性能消耗较少
 可以分成 Service Worker、Memory Cache、Disk Cache 和 Push Cache，那请求的时候 from memory cache 和 from disk cache 的依据是什么，哪些数据什么时候存放在 Memory Cache 和 Disk Cache中
 
 
-
+https://www.jianshu.com/p/54cc04190252
 *
 *
 *
