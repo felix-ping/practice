@@ -897,3 +897,53 @@ https://www.jianshu.com/p/54cc04190252
 *
 *
 * */
+
+
+/*39th bfc
+* BFC 就是块级格式上下文，是页面盒模型布局中的一种 CSS 渲染模式，相当于一个独立的容器，里面的元素和外部的元素相互不影响。创建 BFC 的方式有：
+
+html 根元素
+float 浮动
+绝对定位
+overflow 不为 visiable
+display 为表格布局或者弹性布局
+BFC 主要的作用是：
+
+清除浮动
+防止同一 BFC 容器中的相邻元素间的外边距重叠问题
+
+BFC特性：
+
+内部box会在垂直方向，一个接一个地放置。
+Box垂直方向的距离由margin决定，在一个BFC中，两个相邻的块级盒子的垂直外边距会产生折叠。
+在BFC中，每一个盒子的左外边缘（margin-left）会触碰到容器的左边缘(border-left)（对于从右到左的格式来说，则触碰到右边缘）
+形成了BFC的区域不会与float box重叠
+计算BFC高度时，浮动元素也参与计算
+生成BFC除了 @webproblem 童鞋所说的还有：行内块元素、网格布局、contain值为layout、content或 strict的元素等。
+更多生成BFC的方法：传送门
+
+BFC作用：
+
+利用特性4可实现左图右文之类的效果：
+<img src='image.png'>
+<p>我是超长的文字<p>
+img {
+    float:left
+}
+p {
+    overflow:hidden
+}
+利用特性5可以解决浮动元素造成的父元素高度塌陷问题：
+<div class='parent'>
+    <div class='float'>浮动元素</div>
+</div>
+.parent {
+    overflow:hidden;
+}
+.float {
+    float:left;
+}
+*
+*
+*
+* */

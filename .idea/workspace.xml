@@ -50,8 +50,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="892" lean-forward="true" selection-start-line="892" selection-end-line="892" />
+            <state relative-caret-position="546">
+              <caret line="944" column="1" selection-start-line="944" selection-start-column="1" selection-end-line="944" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -232,21 +232,7 @@
       <workItem from="1566352093106" duration="668000" />
       <workItem from="1566360249530" duration="1198000" />
       <workItem from="1566400783121" duration="599000" />
-      <workItem from="1566569996874" duration="741000" />
-    </task>
-    <task id="LOCAL-00027" summary="每日一题 cookie隔离">
-      <created>1562427879041</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1562427879041</updated>
-    </task>
-    <task id="LOCAL-00028" summary="每日一题 算法优先队列">
-      <created>1562508493412</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1562508493412</updated>
+      <workItem from="1566569996874" duration="1431000" />
     </task>
     <task id="LOCAL-00029" summary="每日一题 router-view">
       <created>1562600904522</created>
@@ -577,11 +563,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566360213936</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="35th">
+      <created>1566575872019</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1566575872020</updated>
+    </task>
+    <task id="LOCAL-00077" summary="35th2">
+      <created>1566575909446</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1566575909446</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70705000" />
+    <option name="totallyTimeSpent" value="71395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -614,8 +614,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 表格数据排序" />
-    <MESSAGE value="每日一题 51th  proxy" />
     <MESSAGE value="每日一题 3rd 防抖/节流" />
     <MESSAGE value="每日一题 26th 模块化" />
     <MESSAGE value="每日一题 63th 无缝轮播" />
@@ -639,7 +637,9 @@
     <MESSAGE value="99th" />
     <MESSAGE value="87th  判断url" />
     <MESSAGE value="57th" />
-    <option name="LAST_COMMIT_MESSAGE" value="57th" />
+    <MESSAGE value="35th" />
+    <MESSAGE value="35th2" />
+    <option name="LAST_COMMIT_MESSAGE" value="35th2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/promise.js">
@@ -974,8 +974,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="892" lean-forward="true" selection-start-line="892" selection-end-line="892" />
+        <state relative-caret-position="546">
+          <caret line="944" column="1" selection-start-line="944" selection-start-column="1" selection-end-line="944" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
