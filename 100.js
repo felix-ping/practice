@@ -947,3 +947,20 @@ p {
 *
 *
 * */
+
+
+
+/*
+*
+*
+*第 60 题：已知如下代码，如何修改才能让图片宽度为 300px ？注意下面代码不可修改。
+*
+* 总结一下吧：
+1.css方法
+max-width:300px;覆盖其样式；
+transform: scale(0.625)；按比例缩放图片；
+2.js方法
+document.getElementsByTagName("img")[0].setAttribute("style","width:300px!important;")
+*
+*
+* */
