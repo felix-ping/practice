@@ -50,8 +50,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="968" column="4" selection-start-line="968" selection-start-column="4" selection-end-line="968" selection-end-column="4" />
+            <state relative-caret-position="575">
+              <caret line="1021" column="28" selection-start-line="1021" selection-start-column="28" selection-end-line="1021" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -66,6 +66,7 @@
       <find>async</find>
       <find>alert</find>
       <find>26</find>
+      <find>23</find>
     </findStrings>
     <replaceStrings>
       <replace>console.log</replace>
@@ -233,21 +234,8 @@
       <workItem from="1566360249530" duration="1198000" />
       <workItem from="1566400783121" duration="599000" />
       <workItem from="1566569996874" duration="2945000" />
-      <workItem from="1566833288087" duration="600000" />
-    </task>
-    <task id="LOCAL-00031" summary="每日一题 async">
-      <created>1562859150668</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1562859150669</updated>
-    </task>
-    <task id="LOCAL-00032" summary="每日一题 async2">
-      <created>1562931055661</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1562931055661</updated>
+      <workItem from="1566833288087" duration="1341000" />
+      <workItem from="1566920627972" duration="101000" />
     </task>
     <task id="LOCAL-00033" summary="每日一题 async3">
       <created>1563032973196</created>
@@ -578,11 +566,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566748540317</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="60th">
+      <created>1566835143725</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1566835143726</updated>
+    </task>
+    <task id="LOCAL-00081" summary="23th">
+      <created>1566835265703</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1566835265703</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73509000" />
+    <option name="totallyTimeSpent" value="74351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -599,13 +601,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31833333" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,8 +617,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 63th 无缝轮播" />
-    <MESSAGE value="每日一题 87th" />
     <MESSAGE value="每日一题 21th" />
     <MESSAGE value="每日一题 20th  npm install" />
     <MESSAGE value="变态async" />
@@ -640,9 +640,45 @@
     <MESSAGE value="35th2" />
     <MESSAGE value="39th BFC" />
     <MESSAGE value="60th  !important" />
-    <option name="LAST_COMMIT_MESSAGE" value="60th  !important" />
+    <MESSAGE value="60th" />
+    <MESSAGE value="23th" />
+    <option name="LAST_COMMIT_MESSAGE" value="23th" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promise-practice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promise2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2790">
+          <caret line="155" column="1" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/100.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17460">
+          <caret line="976" column="68" selection-start-line="976" selection-start-column="68" selection-end-line="976" selection-end-column="68" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/promise.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
@@ -1009,8 +1045,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="968" column="4" selection-start-line="968" selection-start-column="4" selection-end-line="968" selection-end-column="4" />
+        <state relative-caret-position="575">
+          <caret line="1021" column="28" selection-start-line="1021" selection-start-column="28" selection-end-line="1021" selection-end-column="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
