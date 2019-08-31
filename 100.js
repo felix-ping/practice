@@ -1052,6 +1052,48 @@ arrs.forEach((arr) => {
 console.timeEnd('forEach');
 
 for: 2.263ms
-forEach: 0.254ms
+forEach: 0.254msf
+*
+* */
+
+
+/*第 54 题：冒泡排序如何实现，时间复杂度是多少， 还可以如何改进？
+
+
+
+function bubbleSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                const temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    console.log(arr);
+}
+
+// 改进冒泡排序
+function bubbleSort1(arr) {
+    let i = arr.length - 1;
+
+    while (i > 0) {
+        let pos = 0;
+        for (let j = 0; j < i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                pos = j;
+                const temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+        i = pos;
+    }
+    console.log(arr);
+}
+*
+*
+*
 *
 * */

@@ -50,8 +50,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="1054" column="16" selection-start-line="1054" selection-start-column="16" selection-end-line="1054" selection-end-column="16" />
+            <state relative-caret-position="485">
+              <caret line="1088" column="13" lean-forward="true" selection-start-line="1088" selection-start-column="13" selection-end-line="1088" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -67,6 +67,7 @@
       <find>alert</find>
       <find>26</find>
       <find>23</find>
+      <find>54</find>
     </findStrings>
     <replaceStrings>
       <replace>console.log</replace>
@@ -115,6 +116,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,7 +128,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,14 +237,8 @@
       <workItem from="1566569996874" duration="2945000" />
       <workItem from="1566833288087" duration="1341000" />
       <workItem from="1566920627972" duration="1276000" />
-      <workItem from="1567006196966" duration="302000" />
-    </task>
-    <task id="LOCAL-00034" summary="每日一题 key的作用">
-      <created>1563206063962</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1563206063962</updated>
+      <workItem from="1567006196966" duration="923000" />
+      <workItem from="1567265971192" duration="67000" />
     </task>
     <task id="LOCAL-00035" summary="每日一题 11th">
       <created>1563354048191</created>
@@ -581,17 +576,24 @@
       <option name="project" value="LOCAL" />
       <updated>1566920750963</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="72th  for vs foreach">
+      <created>1567006521098</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1567006521099</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75828000" />
+    <option name="totallyTimeSpent" value="76516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14787701" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.109077595" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -602,13 +604,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31833333" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +620,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="每日一题 20th  npm install" />
     <MESSAGE value="变态async" />
     <MESSAGE value="变态async2" />
     <MESSAGE value="async  got it!" />
@@ -643,7 +644,8 @@
     <MESSAGE value="60th" />
     <MESSAGE value="23th" />
     <MESSAGE value="130th" />
-    <option name="LAST_COMMIT_MESSAGE" value="130th" />
+    <MESSAGE value="72th  for vs foreach" />
+    <option name="LAST_COMMIT_MESSAGE" value="72th  for vs foreach" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/promise-practice.js">
@@ -1073,8 +1075,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="1054" column="16" selection-start-line="1054" selection-start-column="16" selection-end-line="1054" selection-end-column="16" />
+        <state relative-caret-position="485">
+          <caret line="1088" column="13" lean-forward="true" selection-start-line="1088" selection-start-column="13" selection-end-line="1088" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
