@@ -1197,3 +1197,10 @@ const intersect = (nums1, nums2) => {
 *
 *
 * */
+
+
+/*第 9 题：Async/Await 如何通过同步的方式实现异步
+*
+* https://juejin.im/post/5d2c814c6fb9a07ecd3d8e43
+*
+* */
