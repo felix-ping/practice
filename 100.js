@@ -478,7 +478,49 @@ await的含义为等待，也就是 async 函数需要等待await后的函数执
 * https://juejin.im/post/5d2c814c6fb9a07ecd3d8e43
 *
 * */
-/*10th*/
+/*10th
+*
+* //请写出输出内容
+async function async1() {
+    console.log('async1 start');
+    await async2();
+    console.log('async1 end');
+}
+async function async2() {
+	console.log('async2');
+}
+
+console.log('script start');
+
+setTimeout(function() {
+    console.log('setTimeout');
+}, 0)
+
+async1();
+
+new Promise(function(resolve) {
+    console.log('promise1');
+    resolve();
+}).then(function() {
+    console.log('promise2');
+});
+console.log('script end');
+
+
+/*
+script start
+async1 start
+async2
+promise1
+script end
+async1 end
+promise2
+setTimeout
+*/
+
+
+*
+* */
 /*11th. 已知如下数组：
 var arr = [ [1, 2, 2], [3, 4, 5, 5], [6, 7, 8, 9, [11, 12, [12, 13, [14] ] ] ], 10];
 编写一个程序将数组扁平化去并除其中重复部分数据，最终得到一个升序且不重复的数组
