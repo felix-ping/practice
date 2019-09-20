@@ -47,8 +47,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="632" column="30" selection-start-line="632" selection-start-column="30" selection-end-line="632" selection-end-column="30" />
+            <state relative-caret-position="540">
+              <caret line="636" column="6" selection-start-line="636" selection-start-column="6" selection-end-line="636" selection-end-column="6" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -295,14 +295,7 @@
       <workItem from="1568558372739" duration="6000" />
       <workItem from="1568559216312" duration="1341000" />
       <workItem from="1568821220880" duration="346000" />
-      <workItem from="1568895068598" duration="646000" />
-    </task>
-    <task id="LOCAL-00052" summary="每日一题 51th  proxy">
-      <created>1564145135781</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1564145135782</updated>
+      <workItem from="1568895068598" duration="720000" />
     </task>
     <task id="LOCAL-00053" summary="每日一题 3rd 防抖/节流">
       <created>1564328862014</created>
@@ -640,11 +633,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568821553156</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="13th">
+      <created>1568908319500</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1568908319501</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93130000" />
+    <option name="totallyTimeSpent" value="93204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -677,7 +677,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="35th" />
     <MESSAGE value="35th2" />
     <MESSAGE value="39th BFC" />
     <MESSAGE value="60th  !important" />
@@ -702,7 +701,8 @@
     <MESSAGE value="10th" />
     <MESSAGE value="10th async" />
     <MESSAGE value="12th  异步方案比较" />
-    <option name="LAST_COMMIT_MESSAGE" value="12th  异步方案比较" />
+    <MESSAGE value="13th" />
+    <option name="LAST_COMMIT_MESSAGE" value="13th" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/promise-practice.js">
@@ -1597,8 +1597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="632" column="30" selection-start-line="632" selection-start-column="30" selection-end-line="632" selection-end-column="30" />
+        <state relative-caret-position="540">
+          <caret line="636" column="6" selection-start-line="636" selection-start-column="6" selection-end-line="636" selection-end-column="6" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
