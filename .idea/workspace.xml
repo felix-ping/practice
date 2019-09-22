@@ -47,8 +47,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="641" column="1" selection-start-line="641" selection-start-column="1" selection-end-line="641" selection-end-column="1" />
+            <state relative-caret-position="576">
+              <caret line="655" column="24" selection-start-line="655" selection-start-column="24" selection-end-line="655" selection-end-column="24" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -297,21 +297,7 @@
       <workItem from="1568559216312" duration="1341000" />
       <workItem from="1568821220880" duration="346000" />
       <workItem from="1568895068598" duration="779000" />
-      <workItem from="1569166727785" duration="78000" />
-    </task>
-    <task id="LOCAL-00054" summary="每日一题 26th 模块化">
-      <created>1564500672612</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1564500672612</updated>
-    </task>
-    <task id="LOCAL-00055" summary="每日一题 63th 无缝轮播">
-      <created>1564581479284</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1564581479285</updated>
+      <workItem from="1569166727785" duration="243000" />
     </task>
     <task id="LOCAL-00056" summary="每日一题 87th">
       <created>1564756908482</created>
@@ -642,11 +628,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568995161832</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="14th  方案1">
+      <created>1569166826224</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1569166826225</updated>
+    </task>
+    <task id="LOCAL-00104" summary="14th 2">
+      <created>1569166903350</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1569166903350</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93341000" />
+    <option name="totallyTimeSpent" value="93506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -679,8 +679,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="35th2" />
-    <MESSAGE value="39th BFC" />
     <MESSAGE value="60th  !important" />
     <MESSAGE value="60th" />
     <MESSAGE value="23th" />
@@ -704,7 +702,9 @@
     <MESSAGE value="10th async" />
     <MESSAGE value="12th  异步方案比较" />
     <MESSAGE value="13th" />
-    <option name="LAST_COMMIT_MESSAGE" value="13th" />
+    <MESSAGE value="14th  方案1" />
+    <MESSAGE value="14th 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="14th 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/promise-practice.js">
@@ -1611,8 +1611,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="641" column="1" selection-start-line="641" selection-start-column="1" selection-end-line="641" selection-end-column="1" />
+        <state relative-caret-position="576">
+          <caret line="655" column="24" selection-start-line="655" selection-start-column="24" selection-end-line="655" selection-end-column="24" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
