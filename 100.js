@@ -634,7 +634,16 @@ promise构造函数是同步执行的，then方法是异步执行的
 *
 *
 * */
-/*14th*/
+/*14th  如何实现一个 new
+* function _new(fn, ...arg) {
+    const obj = Object.create(fn.prototype);
+    const ret = fn.apply(obj, arg);
+    return ret instanceof Object ? ret : obj;
+}
+*
+*
+* */
+
 /*第 21 题：有以下 3 个判断数组的方法，请分别介绍它们之间的区别和优劣Object.prototype.toString.call() 、 instanceof 以及 Array.isArray()
 *
 *1. Object.prototype.toString.call()
