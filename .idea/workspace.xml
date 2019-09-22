@@ -47,8 +47,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="655" column="24" selection-start-line="655" selection-start-column="24" selection-end-line="655" selection-end-column="24" />
+            <state relative-caret-position="590">
+              <caret line="675" column="182" selection-start-line="675" selection-start-column="182" selection-end-line="675" selection-end-column="182" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -297,21 +297,7 @@
       <workItem from="1568559216312" duration="1341000" />
       <workItem from="1568821220880" duration="346000" />
       <workItem from="1568895068598" duration="779000" />
-      <workItem from="1569166727785" duration="243000" />
-    </task>
-    <task id="LOCAL-00056" summary="每日一题 87th">
-      <created>1564756908482</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1564756908489</updated>
-    </task>
-    <task id="LOCAL-00057" summary="每日一题 21th">
-      <created>1564846933449</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1564846933449</updated>
+      <workItem from="1569166727785" duration="548000" />
     </task>
     <task id="LOCAL-00058" summary="每日一题 20th  npm install">
       <created>1564932556396</created>
@@ -642,11 +628,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569166903350</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="15th  http2 多路复用">
+      <created>1569166993608</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1569166993608</updated>
+    </task>
+    <task id="LOCAL-00106" summary="15th  http2 多路复用 补充">
+      <created>1569167012597</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1569167012597</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93506000" />
+    <option name="totallyTimeSpent" value="93811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -679,8 +679,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="60th  !important" />
-    <MESSAGE value="60th" />
     <MESSAGE value="23th" />
     <MESSAGE value="130th" />
     <MESSAGE value="72th  for vs foreach" />
@@ -704,7 +702,9 @@
     <MESSAGE value="13th" />
     <MESSAGE value="14th  方案1" />
     <MESSAGE value="14th 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="14th 2" />
+    <MESSAGE value="15th  http2 多路复用" />
+    <MESSAGE value="15th  http2 多路复用 补充" />
+    <option name="LAST_COMMIT_MESSAGE" value="15th  http2 多路复用 补充" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/promise-practice.js">
@@ -1611,8 +1611,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="655" column="24" selection-start-line="655" selection-start-column="24" selection-end-line="655" selection-end-column="24" />
+        <state relative-caret-position="590">
+          <caret line="675" column="182" selection-start-line="675" selection-start-column="182" selection-end-line="675" selection-end-column="182" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
