@@ -641,7 +641,11 @@ promise构造函数是同步执行的，then方法是异步执行的
     return ret instanceof Object ? ret : obj;
 }
 *
-*
+*先理清楚 new 关键字调用函数都的具体过程，那么写出来就很清楚了
+
+1.首先创建一个空的对象，空对象的__proto__属性指向构造函数的原型对象
+2.把上面创建的空对象赋值构造函数内部的this，用构造函数内部的方法修改空对象
+3.如果构造函数返回一个非基本类型的值，则返回这个值，否则上面创建的对象
 * */
 
 /*第 21 题：有以下 3 个判断数组的方法，请分别介绍它们之间的区别和优劣Object.prototype.toString.call() 、 instanceof 以及 Array.isArray()
