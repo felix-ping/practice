@@ -1210,6 +1210,26 @@ currentState = currentReducer(currentState, action)
 *
 *
 * */
+
+/*38th 下面代码中 a 在什么情况下会打印 1
+ var a = ?;
+  if(a == 1 && a == 2 && a == 3){
+ 	console.log(1);
+}
+*  因为==会进行隐式类型转换 所以我们重写toString方法就可以了
+
+var a = {
+  i: 1,
+  toString() {
+    return a.i++;
+  }
+}
+
+if( a == 1 && a == 2 && a == 3 ) {
+  console.log(1);
+}
+*
+* */
 /*39th bfc
 * BFC 就是块级格式上下文，是页面盒模型布局中的一种 CSS 渲染模式，相当于一个独立的容器，里面的元素和外部的元素相互不影响。创建 BFC 的方式有：
 
