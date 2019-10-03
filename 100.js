@@ -1116,6 +1116,51 @@ Angular 和 Vue 都提供了列表重绘的优化机制，也就是 “提示”
 *
 *
 * */
+/* 33th下面的代码打印什么内容，为什么？
+var b = 10;
+(function b(){
+    b = 20;
+    console.log(b);
+})();
+ var b = 10;
+(function b() {
+   // 内部作用域，会先去查找是有已有变量b的声明，有就直接赋值20，确实有了呀。发现了具名函数 function b(){}，拿此b做赋值；
+   // IIFE的函数无法进行赋值（内部机制，类似const定义的常量），所以无效。
+  // （这里说的“内部机制”，想搞清楚，需要去查阅一些资料，弄明白IIFE在JS引擎的工作方式，堆栈存储IIFE的方式等）
+    b = 20;
+    console.log(b); // [Function b]
+    console.log(window.b); // 10，不是20
+})();
+所以严格模式下能看到错误：Uncaught TypeError: Assignment to constant variable
+
+var b = 10;
+(function b() {
+  'use strict'
+  b = 20;
+  console.log(b)
+})() // "Uncaught TypeError: Assignment to constant variable."
+其他情况例子：
+
+有window：
+
+var b = 10;
+(function b() {
+    window.b = 20;
+    console.log(b); // [Function b]
+    console.log(window.b); // 20是必然的
+})();
+有var:
+
+var b = 10;
+(function b() {
+    var b = 20; // IIFE内部变量
+    console.log(b); // 20
+   console.log(window.b); // 10
+})();
+
+
+
+*/
 /*第 35 题：浏览器缓存读取规则
 可以分成 Service Worker、Memory Cache、Disk Cache 和 Push Cache，那请求的时候 from memory cache 和 from disk cache 的依据是什么，哪些数据什么时候存放在 Memory Cache 和 Disk Cache中
 
