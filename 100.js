@@ -1170,6 +1170,25 @@ https://www.jianshu.com/p/54cc04190252
 *
 *
 * */
+/*36th 使用迭代的方式实现 flatten 函数
+*迭代的实现:
+
+let arr = [1, 2, [3, 4, 5, [6, 7], 8], 9, 10, [11, [12, 13]]]
+
+const flatten = function (arr) {
+    while (arr.some(item => Array.isArray(item))) {
+        arr = [].concat(...arr)
+    }
+    return arr
+}
+
+console.log(flatten(arr))
+*
+*递归的实现(ES6简写):
+
+const flatten = array => array.reduce((acc, cur) => (Array.isArray(cur) ? [...acc, ...flatten(cur)] : [...acc, cur]), [])
+*
+* */
 /*39th bfc
 * BFC 就是块级格式上下文，是页面盒模型布局中的一种 CSS 渲染模式，相当于一个独立的容器，里面的元素和外部的元素相互不影响。创建 BFC 的方式有：
 
