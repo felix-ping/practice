@@ -48,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="575">
-              <caret line="1208" column="31" selection-start-line="1208" selection-start-column="31" selection-end-line="1208" selection-end-column="31" />
+              <caret line="1309" column="168" selection-start-line="1309" selection-start-column="168" selection-end-line="1309" selection-end-column="168" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -302,21 +302,7 @@
       <workItem from="1568895068598" duration="779000" />
       <workItem from="1569166727785" duration="1163000" />
       <workItem from="1569512039471" duration="769000" />
-      <workItem from="1570090983830" duration="1480000" />
-    </task>
-    <task id="LOCAL-00062" summary="手写promise">
-      <created>1565264948542</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1565264948542</updated>
-    </task>
-    <task id="LOCAL-00063" summary="promise练习">
-      <created>1565265703199</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1565265703199</updated>
+      <workItem from="1570090983830" duration="1646000" />
     </task>
     <task id="LOCAL-00064" summary="手写 promise2">
       <created>1565265807560</created>
@@ -647,11 +633,25 @@
       <option name="project" value="LOCAL" />
       <updated>1570106730914</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="37th vuex">
+      <created>1570106813405</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1570106813405</updated>
+    </task>
+    <task id="LOCAL-00112" summary="38th">
+      <created>1570106914227</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1570106914227</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96675000" />
+    <option name="totallyTimeSpent" value="96841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -684,8 +684,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="45th" />
-    <MESSAGE value="47th" />
     <MESSAGE value="59th" />
     <MESSAGE value="75th array" />
     <MESSAGE value="9th" />
@@ -709,7 +707,9 @@
     <MESSAGE value="22th  重流重绘" />
     <MESSAGE value="33th" />
     <MESSAGE value="36th flatten" />
-    <option name="LAST_COMMIT_MESSAGE" value="36th flatten" />
+    <MESSAGE value="37th vuex" />
+    <MESSAGE value="38th" />
+    <option name="LAST_COMMIT_MESSAGE" value="38th" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/promise-practice.js">
@@ -1653,7 +1653,7 @@
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
-          <caret line="1208" column="31" selection-start-line="1208" selection-start-column="31" selection-end-line="1208" selection-end-column="31" />
+          <caret line="1309" column="168" selection-start-line="1309" selection-start-column="168" selection-end-line="1309" selection-end-column="168" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
