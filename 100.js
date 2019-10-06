@@ -1358,6 +1358,17 @@ function* sleepGenerator(time) {
 }
 sleepGenerator(1000).next().value.then(()=>{console.log(1)})
 
+
+//ES5
+function sleep(callback,time) {
+  if(typeof callback === 'function')
+    setTimeout(callback,time)
+}
+
+function output(){
+  console.log(1);
+}
+sleep(output,1000);
 *  */
 
 /*第 45 题：HTTPS 握手过程中，客户端如何验证证书的合法性
