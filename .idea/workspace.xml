@@ -47,8 +47,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="1337" column="2" selection-start-line="1337" selection-start-column="2" selection-end-line="1337" selection-end-column="2" />
+            <state relative-caret-position="572">
+              <caret line="1359" lean-forward="true" selection-start-line="1359" selection-end-line="1359" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -309,21 +309,7 @@
       <workItem from="1569512039471" duration="769000" />
       <workItem from="1570090983830" duration="2263000" />
       <workItem from="1570152828012" duration="634000" />
-      <workItem from="1570348870262" duration="114000" />
-    </task>
-    <task id="LOCAL-00065" summary="new">
-      <created>1565365365806</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1565365365806</updated>
-    </task>
-    <task id="LOCAL-00066" summary="箭头函数">
-      <created>1565452148946</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1565452148947</updated>
+      <workItem from="1570348870262" duration="170000" />
     </task>
     <task id="LOCAL-00067" summary="deep copy">
       <created>1565452202898</created>
@@ -654,11 +640,25 @@
       <option name="project" value="LOCAL" />
       <updated>1570106973086</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="42th promise">
+      <created>1570349002342</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1570349002343</updated>
+    </task>
+    <task id="LOCAL-00115" summary="42th async">
+      <created>1570349020195</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1570349020195</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98206000" />
+    <option name="totallyTimeSpent" value="98262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -691,8 +691,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="75th array" />
-    <MESSAGE value="9th" />
     <MESSAGE value="整理" />
     <MESSAGE value="1st" />
     <MESSAGE value="7th 继承" />
@@ -716,7 +714,9 @@
     <MESSAGE value="37th vuex" />
     <MESSAGE value="38th" />
     <MESSAGE value="40th" />
-    <option name="LAST_COMMIT_MESSAGE" value="40th" />
+    <MESSAGE value="42th promise" />
+    <MESSAGE value="42th async" />
+    <option name="LAST_COMMIT_MESSAGE" value="42th async" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/promise-practice.js">
@@ -1719,8 +1719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="1337" column="2" selection-start-line="1337" selection-start-column="2" selection-end-line="1337" selection-end-column="2" />
+        <state relative-caret-position="572">
+          <caret line="1359" lean-forward="true" selection-start-line="1359" selection-end-line="1359" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />

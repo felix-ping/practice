@@ -1349,6 +1349,15 @@ async function sleepAsync() {
 
 sleepAsync()
 *
+*
+* //Generator
+function* sleepGenerator(time) {
+  yield new Promise(function(resolve,reject){
+    setTimeout(resolve,time);
+  })
+}
+sleepGenerator(1000).next().value.then(()=>{console.log(1)})
+
 *  */
 
 /*第 45 题：HTTPS 握手过程中，客户端如何验证证书的合法性
