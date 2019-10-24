@@ -1400,6 +1400,26 @@ http协议是超文本传输协议，位于tcp/ip四层模型中的应用层；�
 *
 *
 * */
+/*46th
+*
+*
+* var obj = {
+    '2': 3,
+    '3': 4,
+    'length': 2,
+    'splice': Array.prototype.splice,
+    'push': Array.prototype.push
+}
+obj.push(1)
+obj.push(2)
+console.log(obj)
+
+
+Object(4) [empty × 2, 1, 2, splice: ƒ, push: ƒ]
+*
+*
+* length 为2  所以push是从 2这一项往后添加 覆盖了后面的值  有splice会转换为类数组
+* */
 /*第 47 题：双向绑定和 vuex 是否冲突
 *在严格模式中使用Vuex，当用户输入时，v-model会试图直接修改属性值，但这个修改不是在mutation中修改的，所以会抛出一个错误。当需要在组件中使用vuex中的state时，有2种解决方案：
 1、在input中绑定value(vuex中的state)，然后监听input的change或者input事件，在事件回调中调用mutation修改state的值
