@@ -1430,54 +1430,22 @@ computed: { message: { get () { return this.$store.state.obj.message }, set (val
 *
 *
 * */
-/*第 59 题：给定两个数组，写一个方法来计算它们的交集。例如：给定 nums1 = [1, 2, 2, 1]，nums2 = [2, 2]，返回 [2, 2]。
-*这道题不是工程题，是道算法题。求的是两个数组的最长公共子序列 (子序列要求顺序，交集不需要）。所以上面用一个filter一个includes或者indexOf的都是错的。
-
-反例很简单。
-
-var nums1 = [1]
-var nums2 = [1,1]
-或者
-
-var nums1 = [1,1]
-var nums2 = [1]
-交集应该是[1]
-
-跑一下你们的方法就能知道错了。
-
-这道题两种思路，空间换时间，或者不用额外空间就提升时间复杂度。
-
-空间换时间的思路是用个Hash表来存数组1的元素以及出现的个数（此处需要遍历n次，并存一个n级别的空间）。
-遍历数组2，发现数组2里有Hash表里的值就存到Result数组里，并把Hash表内该值次数减一（为0之后就Delete）。如果不存在Hash表里，就跳过。这样时间复杂度就是(m+n)
-
-不用额外空间，就用遍历n的时候，判断值在不在m里，如果在，把m里的该值push到Result数组里，并将该值从m数组里删掉（用splice）。这样就是不用额外空间，但是提高了时间复杂度。
-
-
-
-
-哈希表，时间复杂度O(m + n) m为nums1长度，n为nums2长度
-
-const intersect = (nums1, nums2) => {
-  const map = {}
-  const res = []
-  for (let n of nums1) {
-    if (map[n]) {
-      map[n]++
-    } else {
-      map[n] = 1
+/*50th 实现 (5).add(3).minus(2) 功能。
+Number.prototype.add = function (number) {
+    if (typeof number !== 'number') {
+        throw new Error('请输入数字～');
     }
-  }
-  for (let n of nums2) {
-    if (map[n] > 0) {
-      res.push(n)
-      map[n]--
+    return this + number;
+};
+Number.prototype.minus = function (number) {
+    if (typeof number !== 'number') {
+        throw new Error('请输入数字～');
     }
-  }
-  return res
-}
-*
-*
-*
+    return this - number;
+};
+console.log((5).add(3).minus(2));
+
+
 * */
 /*第 51 题：Vue 的响应式原理中 Object.defineProperty 有什么缺陷？为什么在 Vue3.0 采用了 Proxy，抛弃了 Object.defineProperty？
 *
@@ -1564,6 +1532,55 @@ visibility:hidden: 修改元素只会造成本元素的重绘,性能消耗较少
 opacity: 0 ： 修改元素会造成重绘，性能消耗较少
 
 联系：它们都能让元素不可见
+*
+*
+* */
+/*第 59 题：给定两个数组，写一个方法来计算它们的交集。例如：给定 nums1 = [1, 2, 2, 1]，nums2 = [2, 2]，返回 [2, 2]。
+*这道题不是工程题，是道算法题。求的是两个数组的最长公共子序列 (子序列要求顺序，交集不需要）。所以上面用一个filter一个includes或者indexOf的都是错的。
+
+反例很简单。
+
+var nums1 = [1]
+var nums2 = [1,1]
+或者
+
+var nums1 = [1,1]
+var nums2 = [1]
+交集应该是[1]
+
+跑一下你们的方法就能知道错了。
+
+这道题两种思路，空间换时间，或者不用额外空间就提升时间复杂度。
+
+空间换时间的思路是用个Hash表来存数组1的元素以及出现的个数（此处需要遍历n次，并存一个n级别的空间）。
+遍历数组2，发现数组2里有Hash表里的值就存到Result数组里，并把Hash表内该值次数减一（为0之后就Delete）。如果不存在Hash表里，就跳过。这样时间复杂度就是(m+n)
+
+不用额外空间，就用遍历n的时候，判断值在不在m里，如果在，把m里的该值push到Result数组里，并将该值从m数组里删掉（用splice）。这样就是不用额外空间，但是提高了时间复杂度。
+
+
+
+
+哈希表，时间复杂度O(m + n) m为nums1长度，n为nums2长度
+
+const intersect = (nums1, nums2) => {
+  const map = {}
+  const res = []
+  for (let n of nums1) {
+    if (map[n]) {
+      map[n]++
+    } else {
+      map[n] = 1
+    }
+  }
+  for (let n of nums2) {
+    if (map[n] > 0) {
+      res.push(n)
+      map[n]--
+    }
+  }
+  return res
+}
+*
 *
 *
 * */
