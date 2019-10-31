@@ -9,7 +9,7 @@ const PENDING = "pending";
 const FULFILLED = "fulfilled";
 const REJECTED = "rejected";
 
-function Promise(excutor) {
+function Promise(excutor) { //excutor是什么？
   let that = this; // 缓存当前promise实例对象
   that.status = PENDING; // 初始状态
   that.value = undefined; // fulfilled状态时 返回的信息
@@ -18,6 +18,9 @@ function Promise(excutor) {
   that.onRejectedCallbacks = []; // 存储rejected状态对应的onRejected函数
 
   function resolve(value) { // value成功态时接收的终值
+
+    //promise 中传递一个promise
+
     if(value instanceof Promise) {
       return value.then(resolve, reject);
     }
