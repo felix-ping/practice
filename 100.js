@@ -1511,6 +1511,15 @@ function bubbleSort1(arr) {
 *
 *
 * */
+/*55th{1:222, 2:123, 5:888}，请把数据处理为如下结构：[222, 123, null, null, 888, null, null, null, null, null, null, null]
+*
+*let obj = {1:222, 2:123, 5:888};
+const result = Array.from({ length: 12 }).map((_, index) => obj[index + 1] || null);
+console.log(result)
+*
+*用array.from转换一个类数组为数组，达到填充的目的。
+*
+* */
 /*第 57 题：分析比较 opacity: 0、visibility: hidden、display: none 优劣和适用场景
 *
 *display: none (不占空间，不能点击)（场景，显示出原来这里不存在的结构）
