@@ -2008,7 +2008,26 @@ console.log(5)
 * 2,3,5,4,1
 * 3,5,4,1
 */
+/*var a = 1;
+var obj = {
+    a: 2,
+    c: function() {
+        console.log(this.a);
+    },
+    b: () => {
+        console.log(this.a);
+    }
+}
+obj.c();
+obj.b();
+console.log(this.a);
+var foo = obj.c;
+console.log('111',foo());
 
+
+2,1,1，undefined  因为return的
+
+*/
 
 
 

@@ -53,8 +53,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="1988" lean-forward="true" selection-start-line="1988" selection-end-line="1988" />
+            <state relative-caret-position="539">
+              <caret line="2027" column="26" selection-start-line="2027" selection-start-column="26" selection-end-line="2027" selection-end-column="26" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -315,21 +315,7 @@
       <workItem from="1572505878683" duration="1039000" />
       <workItem from="1572621884566" duration="1302000" />
       <workItem from="1572753078126" duration="1717000" />
-      <workItem from="1572881778362" duration="180000" />
-    </task>
-    <task id="LOCAL-00075" summary="57th">
-      <created>1566360213935</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1566360213936</updated>
-    </task>
-    <task id="LOCAL-00076" summary="35th">
-      <created>1566575872019</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1566575872020</updated>
+      <workItem from="1572881778362" duration="1124000" />
     </task>
     <task id="LOCAL-00077" summary="35th2">
       <created>1566575909446</created>
@@ -660,11 +646,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572795677601</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="eventLoop">
+      <created>1572881979202</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1572881979203</updated>
+    </task>
+    <task id="LOCAL-00125" summary="eventLoop 参数传递">
+      <created>1572882280777</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1572882280777</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112814000" />
+    <option name="totallyTimeSpent" value="113758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -697,8 +697,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10th" />
-    <MESSAGE value="10th async" />
     <MESSAGE value="12th  异步方案比较" />
     <MESSAGE value="13th" />
     <MESSAGE value="14th  方案1" />
@@ -722,7 +720,9 @@
     <MESSAGE value="primise" />
     <MESSAGE value="53th" />
     <MESSAGE value="55th  array.from" />
-    <option name="LAST_COMMIT_MESSAGE" value="55th  array.from" />
+    <MESSAGE value="eventLoop" />
+    <MESSAGE value="eventLoop 参数传递" />
+    <option name="LAST_COMMIT_MESSAGE" value="eventLoop 参数传递" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1589,8 +1589,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="1988" lean-forward="true" selection-start-line="1988" selection-end-line="1988" />
+        <state relative-caret-position="539">
+          <caret line="2027" column="26" selection-start-line="2027" selection-start-column="26" selection-end-line="2027" selection-end-column="26" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
