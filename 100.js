@@ -1987,6 +1987,26 @@ console.log('8');
 1,2,6,8,3,4,7,5
 1,2,3,6,8,4,7,5
 
+
+*
+* setTimeout(function(){
+      console.log(1);
+})
+
+Promise.resolve(function(){
+      console.log(2)
+})
+
+new Promise(function(resolve){
+      console.log(3);
+      resolve();
+}).then(function(){
+      console.log(4)
+})
+console.log(5)
+*
+* 2,3,5,4,1
+* 3,5,4,1
 */
 
 
