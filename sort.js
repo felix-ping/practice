@@ -61,3 +61,47 @@ const countSort = (arr) => {
 let arr = [7, 8, 9, 4, 2, 5, 4, 1, , 6, 8, 22, 45, 98, 1, 0, 6, 7, 8, 9]
 console.log(countSort(arr))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function quickSort(arr){
+	if(arr.length < 2) return arr
+	let index = Math.floor(Math.random()*arr.length)
+	let middle = arr[index]
+	let left = [], right = []
+	for(let i = 0; i < arr.length; i++){
+		if(i === index){continue}
+		arr[i] < middle?left.push(arr[i]):right.push(arr[i])
+	}
+	return quickSort(left).concat(middle,quickSort(right))
+}
+
+
+let arr = [5,6,8,3,5,7,1,6,9,3,76,2,56,3,547,436,7,34,6]
+quickSort(arr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
