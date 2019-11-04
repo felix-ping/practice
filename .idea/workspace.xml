@@ -53,8 +53,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="1519" column="31" selection-start-line="1519" selection-start-column="31" selection-end-line="1519" selection-end-column="31" />
+            <state relative-caret-position="413">
+              <caret line="1988" lean-forward="true" selection-start-line="1988" selection-end-line="1988" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -96,7 +96,6 @@
                 <element signature="e#38771#39064#0" />
                 <element signature="e#39066#39201#0" />
                 <element signature="e#39202#39972#0" />
-                <element signature="e#39973#40989#0" />
               </folding>
             </state>
           </provider>
@@ -162,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,6 +172,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,14 +314,8 @@
       <workItem from="1572448184170" duration="2268000" />
       <workItem from="1572505878683" duration="1039000" />
       <workItem from="1572621884566" duration="1302000" />
-      <workItem from="1572753078126" duration="810000" />
-    </task>
-    <task id="LOCAL-00074" summary="87th  判断url">
-      <created>1566312864132</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1566312864133</updated>
+      <workItem from="1572753078126" duration="1717000" />
+      <workItem from="1572881778362" duration="180000" />
     </task>
     <task id="LOCAL-00075" summary="57th">
       <created>1566360213935</created>
@@ -660,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572622137841</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="55th  array.from">
+      <created>1572795677601</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1572795677601</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111727000" />
+    <option name="totallyTimeSpent" value="112814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -681,13 +681,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31833333" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,7 +697,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="4th" />
     <MESSAGE value="10th" />
     <MESSAGE value="10th async" />
     <MESSAGE value="12th  异步方案比较" />
@@ -722,7 +721,8 @@
     <MESSAGE value="46th  对象的push" />
     <MESSAGE value="primise" />
     <MESSAGE value="53th" />
-    <option name="LAST_COMMIT_MESSAGE" value="53th" />
+    <MESSAGE value="55th  array.from" />
+    <option name="LAST_COMMIT_MESSAGE" value="55th  array.from" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -789,7 +789,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -860,7 +859,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -931,7 +929,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1002,7 +999,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1073,7 +1069,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1144,7 +1139,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1215,7 +1209,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1286,7 +1279,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1357,7 +1349,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1428,7 +1419,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1499,7 +1489,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1570,7 +1559,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>
@@ -1601,8 +1589,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="1519" column="31" selection-start-line="1519" selection-start-column="31" selection-end-line="1519" selection-end-column="31" />
+        <state relative-caret-position="413">
+          <caret line="1988" lean-forward="true" selection-start-line="1988" selection-end-line="1988" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
@@ -1644,7 +1632,6 @@
             <element signature="e#38771#39064#0" />
             <element signature="e#39066#39201#0" />
             <element signature="e#39202#39972#0" />
-            <element signature="e#39973#40989#0" />
           </folding>
         </state>
       </provider>

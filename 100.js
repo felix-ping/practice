@@ -1959,6 +1959,36 @@ Function.prototype.call = function() {
 
 
 
+/*button.disabled 和 button.getAttribute('button')的区别
+ * 前者获取的是对象的属性，后者获取的是对象的特性。
+  *
+  *
+  * */
+
+
+/*console.log('1');
+async function async1(){
+     console.log('2');
+     await console.log('3');
+     console.log('4');
+}
+setTimeout(function(){
+     console.log('5');
+},0);
+async1();
+new Promise(function(resolve){
+     console.log('6');
+     resolve();
+}).then(function(){
+     console.log('7');
+});
+console.log('8');
+
+1,2,6,8,3,4,7,5
+1,2,3,6,8,4,7,5
+
+*/
+
 
 
 
