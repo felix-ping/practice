@@ -1455,7 +1455,17 @@ Proxy不仅可以代理对象，还可以代理数组。还可以代理动态增
 *
 *
 * */
-
+/*52th  水平，垂直居中的方式
+*
+* 垂直居中的七种方式
+* 1. flex
+* 2. position:absolute;top:50%;margin-top:-50%;
+* 3.position:absolute;top:50%;transform:translateY(-50%);
+* 4.display:table; table-row;table-cell;
+* 5.<table><tr><td></td></tr></table>
+* 6.
+*
+* */
 /*53th
 var a = {n: 1};
 var b = a;

@@ -11,7 +11,7 @@ let quick = (arr) => {
       left.push(arr[i])
     }
   }
-  return quick(left).concat(basic, quick(right))//
+  return quick(left).concat(basic, quick(right))
 };
 console.log(quick([5, 3, 4, 5, 7, 5, 2, 1, 8, 5, 3, 1223, 1, 0]));
 

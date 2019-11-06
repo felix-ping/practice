@@ -82,16 +82,21 @@ function quickSort(arr){
 	let middle = arr[index]
 	let left = [], right = []
 	for(let i = 0; i < arr.length; i++){
-		if(i === index){continue}
+		if(i === index){continue} // 删了这句会爆桟，仔细体会
 		arr[i] < middle?left.push(arr[i]):right.push(arr[i])
 	}
 	return quickSort(left).concat(middle,quickSort(right))
 }
 
-
-let arr = [5,6,8,3,5,7,1,6,9,3,76,2,56,3,547,436,7,34,6]
+let arr = [5,6,8,3,5,7,1,6,9,3,76,2,56,3,547,436,7,34,6,1,1,1]
 quickSort(arr)
 
+
+
+function insertSort(arr){
+
+
+}
 
 
 
