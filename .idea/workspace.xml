@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="25246f00-6a21-4f89-9781-7c518ed880ec" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/100.js" beforeDir="false" afterPath="$PROJECT_DIR$/100.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +22,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="1575" column="2" selection-start-line="1575" selection-start-column="2" selection-end-line="1575" selection-end-column="2" />
+            <state relative-caret-position="575">
+              <caret line="1598" column="1" selection-start-line="1598" selection-start-column="1" selection-end-line="1598" selection-end-column="1" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -329,21 +328,7 @@
       <workItem from="1572753078126" duration="1717000" />
       <workItem from="1572881778362" duration="6929000" />
       <workItem from="1573149797561" duration="32000" />
-      <workItem from="1573228443850" duration="63000" />
-    </task>
-    <task id="LOCAL-00080" summary="60th">
-      <created>1566835143725</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1566835143726</updated>
-    </task>
-    <task id="LOCAL-00081" summary="23th">
-      <created>1566835265703</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1566835265703</updated>
+      <workItem from="1573228443850" duration="360000" />
     </task>
     <task id="LOCAL-00082" summary="130th">
       <created>1566920750962</created>
@@ -674,11 +659,25 @@
       <option name="project" value="LOCAL" />
       <updated>1573055343198</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="58th">
+      <created>1573228519957</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1573228519958</updated>
+    </task>
+    <task id="LOCAL-00130" summary="箭头函数和普通函数">
+      <created>1573228581464</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1573228581465</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119658000" />
+    <option name="totallyTimeSpent" value="119955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -711,8 +710,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="14th 2" />
-    <MESSAGE value="15th  http2 多路复用" />
     <MESSAGE value="15th  http2 多路复用 补充" />
     <MESSAGE value="15th  http2 多路复用 补充2" />
     <MESSAGE value="22th  重流重绘" />
@@ -736,7 +733,9 @@
     <MESSAGE value="this" />
     <MESSAGE value="快排 优化版" />
     <MESSAGE value="52th 居中的布局方式。" />
-    <option name="LAST_COMMIT_MESSAGE" value="52th 居中的布局方式。" />
+    <MESSAGE value="58th" />
+    <MESSAGE value="箭头函数和普通函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="箭头函数和普通函数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1879,8 +1878,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="1575" column="2" selection-start-line="1575" selection-start-column="2" selection-end-line="1575" selection-end-column="2" />
+        <state relative-caret-position="575">
+          <caret line="1598" column="1" selection-start-line="1598" selection-start-column="1" selection-end-line="1598" selection-end-column="1" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
