@@ -1753,8 +1753,15 @@ console.log(resArr);
 *
 * */
 /*68th 如何解决移动端 Retina 屏 1px 像素问题
-*
-*
+*1 伪元素 + transform scaleY(.5)
+2 border-image
+3 background-image
+4 box-shadow
+*viewport + rem 实现
+box-shadow
+background-image
+0.5px
+transformY:scale(.5)
 * */
 /*第 72 题： 为什么普通 for 循环的性能远远高于 forEach 的性能，请解释其中的原因
 *for 循环没有任何额外的函数调用栈和上下文；
