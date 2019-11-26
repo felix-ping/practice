@@ -1772,6 +1772,11 @@ transformY:scale(.5)
     return new_arr.join('');
 }
 console.log(processString('AbC'));
+
+
+[].map.call(str, function(item){
+return /[a-z]/.test(item) ? item.toUpperCase() : item.toLowerCase();
+}).join('');
 *
 * */
 /*第 72 题： 为什么普通 for 循环的性能远远高于 forEach 的性能，请解释其中的原因
