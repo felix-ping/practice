@@ -1763,6 +1763,17 @@ background-image
 0.5px
 transformY:scale(.5)
 * */
+/*69th 如何把一个字符串的大小写取反（大写变小写小写变大写），例如 ’AbC' 变成 'aBc'
+* function processString (s) {
+    var arr = s.split('');
+    var new_arr = arr.map((item) => {
+        return item === item.toUpperCase() ? item.toLowerCase() : item.toUpperCase();
+    });
+    return new_arr.join('');
+}
+console.log(processString('AbC'));
+*
+* */
 /*第 72 题： 为什么普通 for 循环的性能远远高于 forEach 的性能，请解释其中的原因
 *for 循环没有任何额外的函数调用栈和上下文；
 
