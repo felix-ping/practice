@@ -1831,6 +1831,38 @@ for: 2.263ms
 forEach: 0.254msf
 *
 * */
+/* 74th 使用 JavaScript Proxy 实现简单的数据绑定
+*<b id="count"></b>
+<button onclick="increase()">+</button>
+<button onclick="decrease()">-</button>
+
+
+const data = { count: 0 };
+const proxy = new Proxy(data, {
+  get(target, property) {
+    return target[property];
+  },
+  set(target, property, value) {
+    target[property] = value;
+    render(value);
+  }
+});
+
+render(proxy.count);
+
+function render(value) {
+  document.getElementById('count').innerHTML = value;
+}
+
+function increase() {
+  proxy.count += 1;
+}
+
+function decrease() {
+  proxy.count -= 1;
+}
+*
+* */
 /*第 75 题：数组里面有10万个数据，取第一个元素和第10万个元素的时间相差多少
 *
 *数组可以直接根据索引取的对应的元素，所以不管取哪个位置的元素的时间复杂度都是 O(1)得出结论：消耗时间几乎一致，差异可以忽略不计
