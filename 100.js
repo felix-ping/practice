@@ -1964,7 +1964,10 @@ function rotate(arr, k) {
 *
 * */
 /*78th Vue 的父组件和子组件生命周期钩子执行顺序是什么
-*
+*父组建： beforeCreate -> created -> beforeMount
+子组件： -> beforeCreate -> created -> beforeMount -> mounted
+父组件： -> mounted
+总结：从外到内，再从内到外
 *
 *
 * */

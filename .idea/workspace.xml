@@ -23,8 +23,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="1933" column="18" selection-start-line="1933" selection-start-column="18" selection-end-line="1933" selection-end-column="18" />
+            <state relative-caret-position="413">
+              <caret line="1969" column="13" selection-start-line="1969" selection-start-column="13" selection-end-line="1969" selection-end-column="13" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -84,6 +84,7 @@
                 <element signature="e#47031#47483#0" />
                 <element signature="e#47484#48033#0" />
                 <element signature="e#48034#48289#0" />
+                <element signature="e#48290#48624#0" />
                 <element signature="e#48290#48859#0" />
                 <element signature="e#48860#49125#0" />
                 <element signature="e#49126#49394#0" />
@@ -348,21 +349,7 @@
       <workItem from="1575388333089" duration="856000" />
       <workItem from="1575474605803" duration="739000" />
       <workItem from="1575712860364" duration="591000" />
-      <workItem from="1576396077246" duration="1433000" />
-    </task>
-    <task id="LOCAL-00092" summary="7th 继承">
-      <created>1568044061314</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1568044061315</updated>
-    </task>
-    <task id="LOCAL-00093" summary="5th 深度 广度">
-      <created>1568130149638</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1568130149638</updated>
+      <workItem from="1576396077246" duration="2314000" />
     </task>
     <task id="LOCAL-00094" summary="2nd">
       <created>1568303666824</created>
@@ -693,11 +680,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575474754365</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="76th">
+      <created>1576424845506</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1576424845508</updated>
+    </task>
+    <task id="LOCAL-00142" summary="78th">
+      <created>1576511507177</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1576511507177</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129272000" />
+    <option name="totallyTimeSpent" value="130153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -730,8 +731,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="42th promise" />
-    <MESSAGE value="42th async" />
     <MESSAGE value="42th generator" />
     <MESSAGE value="42th es5" />
     <MESSAGE value="43th  sort" />
@@ -755,7 +754,9 @@
     <MESSAGE value="71th" />
     <MESSAGE value="71th code" />
     <MESSAGE value="74th proxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="74th proxy" />
+    <MESSAGE value="76th" />
+    <MESSAGE value="78th" />
+    <option name="LAST_COMMIT_MESSAGE" value="78th" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1118,8 +1119,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="1933" column="18" selection-start-line="1933" selection-start-column="18" selection-end-line="1933" selection-end-column="18" />
+        <state relative-caret-position="413">
+          <caret line="1969" column="13" selection-start-line="1969" selection-start-column="13" selection-end-line="1969" selection-end-column="13" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
@@ -1179,6 +1180,7 @@
             <element signature="e#47031#47483#0" />
             <element signature="e#47484#48033#0" />
             <element signature="e#48034#48289#0" />
+            <element signature="e#48290#48624#0" />
             <element signature="e#48290#48859#0" />
             <element signature="e#48860#49125#0" />
             <element signature="e#49126#49394#0" />
