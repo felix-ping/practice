@@ -1971,6 +1971,35 @@ function rotate(arr, k) {
 *
 *
 * */
+/*79th input 搜索如何防抖，如何处理中文输入
+*防抖就不说了，主要是这里提到的中文输入问题，其实看过elementui框架源码的童鞋都应该知道，elementui是通过compositionstart & compositionend做的中文输入处理：
+相关代码：
+<input
+ref="input"
+@compositionstart="handleComposition"
+@compositionupdate="handleComposition"
+@compositionend="handleComposition"
+>
+这3个方法是原生的方法，这里简单介绍下，官方定义如下compositionstart 事件触发于一段文字的输入之前（类似于 keydown 事件，但是该事件仅在若干可见字符的输入之前，而这些可见字符的输入可能需要一连串的键盘操作、语音识别或者点击输入法的备选词）
+简单来说就是切换中文输入法时在打拼音时(此时input内还没有填入真正的内容)，会首先触发compositionstart，然后每打一个拼音字母，触发compositionupdate，最后将输入好的中文填入input中时触发compositionend。触发compositionstart时，文本框会填入 “虚拟文本”（待确认文本），同时触发input事件；在触发compositionend时，就是填入实际内容后（已确认文本）,所以这里如果不想触发input事件的话就得设置一个bool变量来控制。
+///////////////
+根据上图可以看到
+
+输入到input框触发input事件
+失去焦点后内容有改变触发change事件
+识别到你开始使用中文输入法触发**compositionstart 事件
+未输入结束但还在输入中触发compositionupdate **事件
+输入完成（也就是我们回车或者选择了对应的文字插入到输入框的时刻）触发compositionend事件。
+
+那么问题来了 使用这几个事件能做什么？
+因为input组件常常跟form表单一起出现，需要做表单验证
+//////////
+为了解决中文输入法输入内容时还没将中文插入到输入框就验证的问题
+
+我们希望中文输入完成以后才验证
+*
+*
+* */
 /*第 87 题：在输入框中如何判断输入的是一个正确的网址
 
 
