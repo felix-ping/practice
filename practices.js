@@ -1388,14 +1388,14 @@ function selectSort(arr) {
 }
 const array = [5, 9, 7, 4, 2, 8, 1, 6, 0, 3, 11, 10, 12]
 selectSort(array)
-Array.prototype.selection_sort = function() {
-	var i, j, min;var temp;
-	for (i = 0; i < this.length - 1; i++) {
-		min = i;
-		for (j = i + 1; j < this.length; j++){if (this[min] > this[j]){min = j}}
-		temp = this[min];
-		this[min] = this[i];
-		this[i] = temp;
+Array.prototype.selection_sort = function () {
+    var i, j, min; var temp;
+    for (i = 0; i < this.length - 1; i++) {
+        min = i;
+        for (j = i + 1; j < this.length; j++) { if (this[min] > this[j]) { min = j } }
+        temp = this[min];
+        this[min] = this[i];
+        this[i] = temp;
     }
     return this
 };
@@ -1428,7 +1428,8 @@ Array.prototype.countSort = function () {
     }
     const D = []
     for (let j = 0; j < C.length; j++) {
-        if (C[j]) {while (C[j] > 0) {
+        if (C[j]) {
+            while (C[j] > 0) {
                 D.push(j)
                 C[j]--
             }
@@ -1926,7 +1927,7 @@ permutation([1, 2, 3, 4])
 //二分查找， 最坏logn + 1
 
 Array.prototype.binary_search = function (low, high, kv) {
-    if (low > high){return -1}
+    if (low > high) { return -1 }
     var mid = parseInt((high + low) / 2);
     if (this[mid] > kv)
         return this.binary_search(low, mid - 1, kv);
@@ -2033,7 +2034,7 @@ store.changeState({
 function createStore(initState) {
     /* 
     补全代码 */
-    
+
     return {
         getState,
         dispatch,
@@ -2139,30 +2140,30 @@ console.log('fn1' + e)
 var i = 10;
 var fn = 20;
 console.log('i1' + i);
-function fn(){
+function fn() {
     console.log('i2' + i);
     var i = 99;
     var r = fn2();
     console.log('fn2' + r);
-    console.log('i3' +i);
-    function fn2(){
+    console.log('i3' + i);
+    function fn2() {
         i = 100;
     }
 }
 
 
-var e,i,fn;
-function fn(){
-    var i,r;
-    function fn2(){
+var e, i, fn;
+function fn() {
+    var i, r;
+    function fn2() {
         i = 100;
     }
     console.log('i2' + i);
     i = 99;
     r = fn2();
     console.log('fn2' + r);
-    console.log('i3' +i);
-    
+    console.log('i3' + i);
+
 }
 e = fn();
 console.log('fn1' + e)
@@ -2213,25 +2214,25 @@ myPromise.prototype.then = function (successFn, errorFn) {
 }
 
 
-实现如下函数 
+实现如下函数
 sum(2, 3)  //6
 sum(2)(3)  //6
 
 
 //sum(2, 3)  //6
-function sum(a,b){
-    return a*b;
+function sum(a, b) {
+    return a * b;
 }
 
 sum(2)(3)  //6
-function sum(a){
-    return function f(b){
-        return a*b
+function sum(a) {
+    return function f(b) {
+        return a * b
     }
 }
 //ES6
-sum = (a,b) => (a*b)
-sum = a => (b=>a*b)
+sum = (a, b) => (a * b)
+sum = a => (b => a * b)
 
 
 //实现一个map函数，模拟原生的map函数，map(list, iteratee)。
@@ -2239,19 +2240,19 @@ sum = a => (b=>a*b)
 
 //ex：
 
-map([1, 2, 3], function(num){ return num * 3; }=> [3, 6, 9];
+map([1, 2, 3], function (num) { return num * 3; }=> [3, 6, 9];
 
 function map(list, iteratee) {
-    var results=[];
+    var results = [];
     for (var index = 0; index < list.length; index++) {
         results[index] = iteratee(list[index], index, list);
     }
     return results;
 };
-Array.prototype.mymap = function(callback){
+Array.prototype.mymap = function (callback) {
     let arr = [];
-    for(let i=0;i<this.length;i++){
-    arr.push(this[i]===undefined ? undefined : callback(this[i],this));
+    for (let i = 0; i < this.length; i++) {
+        arr.push(this[i] === undefined ? undefined : callback(this[i], this));
     }
     return arr;
 }

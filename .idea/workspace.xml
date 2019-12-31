@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="25246f00-6a21-4f89-9781-7c518ed880ec" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/100.js" beforeDir="false" afterPath="$PROJECT_DIR$/100.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="100.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="2265" column="29" selection-start-line="2265" selection-start-column="29" selection-end-line="2265" selection-end-column="29" />
+            <state relative-caret-position="1530">
+              <caret line="2264" selection-start-line="2264" selection-end-line="2264" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -100,16 +99,8 @@
                 <element signature="e#55256#55351#0" />
                 <element signature="e#55354#55969#0" />
                 <element signature="e#55970#56227#0" />
+                <element signature="e#56228#56321#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sort.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sort.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -117,8 +108,51 @@
       <file leaf-file-name="mianshi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mianshi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="216">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tempCodeRunnerFile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tempCodeRunnerFile.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-901">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todoMVC.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todoMVC.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-469" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todoMVC.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todoMVC.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2233" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="practices.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/practices.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="2092" lean-forward="true" selection-start-line="2092" selection-end-line="2092" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -354,21 +388,7 @@
       <workItem from="1576396077246" duration="2915000" />
       <workItem from="1576681422297" duration="1353000" />
       <workItem from="1576924126643" duration="983000" />
-      <workItem from="1577420633010" duration="634000" />
-    </task>
-    <task id="LOCAL-00096" summary="set map">
-      <created>1568453685133</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1568453685133</updated>
-    </task>
-    <task id="LOCAL-00097" summary="4th">
-      <created>1568455162352</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1568455162352</updated>
+      <workItem from="1577420633010" duration="2571000" />
     </task>
     <task id="LOCAL-00098" summary="10th">
       <created>1568563112293</created>
@@ -699,17 +719,31 @@
       <option name="project" value="LOCAL" />
       <updated>1576684506460</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="异或。">
+      <created>1577464679730</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1577464679733</updated>
+    </task>
+    <task id="LOCAL-00146" summary="异或进阶">
+      <created>1577464909376</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1577464909376</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133724000" />
+    <option name="totallyTimeSpent" value="135661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0431918" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19180088" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -736,8 +770,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="42th es5" />
-    <MESSAGE value="43th  sort" />
     <MESSAGE value="44th http握手过程" />
     <MESSAGE value="46th  对象的push" />
     <MESSAGE value="primise" />
@@ -761,7 +793,9 @@
     <MESSAGE value="76th" />
     <MESSAGE value="78th" />
     <MESSAGE value="79th  图片防抖" />
-    <option name="LAST_COMMIT_MESSAGE" value="79th  图片防抖" />
+    <MESSAGE value="异或。" />
+    <MESSAGE value="异或进阶" />
+    <option name="LAST_COMMIT_MESSAGE" value="异或进阶" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -769,41 +803,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/100.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18378">
-          <caret line="1021" column="28" selection-start-line="1021" selection-start-column="28" selection-end-line="1021" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/promise.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/promise-practice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/promise2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="155" column="1" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/100.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17460">
-          <caret line="976" column="68" selection-start-line="976" selection-start-column="68" selection-end-line="976" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/promise.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
@@ -1108,13 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mianshi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1124,8 +1116,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="2265" column="29" selection-start-line="2265" selection-start-column="29" selection-end-line="2265" selection-end-column="29" />
+        <state relative-caret-position="1530">
+          <caret line="2264" selection-start-line="2264" selection-end-line="2264" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
@@ -1201,6 +1193,47 @@
             <element signature="e#55256#55351#0" />
             <element signature="e#55354#55969#0" />
             <element signature="e#55970#56227#0" />
+            <element signature="e#56228#56321#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tempCodeRunnerFile.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todoMVC.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-469" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todoMVC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2233" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="2092" lean-forward="true" selection-start-line="2092" selection-end-line="2092" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
