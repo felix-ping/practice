@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25246f00-6a21-4f89-9781-7c518ed880ec" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100.js" beforeDir="false" afterPath="$PROJECT_DIR$/100.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="100.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="2264" selection-start-line="2264" selection-end-line="2264" />
+            <state relative-caret-position="575">
+              <caret line="2062" column="3" selection-start-line="2062" selection-start-column="3" selection-end-line="2062" selection-end-column="3" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -87,7 +88,6 @@
                 <element signature="e#49267#49836#0" />
                 <element signature="e#49837#50011#0" />
                 <element signature="e#50012#50981#0" />
-                <element signature="e#50982#51247#0" />
                 <element signature="e#51248#51516#0" />
                 <element signature="e#51517#52197#0" />
                 <element signature="e#52198#53382#0" />
@@ -99,7 +99,7 @@
                 <element signature="e#55256#55351#0" />
                 <element signature="e#55354#55969#0" />
                 <element signature="e#55970#56227#0" />
-                <element signature="e#56228#56321#0" />
+                <element signature="e#56228#56772#0" />
               </folding>
             </state>
           </provider>
@@ -109,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/mianshi.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -122,7 +122,7 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-901">
+            <state>
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -132,23 +132,19 @@
       </file>
       <file leaf-file-name="todoMVC.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoMVC.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-469" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="todoMVC.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todoMVC.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2233" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="practices.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="practices.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/practices.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="215">
-              <caret line="2092" lean-forward="true" selection-start-line="2092" selection-end-line="2092" />
+              <caret line="2093" selection-start-line="2093" selection-end-line="2093" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
@@ -389,6 +385,7 @@
       <workItem from="1576681422297" duration="1353000" />
       <workItem from="1576924126643" duration="983000" />
       <workItem from="1577420633010" duration="2571000" />
+      <workItem from="1577893333765" duration="462000" />
     </task>
     <task id="LOCAL-00098" summary="10th">
       <created>1568563112293</created>
@@ -737,7 +734,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135661000" />
+    <option name="totallyTimeSpent" value="136123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -756,11 +753,11 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1114,10 +1111,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tempCodeRunnerFile.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todoMVC.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todoMVC.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mianshi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="2093" selection-start-line="2093" selection-end-line="2093" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="2264" selection-start-line="2264" selection-end-line="2264" />
+        <state relative-caret-position="575">
+          <caret line="2062" column="3" selection-start-line="2062" selection-start-column="3" selection-end-line="2062" selection-end-column="3" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
@@ -1181,7 +1214,6 @@
             <element signature="e#49267#49836#0" />
             <element signature="e#49837#50011#0" />
             <element signature="e#50012#50981#0" />
-            <element signature="e#50982#51247#0" />
             <element signature="e#51248#51516#0" />
             <element signature="e#51517#52197#0" />
             <element signature="e#52198#53382#0" />
@@ -1193,47 +1225,7 @@
             <element signature="e#55256#55351#0" />
             <element signature="e#55354#55969#0" />
             <element signature="e#55970#56227#0" />
-            <element signature="e#56228#56321#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tempCodeRunnerFile.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-901">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todoMVC.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-469" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todoMVC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2233" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mianshi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="2092" lean-forward="true" selection-start-line="2092" selection-end-line="2092" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="e#56228#56772#0" />
           </folding>
         </state>
       </provider>
