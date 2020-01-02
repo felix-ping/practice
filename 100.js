@@ -2062,6 +2062,25 @@ Promise.all([p1, p2, p3]).then(function (results) {
     console.log(r);
 });
 * */
+/*81th  打印出 1 - 10000 之间的所有对称数例如：121、1331 等
+*
+*[...Array(10000).keys()].filter((x) => {
+  return x.toString().length > 1 && x === Number(x.toString().split('').reverse().join(''))
+})
+*
+*let result=[]
+for(let i=1;i<10;i++){
+    result.push(i)
+    result.push(i*11)
+    for(let j=0;j<10;j++){
+        result.push(i*101+j*10)
+        result.push(i*1001+j*110)
+    }
+}
+*
+* */
+
+
 /*第 87 题：在输入框中如何判断输入的是一个正确的网址
 
 
