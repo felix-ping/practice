@@ -23,8 +23,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="2078" column="1" selection-start-line="2078" selection-start-column="1" selection-end-line="2078" selection-end-column="1" />
+            <state relative-caret-position="540">
+              <caret line="2091" selection-start-line="2091" selection-end-line="2091" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -89,18 +89,20 @@
                 <element signature="e#49837#50011#0" />
                 <element signature="e#50012#50981#0" />
                 <element signature="e#50982#52530#0" />
-                <element signature="e#52531#52796#0" />
-                <element signature="e#52797#53065#0" />
-                <element signature="e#53747#54931#0" />
-                <element signature="e#54932#55241#0" />
-                <element signature="e#55242#55747#0" />
-                <element signature="e#55748#56206#0" />
-                <element signature="e#56207#56391#0" />
-                <element signature="e#56392#56801#0" />
-                <element signature="e#56805#56900#0" />
-                <element signature="e#56903#57518#0" />
-                <element signature="e#57519#57776#0" />
-                <element signature="e#57777#58321#0" />
+                <element signature="e#52531#52902#0" />
+                <element signature="e#52905#53170#0" />
+                <element signature="e#53171#53439#0" />
+                <element signature="e#53440#54120#0" />
+                <element signature="e#54121#55305#0" />
+                <element signature="e#55306#55615#0" />
+                <element signature="e#55616#56121#0" />
+                <element signature="e#56122#56580#0" />
+                <element signature="e#56581#56765#0" />
+                <element signature="e#56766#57175#0" />
+                <element signature="e#57179#57274#0" />
+                <element signature="e#57277#57892#0" />
+                <element signature="e#57893#58150#0" />
+                <element signature="e#58151#58695#0" />
               </folding>
             </state>
           </provider>
@@ -386,14 +388,8 @@
       <workItem from="1576924126643" duration="983000" />
       <workItem from="1577420633010" duration="2571000" />
       <workItem from="1577893333765" duration="1088000" />
-      <workItem from="1577962645348" duration="734000" />
-    </task>
-    <task id="LOCAL-00099" summary="10th async">
-      <created>1568563210582</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1568563210582</updated>
+      <workItem from="1577962645348" duration="1662000" />
+      <workItem from="1578584746551" duration="280000" />
     </task>
     <task id="LOCAL-00100" summary="12th  异步方案比较">
       <created>1568821553155</created>
@@ -731,17 +727,24 @@
       <option name="project" value="LOCAL" />
       <updated>1577893821437</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="81th  找对称数">
+      <created>1577973894218</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1577973894220</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137483000" />
+    <option name="totallyTimeSpent" value="138691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14128843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103953145" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -754,11 +757,11 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -768,7 +771,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="46th  对象的push" />
     <MESSAGE value="primise" />
     <MESSAGE value="53th" />
     <MESSAGE value="55th  array.from" />
@@ -793,7 +795,8 @@
     <MESSAGE value="异或。" />
     <MESSAGE value="异或进阶" />
     <MESSAGE value="80th promise.all" />
-    <option name="LAST_COMMIT_MESSAGE" value="80th promise.all" />
+    <MESSAGE value="81th  找对称数" />
+    <option name="LAST_COMMIT_MESSAGE" value="81th  找对称数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1149,8 +1152,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="2078" column="1" selection-start-line="2078" selection-start-column="1" selection-end-line="2078" selection-end-column="1" />
+        <state relative-caret-position="540">
+          <caret line="2091" selection-start-line="2091" selection-end-line="2091" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />
@@ -1215,18 +1218,20 @@
             <element signature="e#49837#50011#0" />
             <element signature="e#50012#50981#0" />
             <element signature="e#50982#52530#0" />
-            <element signature="e#52531#52796#0" />
-            <element signature="e#52797#53065#0" />
-            <element signature="e#53747#54931#0" />
-            <element signature="e#54932#55241#0" />
-            <element signature="e#55242#55747#0" />
-            <element signature="e#55748#56206#0" />
-            <element signature="e#56207#56391#0" />
-            <element signature="e#56392#56801#0" />
-            <element signature="e#56805#56900#0" />
-            <element signature="e#56903#57518#0" />
-            <element signature="e#57519#57776#0" />
-            <element signature="e#57777#58321#0" />
+            <element signature="e#52531#52902#0" />
+            <element signature="e#52905#53170#0" />
+            <element signature="e#53171#53439#0" />
+            <element signature="e#53440#54120#0" />
+            <element signature="e#54121#55305#0" />
+            <element signature="e#55306#55615#0" />
+            <element signature="e#55616#56121#0" />
+            <element signature="e#56122#56580#0" />
+            <element signature="e#56581#56765#0" />
+            <element signature="e#56766#57175#0" />
+            <element signature="e#57179#57274#0" />
+            <element signature="e#57277#57892#0" />
+            <element signature="e#57893#58150#0" />
+            <element signature="e#58151#58695#0" />
           </folding>
         </state>
       </provider>
