@@ -2215,6 +2215,50 @@ function commonSearch(target, id, mode) {
   } while(staskOrQuene.length)
   return undefined
 }
+33333333333333
+const data = [
+    {
+        id: 1,
+        children: [
+            {
+                id: 2,
+                children: [
+                    {
+                        id: 3,
+                    },
+                    {
+                        id: 4,
+                    },
+                ],
+            },
+        ],
+    },
+];
+
+// 思路：递归遍历，找到目标id后逐级将id返回
+function find(id) {
+    function each(items) {
+        for (let item of items) {
+            if (item.id === id) {
+                return [id];
+            }
+            if (item.children && item.children.length) {
+                const r = each(item.children);
+                if (Array.isArray(r)) {
+                    r.unshift(item.id);
+                    return r;
+                }
+            }
+        }
+    }
+
+    return each(data);
+}
+
+console.log(find(1)); // [1]
+console.log(find(2)); // [1, 2]
+console.log(find(3)); // [1, 2, 3]
+console.log(find(4)); // [1, 2, 4]
 * */
 /*99th
 *
