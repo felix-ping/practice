@@ -2147,6 +2147,10 @@ const isUrl = urlStr => {
 
 
 */
+/*92th 已知数据格式，实现一个函数 fn 找出链条中所有的父级 id
+*
+*
+* */
 /*99th
 *
 * function fun(num){
