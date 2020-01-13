@@ -2149,7 +2149,23 @@ const isUrl = urlStr => {
 */
 /*92th 已知数据格式，实现一个函数 fn 找出链条中所有的父级 id
 *
-*
+*const fn = (data, value) => {
+  let res = []
+  const dfs = (arr, temp = []) => {
+    for (const node of arr) {
+      if (node.children) {
+        dfs(node.children, temp.concat(node.id))
+      } else {
+        if (node.id === value) {
+          res = temp
+        }
+        return
+      }
+    }
+  }
+  dfs(data)
+  return res
+}
 * */
 /*99th
 *
