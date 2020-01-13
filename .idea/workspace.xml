@@ -23,8 +23,8 @@
       <file leaf-file-name="100.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/100.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="2152" column="2" selection-start-line="2152" selection-start-column="2" selection-end-line="2152" selection-end-column="2" />
+            <state relative-caret-position="86">
+              <caret line="2170" column="19" selection-start-line="2170" selection-start-column="19" selection-end-line="2170" selection-end-column="19" />
               <folding>
                 <element signature="e#3259#4090#0" />
                 <element signature="e#4091#5365#0" />
@@ -392,21 +392,7 @@
       <workItem from="1577962645348" duration="1662000" />
       <workItem from="1578584746551" duration="957000" />
       <workItem from="1578668055532" duration="1246000" />
-      <workItem from="1578930997128" duration="47000" />
-    </task>
-    <task id="LOCAL-00102" summary="13th">
-      <created>1568995161832</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1568995161832</updated>
-    </task>
-    <task id="LOCAL-00103" summary="14th  方案1">
-      <created>1569166826224</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1569166826225</updated>
+      <workItem from="1578930997128" duration="127000" />
     </task>
     <task id="LOCAL-00104" summary="14th 2">
       <created>1569166903350</created>
@@ -737,11 +723,25 @@
       <option name="project" value="LOCAL" />
       <updated>1578585114732</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="92th">
+      <created>1578931058356</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1578931058357</updated>
+    </task>
+    <task id="LOCAL-00152" summary="92th  answer1">
+      <created>1578931104917</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1578931104917</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140661000" />
+    <option name="totallyTimeSpent" value="140741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -774,8 +774,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="53th" />
-    <MESSAGE value="55th  array.from" />
     <MESSAGE value="eventLoop" />
     <MESSAGE value="eventLoop 参数传递" />
     <MESSAGE value="this" />
@@ -799,7 +797,9 @@
     <MESSAGE value="80th promise.all" />
     <MESSAGE value="81th  找对称数" />
     <MESSAGE value="84th" />
-    <option name="LAST_COMMIT_MESSAGE" value="84th" />
+    <MESSAGE value="92th" />
+    <MESSAGE value="92th  answer1" />
+    <option name="LAST_COMMIT_MESSAGE" value="92th  answer1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1155,8 +1155,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="2152" column="2" selection-start-line="2152" selection-start-column="2" selection-end-line="2152" selection-end-column="2" />
+        <state relative-caret-position="86">
+          <caret line="2170" column="19" selection-start-line="2170" selection-start-column="19" selection-end-line="2170" selection-end-column="19" />
           <folding>
             <element signature="e#3259#4090#0" />
             <element signature="e#4091#5365#0" />

@@ -2166,6 +2166,55 @@ const isUrl = urlStr => {
   dfs(data)
   return res
 }
+
+
+2222222222222222222
+bfs利用队列实现，循环中做的是push => shift => push => shift
+dfs利用栈实现，循环中做的是push => pop => push => pop
+刚刚好，中间仅仅差了一个数组方法：
+
+function bfs(target, id) {
+  const quene = [...target]
+  do {
+    const current = quene.shift()
+    if (current.children) {
+      quene.push(...current.children.map(x => ({ ...x, path: (current.path || current.id) + '-' + x.id })))
+    }
+    if (current.id === id) {
+      return current
+    }
+  } while(quene.length)
+  return undefined
+}
+
+function dfs(target, id) {
+  const stask = [...target]
+  do {
+    const current = stask.pop()
+    if (current.children) {
+      stask.push(...current.children.map(x => ({ ...x, path: (current.path || current.id) + '-' + x.id })))
+    }
+    if (current.id === id) {
+      return current
+    }
+  } while(stask.length)
+  return undefined
+}
+
+// 公共的搜索方法，默认bfs
+function commonSearch(target, id, mode) {
+  const staskOrQuene = [...target]
+  do {
+    const current = staskOrQuene[mode === 'dfs' ? 'pop' : 'shift']()
+    if (current.children) {
+      staskOrQuene.push(...current.children.map(x => ({ ...x, path: (current.path || current.id) + '-' + x.id })))
+    }
+    if (current.id === id) {
+      return current
+    }
+  } while(staskOrQuene.length)
+  return undefined
+}
 * */
 /*99th
 *
