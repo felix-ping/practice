@@ -161,7 +161,7 @@ function debounce(fn) {
         timeout = setTimeout(() => { // 然后又创建一个新的 setTimeout, 这样就能保证输入字符后的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数
           fn.apply(this, arguments);
         }, 500);
-      };
+      };console.log();
     }
     function sayHi() {
       console.log('防抖成功');
@@ -675,7 +675,6 @@ HTTP/2的多路复用就是为了解决上述的两个性能问题。
 
 http2的多路复用就很好的解决了上面所提出的问题。http2的传输是基于二进制帧的。每一个TCP连接中承载了多个双向流通的流，每一个流都有一个独一无二的标识和优先级，而流就是由二进制帧组成的。二进制帧的头部信息会标识自己属于哪一个流，所以这些帧是可以交错传输，然后在接收端通过帧头的信息组装成完整的数据。这样就解决了线头阻塞的问题，同时也提高了网络速度的利用率。
 * */
-
 
 /*第 20 题：介绍下 npm 模块安装机制，为什么输入 npm install 就可以自动安装对应的模块？
 *
@@ -2003,25 +2002,25 @@ ref="input"
 /*80th 介绍下 Promise.all 使用、原理实现及错误处理
 *  原理实现
 *  function promiseAll(promises){
-     return new Promise(function(resolve,reject){
+    return new Promise(function(resolve,reject){
             if(!Array.isArray(promises)){
-             return reject(new TypeError("argument must be anarray"))
-           }
+            return reject(new TypeError("argument must be anarray"))
+          }
     var countNum=0;
     var promiseNum=promises.length;
     var resolvedvalue=new Array(promiseNum);
     for(var i=0;i<promiseNum;i++){
       (function(i){
-         Promise.resolve(promises[i]).then(function(value){
+        Promise.resolve(promises[i]).then(function(value){
             countNum++;
-           resolvedvalue[i]=value;
+          resolvedvalue[i]=value;
           if(countNum===promiseNum){
               return resolve(resolvedvalue)
           }
-       },function(reason){
+      },function(reason){
         return reject(reason)
       )
-     })(i)
+    })(i)
     }
 })
 }
@@ -2089,9 +2088,9 @@ add(1, 2, 3); // 6
 function add() {
   let args = [].slice.call(arguments);
   let fn = function(){
-   let fn_args = [].slice.call(arguments)
-   return add.apply(null,args.concat(fn_args))
- }
+  let fn_args = [].slice.call(arguments)
+  return add.apply(null,args.concat(fn_args))
+}
 fn.toString = function(){
   return args.reduce((a,b)=>a+b)
 }
@@ -2143,6 +2142,13 @@ const isUrl = urlStr => {
         return false
     }
 }
+
+//89th 设计并实现 Promise.race()
+//Promise._race = promises => new Promise((resolve, reject) => {
+	promises.forEach(promise => {
+		promise.then(resolve, reject)
+	})
+})
 
 
 
@@ -2436,14 +2442,11 @@ Function.prototype.call = function() {
     return result;
 }*/
 
-
-
 /*button.disabled 和 button.getAttribute('button')的区别
  * 前者获取的是对象的属性，后者获取的是对象的特性。
   *
   *
   * */
-
 
 /*console.log('1');
 async function async1(){
@@ -2526,7 +2529,3 @@ console.log('111',foo());
 这样就解出题目。忽略寻找不同位的过程，总共遍历数组两次，时间复杂度为O(n)。
 *
 * */
-
-
-
-
