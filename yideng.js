@@ -21,7 +21,7 @@ console.log(`flattenDeep -> newArr`, newArr) */
 
 
 
-for( let i =0;
+/* for( let i =0;
   setTimeout(()=>console.log('b->',i)),
   i<3;
   setTimeout(()=>console.log('c->',i)),
@@ -29,6 +29,25 @@ for( let i =0;
     console.log('i',i)
     i=i+0.3
     console.log('i++',i)
+} */
+
+
+//在不使用%模运算符的情况下检查一个数字是否是偶数/
+function ifEven(num){
+  if(num&1){
+    return false
+  }else{
+    return true
+  }
 }
 
+function isEven2(num){ 
+  if(num < 0 || num ===1){
+    return false
+  }
+  if(num === 0){
+    return true
+  }
+  return isEven2(num - 2)
+}
 
