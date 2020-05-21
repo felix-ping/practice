@@ -32,7 +32,7 @@ console.log(`flattenDeep -> newArr`, newArr) */
 } */
 
 
-//在不使用%模运算符的情况下检查一个数字是否是偶数/
+/* //在不使用%模运算符的情况下检查一个数字是否是偶数/
 function ifEven(num){
   if(num&1){
     return false
@@ -49,5 +49,26 @@ function isEven2(num){
     return true
   }
   return isEven2(num - 2)
-}
+} */
 
+function captureOne(re, str){
+  var match = re.exec(str)
+  return match && match[1]
+}
+var numRe = /num=(\d+)/ig,
+wordRe = /yideng=(\w+)/i,
+a1 = captureOne(numRe, "num=1")
+a2 = captureOne(wordeRe, "yideng=1")
+a3 = captureOne(numRe, "NUM=2")
+a4 = captureOne(wordeRe, "YIDENG=2")
+a5 = captureOne(numRe, "Num=3")
+a6 = captureOne(wordeRe, "YiDeng=3")
+console.log(a1 === a2)
+console.log(a3 === a4)
+console.log(a5 === a6)
+
+
+
+
+//T F T
+//
