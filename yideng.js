@@ -53,16 +53,17 @@ function isEven2(num){
 
 function captureOne(re, str){
   var match = re.exec(str)
+  console.log(`captureOne -> match`, match)
   return match && match[1]
 }
-var numRe = /num=(\d+)/ig,
-wordRe = /yideng=(\w+)/i,
-a1 = captureOne(numRe, "num=1")
-a2 = captureOne(wordeRe, "yideng=1")
-a3 = captureOne(numRe, "NUM=2")
-a4 = captureOne(wordeRe, "YIDENG=2")
-a5 = captureOne(numRe, "Num=3")
-a6 = captureOne(wordeRe, "YiDeng=3")
+var numRe = /num=(\d+)/ig
+var wordRe = /yideng=(\w+)/i
+var a1 = captureOne(numRe, "num=1") //1
+var a2 = captureOne(wordRe, "yideng=1") //1
+var a3 = captureOne(numRe, "NUM=2")//null
+var a4 = captureOne(wordRe, "YIDENG=2")//2
+var a5 = captureOne(numRe, "Num=3")//3
+var a6 = captureOne(wordRe, "YiDeng=3")//3
 console.log(a1 === a2)
 console.log(a3 === a4)
 console.log(a5 === a6)
