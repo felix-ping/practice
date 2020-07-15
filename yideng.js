@@ -100,10 +100,10 @@ console.log(a5 === a6) */
       target()
       listenerList.add(args[0])
       Reflect.apply(_cache, w, args)
+      console.log(listenerList)
     }
   }
   w.addEventListener = new Proxy((eventName, fn)=>{
-    console.log('proxy')
   },handler)
 })(window)
 
@@ -117,5 +117,5 @@ window.addEventListener('resize', () => {
   console.log(2)
 })
 window.addEventListener('click', () => {
-  console.log(this)
+  console.log(3)
 })
