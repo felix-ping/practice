@@ -13,11 +13,11 @@ function deepClone(source) {
   return targetObj;
 }
 
-/* 2.6.3 defineProterty和proxy的对比
-1.defineProterty是es5的标准,proxy是es6的标准;
+/* 2.6.3 defineProperty和proxy的对比
+1.defineProperty是es5的标准,proxy是es6的标准;
 2.proxy可以监听到数组索引赋值,改变数组长度的变化;
-3.proxy是监听对象,不用深层遍历,defineProterty是监听属性;
-3.利用defineProterty实现双向数据绑定(vue2.x采用的核心)
+3.proxy是监听对象,不用深层遍历,defineProperty是监听属性;
+3.利用defineProperty实现双向数据绑定(vue2.x采用的核心)
 4.利用proxy实现双向数据绑定(vue3.x会采用)
  */
 
