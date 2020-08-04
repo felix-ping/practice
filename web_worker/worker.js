@@ -1,8 +1,10 @@
+let x 
+setTimeout(()=>{x = importScripts('./console.js')},1000)
+
+
 onmessage= (e)=>{
-  let value 
   setTimeout(()=>{
-    value = +e.data+1
-    postMessage(value)
+    postMessage(x)
   },2000)
   
 }

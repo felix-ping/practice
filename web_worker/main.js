@@ -8,7 +8,9 @@ el.addEventListener('click',(e)=>{
 
 
 worker.onmessage=(e)=>{
+  console.log(e)
   let result = e.data
+  console.log(`worker.onmessage ->  e.data`,  e)
+  
   el.textContent =result
-  worker.terminate()
 }
